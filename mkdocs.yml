@@ -35,18 +35,14 @@ copyright: "Copyright &copy; 2021 OpenFaaS Author(s)"
 extra:
   search:
     languages: "en"
-  social:
-    - icon: fontawesome/solid/globe-europe
-      link: https://www.openfaas.com/
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/openfaas
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/openfaas
+
 
 extra_css:
   - stylesheets/extra.css
 
 # Page tree
 nav:
-  - Overview:
-      - Introduction: index.md
+  - Reseau:
+    - index.md
+  - Information:
+      - Markdown: markdown.md

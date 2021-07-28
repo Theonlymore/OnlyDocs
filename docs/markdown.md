@@ -1,12 +1,12 @@
-Markdown
-=======
+# Markdown
 
-Pourquoi utiliser le markdown
-----
+
+# Pourquoi utiliser le markdown
+
 Le markdown est un language de balisage comme l'html, cela permet d'être facile à lire.
 
-Comment utiliser les markdown
-----
+# Comment utiliser les markdown
+
 
 ### Gras, italique et barré
 
