@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: thomasattree/mkdocs2S3@master
+    - uses: Theonlymore/MkdocsToS3@main
       with:
         args: --acl public-read --follow-symlinks --delete
       env:
