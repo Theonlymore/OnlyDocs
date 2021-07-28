@@ -24,10 +24,9 @@ theme:
   feature:
     tabs: false
   palette:
-    primary: blue
+    primary: green
     accent: indigo
-  favicon: images/favicon.ico
-  logo: images/logo.svg
+
 
 # Copyright
 copyright: "Copyright &copy; 2021 OpenFaaS Author(s)"
