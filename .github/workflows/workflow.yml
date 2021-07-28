@@ -20,7 +20,7 @@ jobs:
         AWS_REGION: 'eu-west-3'   # optional: defaults to us-east-1
         SOURCE_DIR: 'site'      # optional: defaults to entire repository
         
-        - name: invalidate
+    - name: invalidate
       uses: chetan/invalidate-cloudfront-action@master
       env:
         DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
