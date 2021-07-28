@@ -42,6 +42,6 @@ extra_css:
 
 # Page tree
 nav:
-   - Accueil: index.md
+  - Accueil: index.md
   - Information:
       - Markdown: markdown.md
