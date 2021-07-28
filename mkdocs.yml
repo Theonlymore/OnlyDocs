@@ -1,12 +1,8 @@
-site_name: OpenFaaS
-site_description: OpenFaaS - Serverless Functions Made Simple
-site_author: OpenFaaS Authors
-site_url: https://docs.openfaas.com/
+site_name: OnlyDocs
+site_description: Docs D'onlymore
+#site_author: OpenFaaS Authors
+#site_url: https://docs.openfaas.com/
 
-# Repository
-repo_name: openfaas/faas
-repo_url: https://github.com/openfaas/faas
-edit_uri: ""
 
 # edit_uri: edit/docs-revamp/docs/
 # edit_uri: blob/docs-revamp/docs/
@@ -16,7 +12,7 @@ edit_uri: ""
 
 # Theme and overrides, i.e. language partial
 theme:
-  name: mkdocs
+  name: material
 
 
   # Don't include MkDocs' JavaScript
