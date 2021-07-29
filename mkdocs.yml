@@ -13,6 +13,8 @@ site_description: Docs D'onlymore
 # Theme and overrides, i.e. language partial
 theme:
   name: material
+  custom_dir: overrides
+
 
 
   # Don't include MkDocs' JavaScript
