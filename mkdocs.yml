@@ -15,7 +15,8 @@ theme:
   name: material
   custom_dir: overrides
   palette:
-    - scheme: green
+    primary: green
+    - scheme: default
       toggle:
         icon: material/toggle-switch-off-outline
         name: Mode nuit
