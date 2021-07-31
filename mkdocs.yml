@@ -26,8 +26,15 @@ theme:
   feature:
     tabs: false
   palette:
-    primary: green
-    accent: indigo
+    - scheme: default
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+  - scheme: slate
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to light mode
+
 
 
 # Copyright
