@@ -1,6 +1,6 @@
 # Future docs réseau
 
-## Liste d'idée : 
+## Liste d'idées : 
 
 - Dhcp
 - proxy
