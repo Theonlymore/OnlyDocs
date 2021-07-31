@@ -53,7 +53,7 @@ extra_css:
 # Page tree
 nav:
   - Accueil: index.md
-  - Autre:
-      - Markdown: autre/markdown.md
   - Réseau: 
       - Adresse ip: reseau/adresse_ip.md
+  - Autre:
+      - Markdown: autre/markdown.md
