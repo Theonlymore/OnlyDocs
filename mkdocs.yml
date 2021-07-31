@@ -15,12 +15,13 @@ theme:
   name: material
   custom_dir: overrides
   palette:
-    primary: green
     - scheme: default
+      primary: green
       toggle:
         icon: material/toggle-switch-off-outline
         name: Mode nuit
     - scheme: slate
+      primary: green
       toggle:
         icon: material/toggle-switch
         name: Mode par défaut
