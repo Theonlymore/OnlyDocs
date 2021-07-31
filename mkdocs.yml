@@ -15,14 +15,14 @@ theme:
   name: material
   custom_dir: overrides
   palette:
-    - scheme: default
+    - scheme: green
       toggle:
         icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+        name: Mode nuit
     - scheme: slate
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode
+        name: Mode par défaut
 
 
   # Don't include MkDocs' JavaScript
