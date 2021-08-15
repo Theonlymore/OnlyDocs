@@ -63,6 +63,11 @@ Le markdown est un language de balisage comme l'html, cela permet d'être facile
 
 ### Images et hyperliens
 
->``Ce qui suit [Lien](https://example.com/ "titre de lien en option").``
+Image:
+> `![alt text](etc/images.png "Titre")`
+
+Lien :
+>`[Titre](https://example.com/ "titre de lien en option" `
+
 
 Salut
