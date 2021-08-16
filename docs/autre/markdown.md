@@ -16,7 +16,7 @@ Le markdown est un language de balisage comme l'html, cela permet d'être facile
 > 
 > `**Texte en gras**`
 > 
-> `__Teste en gras__`
+> `__Texte en gras__`
 > 
 > `~~Texte est barré~~`
 
