@@ -8,7 +8,7 @@ Cela me permet de noter facilement les choses.
 
 ### Outil 
 
-MkDocs est un outil en python qui me permet de faire passer mes fichiers markdown en fichier web (html, jjjcss,..)
+MkDocs est un outil en python qui me permet de faire passer mes fichiers markdown en fichier web (html, css,..)
 
 ### Serveur
 J'utilise Aws avec un lien entre le service de stockage S3 et le CDN Cloudfront
@@ -26,9 +26,9 @@ La github action est lancée à chaque mise à jour de la branche principal du r
 
 ### Les Coûts
 
-95% des coûts sont du au nom de domaine (le reste stockage et CDN), le site me coûte environ 0,5 euro par mois.
+95% des coûts sont du au nom de domaine (le reste stockage et CDN), le site me coûte environ 0,5 euro par mois hors prix de nom de domaine.
 
-Nom de domaines : 13 euros par ans.
+Nom de domaine : 13 euros par ans.
 - Ils étaient possibles d'avoir un domaine à un coût plus faible voire nul mais j'ai opté pour ce nom de domaine via route 53 d'aws
 
 Coût final
