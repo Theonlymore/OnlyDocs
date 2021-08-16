@@ -20,7 +20,7 @@ Route 53 de aws me permet de router le trafique qui arrive sur mon domaine.
 ### Interne et mise en ligne
 J'utilise github pour le [versioning](https://github.com/Theonlymore/OnlyDocs "Lien github vers le versioning du site") des docs/code.
 
-Pour mettre à jour les docs j'utilise une [github action](https://github.com/Theonlymore/MkdocsToS3 "Lien vers le fork de la github action que j'ai modifié") personnalisée qui lance mkdocs (pour pouvoir crées les fichiers web), par la suite les fichiers crés par mkdocs sont synchronisés avec S3 et pour finir la github action demande à cloudfront de mettre à jours le cache.
+Pour mettre à jour les docs j'utilise deux github action, une [personnalisé](https://github.com/Theonlymore/MkdocsToS3 "Lien vers le fork de la github action que j'ai modifié") qui lance mkdocs (pour pouvoir créer les fichiers web), les fichiers créés par mkdocs sont ensuite synchronisés avec S3 et pour finir la [deuxième github action](https://github.com/chetan/invalidate-cloudfront-action "Github action pour cloudfront") demande à cloudfront de mettre à jours le cache.
 
 La github action est lancée à chaque mise à jour de la branche principal du répo github.
 
