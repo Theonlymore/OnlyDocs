@@ -54,7 +54,7 @@ extra_css:
 nav:
   - Accueil: index.md
   - Linux:
-      - Vim: vim.md
+      - Vim: linux/vim.md
   - Docker:
       - Présentation: docker/presentationDocker.md
       - Base de docker: docker/baseDocker.md
