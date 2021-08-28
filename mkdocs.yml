@@ -53,8 +53,12 @@ extra_css:
 # Page tree
 nav:
   - Accueil: index.md
-  - Réseau: 
-      - Docker: reseau/docker.md
+  - Linux:
+      - Vim: vim.md
+  - Docker:
+      - Présentation: docker/presentationDocker.md
+      - Base de docker: docker/baseDocker.md
+  - Réseau:       
       - Adresse ip: reseau/adresse_ip.md
       - Future docs: reseau/futures_docs.md
   - Autre:
