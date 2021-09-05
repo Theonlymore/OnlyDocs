@@ -3,7 +3,7 @@
 
 ## Pourquoi utiliser le markdown
 
-Le markdown est un language de balisage comme l'html, cela permet d'être facile à lire.
+Le markdown est un langage de balisage comme l'html, cela permet d'être facile à lire.
 
 ## Comment utiliser les markdown
 
@@ -69,5 +69,14 @@ Image:
 Lien :
 >`[Titre](https://example.com/ "titre de lien en option" `
 
+### Tableau
 
-Salut
+| Exemple | Tableau |
+|---------|---------|
+|    A    |    B    |
+|    C    |    D    |
+
+- `|cellule 1|cellule 2|`
+- `|---------|---------|`
+- `|    A    |    B    |`
+- `|    C    |    D    |`
