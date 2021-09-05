@@ -17,20 +17,16 @@
         - `password azerty`
     - Enregistrer la configuration actuelle pour chaque restart : `copy running-config startup-config`
     - Mettre une bannière au démarrage : 
-
-        ```
-        config)#banner motd &
-        ------------------------------------------
-        -           ZONE INTERDITE               -
-        - UTILISATEURS AUTHENTIFIES UNIQUEMENT   -
-        ------------------------------------------
-        ```
-        
-        - "&" après le avoir coller
+        - `config)#banner motd &`
+        - `------------------------------------------`
+        - `-           ZONE INTERDITE               -`
+        - `- UTILISATEURS AUTHENTIFIES UNIQUEMENT   -`
+        - `------------------------------------------`  
+            - "&" après le avoir coller
     - Mémoire :
         - Suppression du fichiers de configuration initiale : `erase startup-config`
         - Suppression de la base de données Vlan : `delete flash:vlan.dat` [ Retourne a la configuration par défaut des vlan]
-        - Afficher les fichier : `show flash:`
+        - Afficher les fichie : `show flash:`
         
         
 
