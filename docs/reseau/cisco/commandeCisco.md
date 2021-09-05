@@ -1,5 +1,4 @@
 # Commande de base Cisco
-1) Tout switch : `delete flash:vlan.dat`
 
 ## Cli
 
@@ -18,6 +17,7 @@
         - `password azerty`
     - Enregistrer la configuration actuelle pour chaque restart : `copy running-config startup-config`
     - Mettre une bannière au démarrage : 
+
         ```
         config)#banner motd &
         ------------------------------------------
@@ -25,6 +25,7 @@
         - UTILISATEURS AUTHENTIFIES UNIQUEMENT   -
         ------------------------------------------
         ```
+        
         - "&" après le avoir coller
     - Mémoire :
         - Suppression du fichiers de configuration initiale : `erase startup-config`
@@ -35,7 +36,8 @@
 
 ## Switch :
 
-Vlan :
+### Vlan :
+
 - Voir les vlan et port affecter :` show vlan`
 - Ajout de vlan :
  `vlan 1` ou `vlan 1,2,3,4`
@@ -51,7 +53,8 @@ Vlan :
     - `config-if)#ip address 192.168.56.11 255.255.255.0`
     - `no shutdown`
 
-Sécurité du port :
+### Sécurité du port :
+
 - Interface utilisable par une seul adresse mac :
     - `config)#interface fa0/1`
     - `config-if)#switchport mode access`
