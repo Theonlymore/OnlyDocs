@@ -18,13 +18,13 @@
     - Enregistrer la configuration actuelle pour chaque restart : `copy running-config startup-config`
     - Mettre une bannière au démarrage : 
 
-    ```bash
-        config)#banner motd &
-        ------------------------------------------
-        -           ZONE INTERDITE               -
-        - UTILISATEURS AUTHENTIFIES UNIQUEMENT   -
-        ------------------------------------------
-    ```
+```bash
+config)#banner motd &
+------------------------------------------
+-           ZONE INTERDITE               -
+- UTILISATEURS AUTHENTIFIES UNIQUEMENT   -
+------------------------------------------
+```
 
             - "&" après le avoir coller
     - Mémoire :
