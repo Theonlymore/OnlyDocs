@@ -25,12 +25,11 @@ config)#banner motd &
 - UTILISATEURS AUTHENTIFIES UNIQUEMENT   -
 ------------------------------------------
 ```
-
-            - "&" après le avoir coller
-    - Mémoire :
-        - Suppression du fichiers de configuration initiale : `erase startup-config`
-        - Suppression de la base de données Vlan : `delete flash:vlan.dat` [ Retourne a la configuration par défaut des vlan]
-        - Afficher les fichiers racines : `show flash:`
+- "&" après le avoir coller
+- Mémoire :
+    - Suppression du fichiers de configuration initiale : `erase startup-config`
+    - Suppression de la base de données Vlan : `delete flash:vlan.dat` [ Retourne a la configuration par défaut des vlan]
+    - Afficher les fichiers racines : `show flash:`
         
         
 
