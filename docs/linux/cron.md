@@ -12,10 +12,10 @@ Il est déconseillé de modifier directement le fichier /etc/crontab. Les tâche
 
 ## Autorisation d'utilisation de crontab
 
-- Les fichiers cron.deny et cron.allow contiennent une liste de noms d'utilisateur, chaque ligne comportant un seul nom.
-- Si cron.allow existe, seuls les utilisateurs figurant dans ce fichier peuvent créer, modifier, afficher ou supprimer des fichiers crontab.
-- Si cron.allow n'existe pas, tous les utilisateurs peuvent soumettre des fichiers crontab, à l'exception de ceux qui figurent dans cron.deny.
-- Si ni cron.allow ni cron.deny n'existent, les privilèges de superutilisateur sont requis pour exécuter la commande crontab .
+- Les fichiers `cron.deny` et `cron.allow` contiennent une liste de noms d'utilisateur, chaque ligne comportant un seul nom.
+- Si `cron.allow` existe, seuls les utilisateurs figurant dans ce fichier peuvent créer, modifier, afficher ou supprimer des fichiers crontab.
+- Si `cron.allow` n'existe pas, tous les utilisateurs peuvent soumettre des fichiers crontab, à l'exception de ceux qui figurent dans `cron.deny`.
+- Si ni `cron.allow` ni `cron.deny` n'existent, les privilèges de superutilisateur sont requis pour exécuter la commande crontab .
 
 Exemple fichier : `cron.deny` ou `cron.allow`
 
@@ -71,7 +71,7 @@ Dans chaque unité, nous pouvons utiliser les notations suivantes :
 
 Quelque exemple :
 
-**Bien vérifié que cron est lancé :  `/etc/init.d/cron status`** (problème eu dans Wls2)
+**Bien vérifié que cron est lancé :  `/etc/init.d/cron status`** (problème eu dans Wls 2)
 
 - Commande toute les 5 minutes : `*/5 * * * * echo "Je passe tout les minutes :)" >> $HOME/file`
 - Exécution d'une commande toutes les minutes uniquement les lundis : `* * * * 1 /root/script/commandes-du-lundi.sh`

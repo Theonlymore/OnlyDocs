@@ -9,8 +9,8 @@ Changer de mode : esc
 ## enregistrer et quitter
 
 - `:w` (enregistrer le fichier en cours d'édition sans quitter)
-- `:w` /chemin/vers/le/fichier (enregistrer sous )
-- `:x` ou :wq (enregistrer et quiter)
+- `:w` /chemin/vers/le/fichier (enregistrer sous)
+- `:x` ou `:wq` (enregistrer et quitter)
 - `:q` (quitter)
 
 ## Se déplacer dans le fichier
