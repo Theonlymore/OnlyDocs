@@ -17,11 +17,13 @@
         - `password azerty`
     - Enregistrer la configuration actuelle pour chaque restart : `copy running-config startup-config`
     - Mettre une bannière au démarrage : 
-        - `config)#banner motd &`
-        - `------------------------------------------`
-        - `-           ZONE INTERDITE               -`
-        - `- UTILISATEURS AUTHENTIFIES UNIQUEMENT   -`
-        - `------------------------------------------`  
+    ```bash
+        config)#banner motd &
+        ------------------------------------------
+        -           ZONE INTERDITE               -
+        - UTILISATEURS AUTHENTIFIES UNIQUEMENT   -
+        ------------------------------------------
+    ```
             - "&" après le avoir coller
     - Mémoire :
         - Suppression du fichiers de configuration initiale : `erase startup-config`

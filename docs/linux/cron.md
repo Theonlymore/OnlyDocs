@@ -3,7 +3,7 @@
 ## C'est quoi Cron
 
 Cron permet d'exécuter automatiquement des scripts,commandes ou logiciels à une date et heure précise ou selon un cycle défini.
-Tout les utilisateur on un fichier crontab qui lui permet d'indiquer les action à exécuter.
+Tout les utilisateurs on un fichier crontab qui lui permet d'indiquer les actions à exécuter.
 
 ## Comment cela marche 
 
@@ -32,7 +32,7 @@ username3
 
 
 - Afficher les actions : `crontab -l`
-- Supprimer toutes les actoins : `crontab -r`
+- Supprimer toutes les actions : `crontab -r`
 - Editer les actions : `crontab -e` ( après il demande quel éditeur de texte choisir)
 
 ## La syntaxes de crontab
@@ -69,10 +69,17 @@ Dans chaque unité, nous pouvons utiliser les notations suivantes :
 - */6 : toutes les 6 unités de temps (toutes les 6 heures par exemple).
 - 2,7 : les unités de temps 2 et 7.
 
+Quelque exemple :
 
+**Bien vérifié que cron est lancé :  `/etc/init.d/cron status`** (problème eu dans Wls2)
+
+- Commande toute les 5 minutes : `*/5 * * * * echo "Je passe tout les minutes :)" >> $HOME/file`
+- Exécution d'une commande toutes les minutes uniquement les lundis : `* * * * 1 /root/script/commandes-du-lundi.sh`
 
 ### Source : 
 - https://www.youtube.com/watch?v=2Zqqlhc6bQE&t=8s
 - https://doc.ubuntu-fr.org/cron
 - https://www.linuxtricks.fr/wiki/cron-et-crontab-le-planificateur-de-taches
 - https://www.math-linux.com/linux-2/commande-du-jour/article/programmation-des-actions-taches-regulieres-crontab
+- Test de la valeur du crontab en ligne : https://crontab.guru/ 
+
