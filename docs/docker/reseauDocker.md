@@ -45,16 +45,20 @@ C’est le type de réseau idéal, si vous souhaitez interdire toute communicati
 
 Ce type de réseau permet aux conteneurs d’utiliser la même interface que l’hôte. Il supprime l’isolation réseau entre les conteneurs et seront par défaut accessibles de l’extérieur. Il prendra donc la IP que votre machine hôte.
 
+![host network docker](image/dockerHost.png)
+
 ### Driver overlay
 
-> en cours
+Si vous souhaitez une mise en réseau multi-hôte native, vous devez utiliser un driver overlay. Il crée un réseau distribué entre plusieurs hôtes possédant le moteur Docker. Docker gère de manière transparente le routage de chaque paquet vers et depuis le bon hôte et le bon conteneur.
+
+![Dockey overlay network](image/dockerOverlay.png)
+
 
 ### Driver macvlan
 
 Le driver macvlan permet d’attribuer une adresse MAC à un conteneur, le faisant apparaître comme un périphérique physique sur votre réseau. Le moteur Docker route le trafic vers les conteneurs en fonction de leurs adresses MAC.
 
-- Alex : Pas totalement compris la notion 
-
+![macvlan](image/dockerMacvlan.jpg)
 
 
 ## Manipulation du réseau dans Docker
