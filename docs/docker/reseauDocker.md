@@ -79,7 +79,7 @@ On va ensuite lister les réseaux docker avec la commande suivante :
 docker network ls
 ```
 
-#### Résultat
+##### Résultat
 
 ```bash
 NETWORK ID          NAME                     DRIVER              SCOPE
@@ -91,6 +91,12 @@ ccdbdbf708db        mon-bridge               bridge              local
 ```
 
 Il est possible de récolter des informations sur le réseau docker, comme par exemple la config réseau, en tapant la commande suivante :
+
+```bash
+docker network inspect mon-bridge
+```
+
+#### Résultat :
 
 ```bash
 [
@@ -112,6 +118,135 @@ Il est possible de récolter des informations sur le réseau docker, comme par e
         "Labels": {}
     }
 ]
+```
+
+Surcharger la valeur du Subnet et mettre une gateway :
+
+```bash
+docker network create bridge --subnet=172.16.86.0/24 --gateway=172.16.86.1 mon-bridge
+```
+
+### Un exemple
+
+connecter deux conteneurs à notre réseau bridge créé précédemment
+
+```bash
+docker run -dit --name alpine1 --network mon-bridge alpine
+
+docker run -dit --name alpine2 --network mon-bridge alpine
+```
+
+En inspectant le réseau `mon-bridge`, on peux voir les deux conteneurs et leurs informations :
+
+```bash
+docker network inspect mon-bridge
+```
+
+#### Résultat :
+
+```bash
+[
+    {
+        "Name": "mon-bridge",
+        "Id": "ccdbdbf708db7fa901b512c8256bc7f700a7914dfaf6e8182bb5183a95f8dd9b",
+        ...
+        "Containers": {
+            "1ab5f1815d98cd492c69a63662419e0eba891c0cadb2cbdd0fb939ab25f94b33": {
+                "Name": "alpine1",
+                "EndpointID": "5f04963f9ec084df659cfc680b9ec32c44237dc89e96184fe4f2310ba6af7570",
+                "MacAddress": "02:42:ac:15:00:02",
+                "IPv4Address": "172.21.0.2/16",
+                "IPv6Address": ""
+            },
+            "a935d2e1ddf76fe49cdb1950653f4a093928020b49ebfea4130ff9d712ffb1d6": {
+                "Name": "alpine2",
+                "EndpointID": "3e009b56104a1bf9106bc622043a2ee06010b102279e24b4807c7b7ffec166dd",
+                "MacAddress": "02:42:ac:15:00:03",
+                "IPv4Address": "172.21.0.3/16",
+                "IPv6Address": ""
+            }
+        },
+        ...
+    }
+]
+```
+
+On ne peux pas créer de network host car on utilise l'interface de la machine hôte. Cela donne une erreur
+
+### Supprimer, déconnecter et connecter un réseau docker
+
+Avant de supprimer votre réseau docker, il est nécessaire au préalable de supprimer tout conteneur connecté à votre réseau docker, ou sinon il suffit juste de déconnecter votre conteneur de votre réseau docker sans forcément le supprimer.
+
+Nous allons choisir la méthode 2, en déconnectant tous les conteneurs utilisant le réseau docker `mon-bridge` :
+
+```bash
+docker network disconnect mon-bridge alpine1
+
+docker network disconnect mon-bridge alpine2
+```
+
+Une fois que vous avez déconnecté tous vos conteneurs du réseau docker mon-bridge, vous pouvez alors le supprimer :
+
+```bash
+docker network rm mon-bridge
+```
+
+Cependant vos conteneurs se retrouvent maintenant sans interface réseau bridge, il faut donc reconnecter vos conteneurs au réseau bridge par défaut pour qu'ils puissent de nouveau communiquer entre eux :
+
+```bash
+docker network connect bridge alpine1
+
+docker network connect bridge alpine2
+```
+
+Vérifiez ensuite si vos conteneurs ont bien reçu la bonne Ip :
+
+```bash
+docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)
+```
+
+#### Résultat
+
+```bash
+/alpine2 - 172.17.0.3
+/alpine1 - 172.17.0.2
+```
+
+## Conclusion
+
+Vous pouvez créer autant de réseaux bridge que vous souhaitez, ça reste un bon moyen pour sécuriser la communication entre vos conteneurs, car les conteneurs connectés au bridge1 ne peuvent pas communiquer avec les conteneurs du bridge2, limitant ainsi les communications inutiles.
+
+Concernant le driver overlay, j’essayerais de vous montrer son utilisation dans un autre article car le sujet est très vaste et demande des connaissances sur d'autres sujets que nous n'avons pas eu encore l'occasion de voir, notamment le docker swarm.
+
+## Aide mémoire 
+
+```bash
+## Créer un réseau docker
+docker network create --driver <DRIVER TYPE> <NETWORK NAME>
+
+# Lister les réseaux docker
+docker network ls
+
+## Supprimer un ou plusieurs réseau(x) docker
+docker network rm <NETWORK NAME>
+
+## Récolter des informations sur un réseau docker
+docker network inspect <NETWORK NAME>
+    -v ou --verbose : mode verbose pour un meilleur diagnostique
+
+## Supprimer tous les réseaux docker non inutilisés
+docker network prune
+    -f ou --force : forcer la suppression
+
+## Connecter un conteneur à un réseau docker
+docker network connect <NETWORK NAME> <CONTAINER NAME>
+
+## Déconnecter un conteneur à réseau docker
+docker network disconnect <NETWORK NAME> <CONTAINER NAME>
+    -f ou --force : forcer la déconnexion
+
+## Démarrer un conteneur et le connecter à un réseau docker
+docker run --network <NETWORK NAME> <IMAGE NAME>
 ```
 
 #### Source :
