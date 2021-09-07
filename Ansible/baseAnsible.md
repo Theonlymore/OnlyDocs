@@ -4,7 +4,7 @@
 
 ## Introduction
 
-- [Vidéo d'introduction](https://youtu.be/Cisg9bLhLkk)
+- [Vidéo d'introduction ](https://youtu.be/Cisg9bLhLkk)
 
 Ansible est un outil d'automatisation informatique Open Source qui automatise l'[approvisionnement](https://www.redhat.com/fr/topics/automation/what-is-provisioning)     (allocation automatique de ressources.) et la [gestion des configurations](https://www.redhat.com/fr/topics/automation/learning-ansible-tutorial), le déploiement des applications et d'autres processus informatiques.
 
