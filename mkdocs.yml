@@ -56,6 +56,7 @@ nav:
   - Linux:
       - Vim: linux/vim.md
       - Cron: linux/cron.md
+      - Commande réseau: linux/commandeReseau.md
   - Docker:
       - Présentation: docker/presentationDocker.md
       - Base de docker: docker/baseDocker.md
