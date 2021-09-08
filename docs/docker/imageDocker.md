@@ -26,7 +26,15 @@ Inscructions Dockerfile les plus utiliser :
 - `ARG` : Variablies tempodraires utilisables dans le Dockerfile.
 - `ENV` : Variable d'environnements utilisables dans le Dockerfile et le conteneur.
 - `RUN` : Exécute des commandes Linux ou Windows lors de la création de l'image.
+- `COPY` : Permet de copier des fichiers depuis notre machine locale vers le conteneur Docker.
+- `ADD` : Même chose que COPY mais prend en charge des liens ou des archives (si le format est reconnu, alors il sera décompressé à la volée).
 - `ENTRYPOINT` : [Docs](https://aws.amazon.com/fr/blogs/france/demystifier-entrypoint-et-cmd-dans-docker/)
+- `WORKDIR` : Définit le répertoire de travail qui sera utilisé pour le lancement des commandes CMD et/ou ENTRYPOINT et ça sera aussi le dossier courant lors du démarrage du conteneur.
+- `WORKDIR` : Définit le répertoire de travail qui sera utilisé pour le lancement des commandes CMD et/ou ENTRYPOINT et ça sera aussi le dossier courant lors du démarrage du conteneur.
+- `EXPOSE` : Expose un port.
+- `VOLUMES` : Crée un point de montage qui permettra de persister les données.
+- `USER` : Désigne quel est l'utilisateur qui lancera les prochaines instructions RUN, CMD ou ENTRYPOINT (par défaut c'est l'utilisateur root).
+
 
 ## Source 
 
