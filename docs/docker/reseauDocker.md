@@ -33,9 +33,7 @@ Exemple de mappage de port avec run : `docker run -it -p 8000:5000 alpine` (`-p 
 #### Schéma 
 ![Docker Bridge Network](image/dockerBridgeNetwork.jpg "Docker bridge schéma")
 
-#### Approfondir sur le bridge dans docker
-- https://blog.alphorm.com/reseau-docker-partie-1-bridge/
-
+#### Approfondir sur le bridge dans docker : [ici](https://blog.alphorm.com/reseau-docker-partie-1-bridge/)
 
 ### Driver none
 
