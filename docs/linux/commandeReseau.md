@@ -1,8 +1,9 @@
-
+# Commande réseau sur debian
 
 
 ## Changement de réseau :
 
+Vim  
 ```bash
 # Démarrer l'interface <nom_interface> lors du démarrage du système
 auto lo etho0
@@ -20,13 +21,24 @@ iface etho0 inet static
 ## Mettre en place un NAT
 
 
+```bash
+iptables -t nat -A POSTROUTING -o ens224 -j MASQUERADE
+
+iptables-save > /etc/iptables.save
+```
+
+- post-up iptables-restore < /etc/iptables.save
+
+Info complémentaire sur ip tables
 
 ```bash
-#iptables -t nat -A POSTROUTING -o etho0 -j MASQUEADE
-#iptables-save > /etc/iptables.save
+# Voir les iptables
+iptables -L
+# Supprimer tables
+iptables -d chain rulenum
+# docs
+man iptables
 ```
-post-up iptables-restore < /etc/iptables.save
-
 
 
 ## Activation du routage

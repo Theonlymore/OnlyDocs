@@ -37,9 +37,9 @@ config)#banner motd &
 
 ### Vlan :
 
-- Voir les vlan et port affecter :` show vlan`
+- Voir les vlan et port affecter :`#show vlan`
 - Ajout de vlan :
- `vlan 1` ou `vlan 1,2,3,4`
+ `config)#vlan 1` ou `config)#vlan 1,2,3,4`
 -  Nom du vlan : `config-vlan)#name prod`
 - Supprimer vlan : `config)#no vlan 1`
 - Vlan à un port :
@@ -51,6 +51,13 @@ config)#banner motd &
     - `config)#interface vlan 99`
     - `config-if)#ip address 192.168.56.11 255.255.255.0`
     - `no shutdown`
+
+### Mettre en place un trunk :
+
+- Mettre le mode trunk : `config)#interface fa0/1`
+  - `config-if)#switchport mode trunk`
+
+
 
 ### Sécurité du port :
 

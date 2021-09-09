@@ -57,10 +57,12 @@ nav:
       - Vim: linux/vim.md
       - Cron: linux/cron.md
       - Commande réseau: linux/commandeReseau.md
+      - Commande linux: linux/linuxBase.md
   - Docker:
       - Présentation: docker/presentationDocker.md
       - Base de docker: docker/baseDocker.md
       - Réseau dans docker: docker/reseauDocker.md
+      - Image docker: docker/imageDocker.md
   - Réseau:       
       - Adresse ip: reseau/adresse_ip.md
       - Cisco:
