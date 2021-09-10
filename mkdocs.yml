@@ -63,10 +63,10 @@ nav:
       - Base de docker: docker/baseDocker.md
       - Réseau dans docker: docker/reseauDocker.md
       - Image docker: docker/imageDocker.md
-  - Réseau:       
-      - Adresse ip: reseau/adresse_ip.md
+  - Réseau:     
       - Cisco:
-        - Commande cisco: reseau/cisco/commandeCisco.md
+        - Commande cisco: reseau/cisco/commandeCisco.md  
+      - Adresse ip: reseau/adresse_ip.md
       - Future docs: reseau/futures_docs.md
   - Autre:
       - Markdown: autre/markdown.md
