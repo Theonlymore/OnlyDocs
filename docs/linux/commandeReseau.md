@@ -1,5 +1,15 @@
 # Commande réseau sur debian
 
+## Configuration ip
+
+Fichier de configuration
+
+- `/etc/network/interfaces`
+
+Afficher configuration réseau
+
+- `ip a`
+
 
 ## Changement de réseau :
 
@@ -40,6 +50,33 @@ iptables -d chain rulenum
 man iptables
 ```
 
+## Filtrage
+
+Affiche le contenu des tables de cache d'ARP
+
+- `arp`
+
+
+Affiche le contenu des tables de cache d’ARP.
+
+- `arp` 
+
+Vérifie le filtrage des paquets.
+
+- `iptables -L -n` 
+
+Vérifie le filtrage NAT des paquets.
+
+- `iptables -t nat -L` 
+  
+Rechercher tous les ports ouverts.
+
+- `netstat -a`
+
+Rechercher les ports à l’écoute.
+
+- `netstat -l --inet`
+
 
 ## Activation du routage
 
@@ -55,5 +92,30 @@ net.ipv4.ip_forward=1
 ```bash
 ip route add {NETWORK/MASK} via {GATEWAYIP}
 ```
+
+## DNS
+
+Fichier de configuration
+
+- `/etc/hostname`
+- `/etc/hosts`
+
+Affiche ou définit le nom d'un machine
+
+- `hostname`
+
+## Tests réseau
+
+Vérification de connexion.
+
+- `ping`
+
+Tracer un ping
+
+- `traceroute`
+
+
+
+
 
 [Commanderéseau](commandeReseau.pdf)

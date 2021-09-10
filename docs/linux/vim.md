@@ -51,5 +51,5 @@ On peut utiliser les flèches du clavier, page up/down ou les touches h j k l
 
 
 ### Source : 
-- https://www.syloe.com/utiliser-vim-guide/
-- https://doc.ubuntu-fr.org/vim
+- [Syloe](https://www.syloe.com/utiliser-vim-guide/)
+- [Ubuntu](https://doc.ubuntu-fr.org/vim) 
