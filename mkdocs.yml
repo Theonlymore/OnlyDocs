@@ -58,6 +58,7 @@ nav:
       - Cron: linux/cron.md
       - Commande réseau: linux/commandeReseau.md
       - Commande linux: linux/linuxBase.md
+      - Apache2: linux/apache2.md
   - Docker:
       - Présentation: docker/presentationDocker.md
       - Base de docker: docker/baseDocker.md
