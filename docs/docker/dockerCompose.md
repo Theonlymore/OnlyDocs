@@ -6,12 +6,15 @@
 - un service comprend 1 à plusieurs conteneurs
 - comme pour dockerfile : partage facile, versionning....
 
-## Installation 
+## [Installation](https://docs.docker.com/compose/install/) 
 
 ```bash
 sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 
 sudo chmod +x /usr/local/bin/docker-compose
+
+# Si fail : 
+ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
 
 ## Principales commandes 

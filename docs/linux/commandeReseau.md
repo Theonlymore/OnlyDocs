@@ -95,14 +95,22 @@ ip route add {NETWORK/MASK} via {GATEWAYIP}
 
 ## DNS
 
-Fichier de configuration
+### Fichier de configuration
+
+Contient le nom du PC :
 
 - `/etc/hostname`
+
+Fichier hosts consulté avant le serveur DNS :
+
 - `/etc/hosts`
 
 Affiche ou définit le nom d'un machine
 
 - `hostname`
+
+Définire des serveur DNS
+- `/etc/resolv.con`
 
 ## Tests réseau
 

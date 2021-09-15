@@ -66,7 +66,8 @@ nav:
       - Docker compose: docker/dockerCompose.md
   - Réseau:     
       - Cisco:
-        - Commande cisco: reseau/cisco/commandeCisco.md  
+        - Commande cisco: reseau/cisco/commandeCisco.md
+      - DNS : reseau/dns.md  
       - Adresse ip: reseau/adresse_ip.md
       - Future docs: reseau/futures_docs.md
   - Autre:
