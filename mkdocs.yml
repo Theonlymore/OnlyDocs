@@ -71,6 +71,7 @@ nav:
         - Commande cisco: reseau/cisco/commandeCisco.md
       - DNS : reseau/dns.md  
       - Adresse ip: reseau/adresse_ip.md
+      - Filtrage: reseau/filtrage.md
       - Future docs: reseau/futures_docs.md
   - Autre:
       - Markdown: autre/markdown.md
