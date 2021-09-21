@@ -43,6 +43,11 @@ Les droits peuvent être définit en octal : 4 pour read, 2 pour write, 1 pour e
 - `apt-cache depends <paquet> `Recherche les dépendances d’un paquet.
 - `apt-get clean` Vide le cache disque des paquets
 
+
+## Dossier de lancement de script au démarage
+
+`/etc/init.d/`
+
 ## Les processus
 
 - `ps` Affiche les processus en cours d’exécution. 

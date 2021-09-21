@@ -13,7 +13,6 @@ site_description: Docs D'onlymore
 # Theme and overrides, i.e. language partial
 theme:
   name: material
-  logo: assets/iconAlex.png
   custom_dir: overrides
   palette:
     - scheme: default
@@ -40,7 +39,7 @@ theme:
 
 
 # Copyright
-copyright: "Copyright &copy; 2021 OpenFaaS Author(s)"
+copyright: "Onlydocs <3"
 
 # Options
 extra:

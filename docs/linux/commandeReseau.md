@@ -13,7 +13,8 @@ Afficher configuration réseau
 
 ## Changement de réseau :
 
-Vim  
+`/etc/netword/interfaces`
+  
 ```bash
 # Démarrer l'interface <nom_interface> lors du démarrage du système
 auto lo etho0
@@ -87,11 +88,21 @@ nano/etc/sysctl.conf
 net.ipv4.ip_forward=1
 ```
 
-## Création de [route](https://www.cyberciti.biz/faq/ip-route-add-network-command-for-linux-explained/) 
+
+## Ip [route](https://www.cyberciti.biz/faq/ip-route-add-network-command-for-linux-explained/) 
+
+### Connaître les routes
+
+```bash
+ip route
+```
+
+### Crée une route
 
 ```bash
 ip route add {NETWORK/MASK} via {GATEWAYIP}
 ```
+
 
 ## DNS
 
