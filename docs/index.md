@@ -11,7 +11,7 @@ Cela me permet de noter facilement les choses.
 MkDocs est un outil en python qui me permet de faire passer mes fichiers markdown en fichier web (html, css,..)
 
 ### Serveur
-J'utilise Aws avec un lien entre le service de stockage S3 et le CDN Cloudfront
+J'utilise Aws avec un lien entre le service de stockage S3 et le CDN Cloudfront.
 
 ### Nom de domaine
 
@@ -39,6 +39,9 @@ Coût final
 ### Bilan
 
 Pour payer le moins chère possible il faudrait passé par un autre acteur qu'Aws pour le nom de domaine.
+
+
+ROCHER Alexandre
 
 
 

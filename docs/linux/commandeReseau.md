@@ -11,7 +11,7 @@ Afficher configuration réseau
 - `ip a`
 
 
-## Changement de réseau :
+## Changement de réseau
 
 `/etc/netword/interfaces`
   
