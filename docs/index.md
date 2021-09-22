@@ -42,4 +42,3 @@ Coût final
 
 Pour payer le moins chère possible il faudrait passé par un autre acteur qu'Aws pour le nom de domaine.
 
-
