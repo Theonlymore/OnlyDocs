@@ -2,7 +2,7 @@
 
 ## Pourquoi 
 
-Ce site me permet d'accéder et de rendre publique les documentation que j’utilise ainsi que les partagées.
+Ce site me permet d'accéder et de rendre publique les documentations que j’utilise ainsi que les partagées.
 
 ## Comment
 
