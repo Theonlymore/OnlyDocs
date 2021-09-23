@@ -72,7 +72,11 @@ config)#banner motd &
     - `#clear port-security {all | configured | dynamic | sticky}`
 
 
+## Packet tracer
 
+Tips : Il est possible de faire avancer le temps plus vite :
+
+![Speeeeeeeeeeeeeeeeeeeeeeeeeeeeed](../image/packetTracer.png)
 
 #### Source : 
 
