@@ -74,6 +74,6 @@ nav:
       - Future docs: reseau/futures_docs.md
   - Windows serveur:
     - Présentation: windowsServeur/windowsServeur.md
-    - Active directory:windowsServeur/ad.md
+    - Active directory: windowsServeur/ad.md
   - Autre:
       - Markdown: autre/markdown.md
