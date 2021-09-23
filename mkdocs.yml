@@ -72,5 +72,8 @@ nav:
       - Adresse ip: reseau/adresse_ip.md
       - Filtrage: reseau/filtrage.md
       - Future docs: reseau/futures_docs.md
+  - Windows serveur:
+    - Présentation: windowsServeur/windowsServeur.md
+    - Active directory:windowsServeur/ad.md
   - Autre:
       - Markdown: autre/markdown.md
