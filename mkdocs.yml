@@ -68,6 +68,7 @@ nav:
   - Réseau:     
       - Cisco:
         - Commande cisco: reseau/cisco/commandeCisco.md
+      - Dépannage réseau: reseau/depannageReseau.md
       - DNS : reseau/dns.md  
       - Adresse ip: reseau/adresse_ip.md
       - Filtrage: reseau/filtrage.md

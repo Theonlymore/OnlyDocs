@@ -37,6 +37,9 @@ Problèmes possible :
   - Probème avec broadcast
   - `ip neighbor show` pour connaître table ARP d'un linux.. 
   - Vlan
+    - Sur un cisco : `show running config`
+        - Mettre plusieurs interface vlan.
+
 
 ### Couche 3 : Réseau
 

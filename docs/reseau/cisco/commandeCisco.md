@@ -59,7 +59,7 @@ config)#banner motd &
 
 
 
-### Sécurité du port :
+### [Sécurité du port : ](https://cisco.goffinet.org/ccna/ethernet/switchport-port-security-cisco-ios/)
 
 - Interface utilisable par une seul adresse mac :
     - `config)#interface fa0/1`
@@ -70,6 +70,14 @@ config)#banner motd &
     - `config-if)#switchport port-security violation shutdown`
 - effacé la mémoire de `port-security`  
     - `#clear port-security {all | configured | dynamic | sticky}`
+  - Information
+    - show port-security
+    - #show port-security address
+    - #show port-security interface G0/1
+  - Désactivation du port-security
+    - `no switchport port-security maximum`
+    - `no  switchport port-security mac-address sticky`
+    - `no switchport port-security`
 
 
 ## Packet tracer
