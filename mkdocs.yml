@@ -54,9 +54,12 @@ extra_css:
 nav:
   - Accueil: index.md
   - Linux:
+      - Réseau linux:
+        - Commande réseau: linux/reseauLinux/commandeReseau.md
+        - Filtrage sous linux: linux/reseauLinux/filtrageLinux.md
+
       - Vim: linux/vim.md
       - Cron: linux/cron.md
-      - Commande réseau: linux/commandeReseau.md
       - Commande linux: linux/linuxBase.md
       - Apache2: linux/apache2.md
   - Docker:
