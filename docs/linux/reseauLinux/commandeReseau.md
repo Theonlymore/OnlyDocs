@@ -8,7 +8,10 @@ Fichier de configuration
 
 Afficher configuration réseau
 
-- `ip a` ou `ip addr`
+
+- [x] `ip a`
+- [x] `ip addr`
+- [ ] `ifconfig` (packet en plus)
 
 
 ## Changement de réseau
@@ -123,6 +126,7 @@ Tracer un ping
 
 - `traceroute`
 
-### Source :
 
+
+Source :
 - [Commande réseau de CCC](commandeReseau.pdf)

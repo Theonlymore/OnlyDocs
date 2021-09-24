@@ -1,5 +1,5 @@
 site_name: OnlyDocs
-site_description: Docs D'onlymore
+site_description: Docs d'Alexandre, Le site me permet d'accéder et de rendre publique les documentations que je fais et utilise.
 #site_author: OpenFaaS Authors
 #site_url: https://docs.openfaas.com/
 
@@ -46,6 +46,9 @@ extra:
   search:
     languages: "en"
 
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 extra_css:
   - stylesheets/extra.css

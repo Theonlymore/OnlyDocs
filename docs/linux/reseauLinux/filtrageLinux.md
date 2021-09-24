@@ -53,7 +53,6 @@ Modification de la règle par défaut (Rien ne passe à travers le routeur).
 
 
 Explication  :
-
 - `ìptables` : Commande pour configurer le filtre
 - `-A` : append / ajouter ( mes la règles à la fin de la table)
   - `I` : insersion de la règles au numéro de règles choisis
