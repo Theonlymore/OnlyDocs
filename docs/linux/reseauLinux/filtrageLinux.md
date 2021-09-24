@@ -3,15 +3,16 @@
 ## Definition  :
 
 - ACCEPT
-  - Cette cible permet d'accepter les paquets
+    - Cette cible permet d'accepter les paquets
 - DROP
-  - Cette cible permet de refuser les paquets sans avertir le demandeur que sa demande de connexion à été refusée.
+    - Cette cible permet de refuser les paquets sans avertir le demandeur que sa demande de connexion à été refusée.
 
 - -p TCP 
-  - premier paramètre
+    - premier paramètre
 - --dport 22
-  - Sous paramètre
+    - Sous paramètre
 
+  
 - **docs :** `iptables --help`
 
 ## Selection des chaînes :
@@ -49,23 +50,27 @@ Modification de la règle par défaut (Rien ne passe à travers le routeur).
 
 ### Exemple :
 
-`iptables -A INPUT -s 192.168.1.148/32 -d 192.168.31.250/32 -i ens192 -p TCP --dport 22 -j accept`
+```bash
+iptables -A INPUT -s 192.168.1.148/32 -d 192.168.31.250/32 -i ens192 -p TCP --dport 22 -j accept
+```
 
 
-Explication  :
+### Explication  :
+
 - `ìptables` : Commande pour configurer le filtre
 - `-A` : append / ajouter ( mes la règles à la fin de la table)
-  - `I` : insersion de la règles au numéro de règles choisis
-  - `C` : Check : Vérifier
-  - `-R` : Remove : Supprimer
+    - `I` : insersion de la règles au numéro de règles choisis
+    - `C` : Check : Vérifier
+    - `-R` : Remove : Supprimer
 - `INPUT` : estiné à la machine ( routeur )
-  - `OUTPUT` : En sortis de la machine ( routeur )
-  - `FORWARD` : Qui travers le routeur
+    - `OUTPUT` : En sortis de la machine ( routeur )
+    - `FORWARD` : Qui travers le routeur
 - `-s` : Source
-  - `-d` : destination
-  - `-p` : protocole couche 4 (TCP ou UDP)
-    - `--dport` : protocole couche 7 (22,80,443,...)
+    - `-d` : destination
+    - `-p` : protocole couche 4 (TCP ou UDP)
+        - `--dport` : protocole couche 7 (22,80,443,...)
 - `-j` : Accepte ou refuse le paquet : `DROP` ou `ACCEPT` 
   
+### Source :
 
-[Source](https://tldp.org/pub/Linux/docs/HOWTO/translations/fr/html-1page/Masquerading-Simple-HOWTO.html)
+[tlpd.org](https://tldp.org/pub/Linux/docs/HOWTO/translations/fr/html-1page/Masquerading-Simple-HOWTO.html)

@@ -1,6 +1,6 @@
 # Commande réseau sur debian
 
-## Configuration ip
+## Configuration ip 
 
 Fichier de configuration
 
@@ -11,7 +11,7 @@ Afficher configuration réseau
 
 - [x] `ip a`
 - [x] `ip addr`
-- [ ] `ifconfig` (packet en plus)
+- [ ] `ifconfig` (paquet en plus)
 
 
 ## Changement de réseau
