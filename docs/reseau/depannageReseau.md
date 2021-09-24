@@ -10,7 +10,7 @@ Les étapes de ce modèle sont les suivantes:
 5. Confirmation de la résolution du problème.
 6. Rédaction d’une documentation sur le problème et sa solution.
 
-- [Aller plus loin avec la doc de Rachid ezzine](7couches.md)
+  [Aller plus loin avec la doc de Rachid ezzine](7couches.md)
 
 
 ## Comment trouvé l'origine d'un problème

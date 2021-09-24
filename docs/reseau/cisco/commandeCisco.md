@@ -3,19 +3,20 @@
 ## Cli
 
 - Noms d'hôte du switch :
-    - `hostname Sw1`
+    - `#hostname Sw1`
 - Désactivez la recherche DNS :
-    -  `no ip domain-lookup`
+    -  `#no ip domain-lookup`
 - Mettre un mots de passe :
     - enable / exécution
         - `config)#enable secret azerty` (`secret` pour que le mot de passe sois chiffré)
     - Connexions en console
         - `config)#line console 0`
         - `config-line)#password azerty`
+        - `config-line)#login`
     - Connexions telnet [source](https://formip.com/securisation-ios-cisco/)
-        - `line vty 0 15` (15 pour switch et 5 routeurs)
-        - `password azerty`
-    - Enregistrer la configuration actuelle pour chaque restart : `copy running-config startup-config`
+        - `config)#line vty 0 15` (15 pour switch et 5 routeurs)
+        - `config-line)#password azerty`
+    - Enregistrer la configuration actuelle pour chaque restart : `#copy running-config startup-config`
     - Mettre une bannière au démarrage : 
 
 ```bash
@@ -27,9 +28,9 @@ config)#banner motd &
 ```
 - "&" après le avoir coller
 - Mémoire :
-    - Suppression du fichiers de configuration initiale : `erase startup-config`
-    - Suppression de la base de données Vlan : `delete flash:vlan.dat` [ Retourne a la configuration par défaut des vlan]
-    - Afficher les fichiers racines : `show flash:`
+    - Suppression du fichiers de configuration initiale : `#erase startup-config`
+    - Suppression de la base de données Vlan : `#delete flash:vlan.dat` [ Retourne a la configuration par défaut des vlan]
+    - Afficher les fichiers racines : `#show flash:`
         
         
 
@@ -75,9 +76,10 @@ config)#banner motd &
     - #show port-security address
     - #show port-security interface G0/1
   - Désactivation du port-security
-    - `no switchport port-security maximum`
-    - `no  switchport port-security mac-address sticky`
-    - `no switchport port-security`
+    - `config)#interface fa0/1`
+      - `config-if)#no switchport port-security maximum`
+      - `config-if)#no  switchport port-security mac-address sticky`
+      - `config-if)#no switchport port-security`
 
 
 ## Packet tracer
@@ -85,6 +87,9 @@ config)#banner motd &
 Tips : Il est possible de faire avancer le temps plus vite :
 
 ![Speeeeeeeeeeeeeeeeeeeeeeeeeeeeed](../image/packetTracer.png)
+
+[PDF des commandes Cisco pour la CCNA](commandesCisco.pdf)
+
 
 #### Source : 
 
