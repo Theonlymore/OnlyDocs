@@ -21,6 +21,23 @@
 - `OUTPUT` : En sortis de la machine ( routeur )
 - `FORWARD` : Qui travers le routeur
 
+
+### Schéma chaînes :
+
+```
+PACKET IN
+    |
+PREROUTING--[routing]-->--FORWARD-->--POSTROUTING-->--OUT
+ - nat (dst)   |           - filter      - nat (src)
+               |                            |
+               |                            |
+              INPUT                       OUTPUT
+              - filter                    - nat (dst)
+               |                          - filter
+               |                            |
+               `----->-----[app]----->------'
+```
+
 ## Diagnostique :
 
 Lister toutes les règles :
@@ -46,7 +63,7 @@ Modification de la règle par défaut (Rien ne passe à travers le routeur).
   - `iptables -P FORWARD DROP`
 
 
-## Règles de filtrage : 
+## Créer règles de filtrage : 
 
 ### Exemple :
 
@@ -69,8 +86,28 @@ iptables -A INPUT -s 192.168.1.148/32 -d 192.168.31.250/32 -i ens192 -p TCP --dp
     - `-d` : destination
     - `-p` : protocole couche 4 (TCP ou UDP)
         - `--dport` : protocole couche 7 (22,80,443,...)
-- `-j` : Accepte ou refuse le paquet : `DROP` ou `ACCEPT` 
+- `-j` : Accepte ou refuse le paquet : - - `DROP` : Refuse le paquet sans prévenir
+    - `ACCEPT` : Accepte le paquet
+    - `REJECT` : Refuse le paquet mais avertie le demandeur via un paquet RESET (RST)
   
+
+#### Filtrage multi-port sur la même ligne :
+
+`iptables -A INPUT -p tcp -s 172.24.26.32  -m multiport --dport
+110,666,42 -j REJECT`
+
+## Supprimer règles de filtrage : 
+
+#### Supprimer règles précise : `-D` :
+
+Supprimé règles 5 en OUTPUT
+
+- `iptables -D OUTPUT 5`
+
+#### Supprimé toutes les règles d'une chaîne : `-F`
+
+- `iptables -F INPUT`
+
 ### Source :
 
 [tlpd.org](https://tldp.org/pub/Linux/docs/HOWTO/translations/fr/html-1page/Masquerading-Simple-HOWTO.html)
