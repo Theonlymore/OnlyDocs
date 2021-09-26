@@ -55,6 +55,11 @@ Lister les règles d'une chaîne :
 Vérifie le filtrage des paquets.
 
 - `iptables -L -n` 
+
+Connaître le numéro de ligne :
+
+- `iptables -L --line-numbers`
+
   
 ## Modification de la policy
   
@@ -107,6 +112,17 @@ Supprimé règles 5 en OUTPUT
 #### Supprimé toutes les règles d'une chaîne : `-F`
 
 - `iptables -F INPUT`
+
+## Sauvegard et restauration des règles :
+
+Sauvegard :
+
+- `iptables-save > /etc/filtrages.save`
+
+Restauration :
+
+- `iptabes-restore < /etc/filtrages.save`
+
 
 ### Source :
 
