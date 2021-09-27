@@ -79,8 +79,11 @@ nav:
       - Adresse ip: reseau/adresse_ip.md
       - Filtrage: reseau/filtrage.md
       - Future docs: reseau/futures_docs.md
-  - Windows serveur:
-    - Présentation: windowsServeur/windowsServeur.md
-    - Active directory: windowsServeur/ad.md
+  - Windows :
+    - Windows serveur :
+      - Présentation: windows/windowsServeur/windowsServeur.md
+      - Active directory: windows/windowsServeur/ad.md
+  - Aws :
+    - S3 Glacier : aws/s3Glacier.md
   - Autre:
       - Markdown: autre/markdown.md

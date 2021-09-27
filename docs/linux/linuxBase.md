@@ -48,6 +48,22 @@ Les droits peuvent être définit en octal : 4 pour read, 2 pour write, 1 pour e
 
 `/etc/init.d/`
 
+## Manipulation de fichier
+
+Connaitre la [taille des dossiers](https://www.it-connect.fr/connaitre-la-taille-dun-fichier-ou-dun-dossier-avec-du%EF%BB%BF/) et fichiers
+
+- chaque la taille dossier du dossier
+
+```bash
+$ du -h
+```
+
+Connaitre juste la taille d'un dossier
+
+```bash
+$ du -sh /etc
+```
+
 ## Les processus
 
 - `ps` Affiche les processus en cours d’exécution. 
@@ -60,7 +76,46 @@ Les droits peuvent être définit en octal : 4 pour read, 2 pour write, 1 pour e
 - `w`	Affiche les utilisateurs actuellement connectés en SSH (date/heure/IP)
 - `last reboot`	Afficher l’historique des redémarrages
 
+## [Archivage et compression](https://lecrabeinfo.net/linux-compresser-decompresser-fichiers-dossiers-avec-tar-gzip-bzip2-xz.html)
+
+Pour résumer :
+
+- tar
+  - permet de créer une archive ( combiner plusieurs fichiers en un seul)
+- gzip
+  - permet la compresion pour réduire la taille d'un fichier.
+  
+Commande tar :
 
 
+``bash
+tar -czvf nom-de-l-archive.tar.gz /chemin/vers/répertoire-ou-fichier
+```
+
+Options :
+
+- `-c` : crée une archive.
+- `-z` : compresse l'archive avec gzip
+- `-v` : mode verbeux ( affiche la progession.)
+- `-f` : permet de spécifier le nom de l'archive.
+
+Plusieurs fichier à la fois :
+
+```bash
+tar -czvf archive.tar.gz ~/Images/Wallpapers/ ~/Téléchargements/photo.jpg ~/Documents/sample.odt
+```
+### Décompresser une archive
+
+Dans le répertoire courrant : 
+
+```bash
+tar -xzvf archive.tar.gz
+```
+
+Dans un répertoire spécifique :
+
+```bash
+tar -xzvf archive.tar.gz -C / tmp
+```
 
 
