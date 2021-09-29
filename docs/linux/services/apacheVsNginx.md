@@ -7,7 +7,7 @@
 
 ## Différences
 
-La plus grand différence entre Apache et NGINX est le design architectural, moyens de traiter les connexions, données sur le trafic et de répondre aux différentes conditions des serveurs.
+La plus grande différence entre Apache et NGINX est le design architectural, moyens de traiter les connexions, données sur le trafic et de répondre aux différentes conditions des serveurs.
 
 ## Avantage Apache :
 
