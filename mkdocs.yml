@@ -88,6 +88,6 @@ nav:
       - Active directory: windows/windowsServeur/ad.md
   - Aws :
     - S3 Glacier : aws/s3Glacier.md
-  - Autre:
-    - Markdown: autre/markdown.md
+  - Langage:
+    - Markdown: langage/markdown.md
   - Sites sympas: niceSite.md
