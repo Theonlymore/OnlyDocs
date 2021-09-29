@@ -86,3 +86,4 @@ Activation des module/site apache2 :
 
 Source : 
 - [Les Tutos de Processus](https://www.youtube.com/watch?v=uG_bRjqUzFM)
+- [digiCert](https://www.digicert.com/kb/ssl-support/apache-multiple-ssl-certificates-using-sni.htm)

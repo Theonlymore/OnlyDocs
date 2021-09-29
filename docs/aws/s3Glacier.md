@@ -37,7 +37,8 @@ $aws glacier list-vaults --account-id -
 ```
 
 
+- Demande de l'inventaire du "Vault" (cela peux prendre plus de 5 heure) : 
 
 ```bash
-
+aws glacier initiate-job --account-id - --vault-name my-vault --job-parameters '{"Type": "inventory-retrieval"}'
 ```

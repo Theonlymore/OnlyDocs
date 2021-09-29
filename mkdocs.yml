@@ -60,11 +60,14 @@ nav:
       - Réseau linux:
         - Commande réseau: linux/reseauLinux/commandeReseau.md
         - Filtrage sous linux: linux/reseauLinux/filtrageLinux.md
-
+      - Services:
+        - Bind: linux/services/bind.md
+        - OpenLda: linux/services/openLdap.md
+        - Apache2 vs NGINX: linux/services/apacheVsNginx.md
+        - Apache2: linux/services/apache2.md
       - Vim: linux/vim.md
       - Cron: linux/cron.md
-      - Commande linux: linux/linuxBase.md
-      - Apache2: linux/apache2.md
+      - Commande linux: linux/commandeLinux.md
   - Docker:
       - Présentation: docker/presentationDocker.md
       - Base de docker: docker/baseDocker.md
@@ -86,4 +89,5 @@ nav:
   - Aws :
     - S3 Glacier : aws/s3Glacier.md
   - Autre:
-      - Markdown: autre/markdown.md
+    - Markdown: autre/markdown.md
+  - Sites sympas: niceSite.md

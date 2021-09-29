@@ -10,7 +10,7 @@
 
 ### Infrastructure :
 
-![Exemple d'infrastructure avec filtrage](image/../filtrageReseau.png)
+![Exemple d'infrastructure avec filtrage](images/filtrageReseau.png)
 
 ### Règles :
 

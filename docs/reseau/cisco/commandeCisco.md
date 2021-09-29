@@ -86,7 +86,7 @@ config)#banner motd &
 
 Tips : Il est possible de faire avancer le temps plus vite :
 
-![Speeeeeeeeeeeeeeeeeeeeeeeeeeeeed](../image/packetTracer.png)
+![Speeeeeeeeeeeeeeeeeeeeeeeeeeeeed](../images/packetTracer.png)
 
 [PDF des commandes Cisco pour la CCNA](commandesCisco.pdf)
 
