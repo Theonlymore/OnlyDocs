@@ -2,14 +2,14 @@
 
 ## Definition  :
 
-- ACCEPT
+- `ACCEPT`
     - Cette cible permet d'accepter les paquets
-- DROP
+- `DROP`
     - Cette cible permet de refuser les paquets sans avertir le demandeur que sa demande de connexion à été refusée.
 
-- -p TCP 
+- `-p TCP`
     - premier paramètre
-- --dport 22
+- `--dport 22`
     - Sous paramètre
 
   
@@ -17,12 +17,12 @@
 
 ## Selection des chaînes :
 
-- `INPUT` : Destiné à la machine ( routeur )
+- `INPUT` : Entrer dans la machine ( routeur )
 - `OUTPUT` : En sortis de la machine ( routeur )
 - `FORWARD` : Qui travers le routeur
 
 
-### Schéma chaînes :
+### Schéma des chaînes :
 
 ```
 PACKET IN
@@ -44,7 +44,7 @@ Lister toutes les règles :
 
 - `iptables -L -n`
 
-Lister les règles avec port numérique et paquets qui ont utiliser la règle :
+Lister les règles avec port numérique et utilisation en octets :
 
 - `ìptables -nvL`
   
@@ -52,7 +52,7 @@ Lister les règles d'une chaîne :
 
 - `iptables -P INPUT -n`
 
-Vérifie le filtrage des paquets.
+Vérifier le filtrage des paquets.
 
 - `iptables -L -n` 
 
@@ -94,7 +94,7 @@ iptables -A INPUT -s 192.168.1.148/32 -d 192.168.31.250/32 -i ens192 -p TCP --dp
 - `-j` : Accepte ou refuse le paquet : - - `DROP` : Refuse le paquet sans prévenir
     - `ACCEPT` : Accepte le paquet
     - `REJECT` : Refuse le paquet mais avertie le demandeur via un paquet RESET (RST)
-  
+
 
 #### Filtrage multi-port sur la même ligne :
 
@@ -103,19 +103,19 @@ iptables -A INPUT -s 192.168.1.148/32 -d 192.168.31.250/32 -i ens192 -p TCP --dp
 
 ## Supprimer règles de filtrage : 
 
-#### Supprimer règles précise : `-D` :
+#### Supprimer règle précise : `-D` :
 
-Supprimé règles 5 en OUTPUT
+Supprimer règle 5 en OUTPUT
 
 - `iptables -D OUTPUT 5`
 
-#### Supprimé toutes les règles d'une chaîne : `-F`
+#### Supprimer toutes les règles d'une chaîne : `-F`
 
 - `iptables -F INPUT`
 
-## Sauvegard et restauration des règles :
+## Sauvegarde et restauration des règles :
 
-Sauvegard :
+Sauvegarde :
 
 - `iptables-save > /etc/filtrages.save`
 

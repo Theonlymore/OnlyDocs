@@ -72,6 +72,7 @@ nav:
       - Présentation: docker/presentationDocker.md
       - Base de docker: docker/baseDocker.md
       - Réseau dans docker: docker/reseauDocker.md
+      - Volumes dans docker: docker/dockerVolumes.md
       - Image docker: docker/imageDocker.md
       - Docker compose: docker/dockerCompose.md
   - Réseau:     

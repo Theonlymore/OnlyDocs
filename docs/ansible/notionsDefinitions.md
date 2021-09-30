@@ -21,7 +21,17 @@ Inventory :
 - statique (fichiers) ou dynamique (api via script)
 - utilisaation de patterns possible (srv-p)
 
+## Architecure d'Ansible
+
+![ Architecure d'Ansible](images/architectureAnsible.jpg)
+
+## Playbooks
+
+
 
 ### Source :
 
-https://www.youtube.com/watch?v=tirjpYSMkkM&list=PLn6POgpklwWoCpLKOSw3mXCqbRocnhrh-&index=4
+- [xavki](https://www.youtube.com/watch?v=tirjpYSMkkM&list=PLn6POgpklwWoCpLKOSw3mXCqbRocnhrh-&index=4)
+- Cisco Devnet
+
+

@@ -63,6 +63,7 @@ Certificat dans le dossier : `/etc/letsencrypt/live/www.rocheralexandre.com-001/
     SSLEngin on
     SSLCertificateFile /etc/apache2/certs/alex.crt
     SSLCertificateKeyFile /etc/apache2/certs/alex.key #clée privé ssl
+    SSLCertificateChainFile  /etc/apache2/certs/alex.chain # mettre la chain ici
 </Virtualhost>
 ```
 
