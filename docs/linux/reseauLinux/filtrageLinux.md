@@ -55,6 +55,11 @@ Lister les règles d'une chaîne :
 Vérifier le filtrage des paquets.
 
 - `iptables -L -n` 
+
+Connaître le numéro de ligne :
+
+- `iptables -L --line-numbers`
+
   
 ## Modification de la policy
   
@@ -134,7 +139,6 @@ Supprimer règle 5 en OUTPUT
 
 - `iptables -F INPUT`
 
-<<<<<<< HEAD
 ## Sauvegarde et restauration des règles :
 
 Sauvegarde :
@@ -147,9 +151,6 @@ Restauration :
 
 
 ### Sources :
-=======
-### Source :
->>>>>>> parent of 2d376fe (update link et firewall)
 
 - [Sécurité iptables - Azlux](https://gist.github.com/azlux/6a70bd38bb7c525ab26efe7e3a7ea8ac)
 - [Docs CCC iptable](filtragesIptables.pdf)

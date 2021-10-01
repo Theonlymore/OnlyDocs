@@ -1,5 +1,4 @@
 # Sites Sympas
 
-- [lafor.ge](https://lafor.ge/)
-- [wiki-tech](https://wiki-tech.io/)
-- 
+- [lafor.ge](lafor.ge)
+- [wiki-tech](wiki-tech.io)
