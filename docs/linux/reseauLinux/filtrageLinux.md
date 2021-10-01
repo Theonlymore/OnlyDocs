@@ -102,7 +102,7 @@ iptables -A INPUT -s 192.168.1.148/32 -d 192.168.31.250/32 -i ens192 -p TCP --dp
 
 ### Le suivi de connexion :
 
-Cela se base sur trois états :
+Cela ce base sur trois états :
 
 - `NEWS`
     - Signifie que le paquet a démarré une nouvelle connexion ou est associé d'une autre manière à une connexion qui n'a pas vu de paquets dans les deux sens
