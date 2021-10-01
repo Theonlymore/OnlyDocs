@@ -2,16 +2,12 @@
 
 ## Configuration ip 
 
-Fichier de configuration
-
-- `/etc/network/interfaces`
-
-Afficher configuration réseau
-
-
-- [x] `ip a`
-- [x] `ip addr`
-- [ ] `ifconfig` (paquet en plus)
+- Fichier de configuration
+    - `/etc/network/interfaces`
+- Afficher configuration réseau
+  - [x] `ip a`
+  - [x] `ip addr`
+  - [ ] `ifconfig` (paquet en plus)
 
 
 ## Changement de réseau
@@ -40,7 +36,9 @@ iptables -t nat -A POSTROUTING -o ens224 -j MASQUERADE
 iptables-save > /etc/iptables.save
 ```
 
-- `post-up iptables-restore < /etc/iptables.save`
+Remettre la route :
+
+- `iptables-restore < /etc/iptables.save`
 
 Info complémentaire sur ip tables
 
@@ -55,7 +53,7 @@ man iptables
 
 ### Diagnostique 
 
-Vérifie le filtrage NAT des paquets.
+Vérifier le filtrage NAT des paquets.
 
 - `iptables -t nat -L` 
 
@@ -74,9 +72,10 @@ Rechercher les ports à l’écoute.
 
 ## Activation du routage
 
-Décomenter la ligne
+Décommenter la ligne
 
-nano/etc/sysctl.conf
+- `nano/etc/sysctl.conf`
+
 ```bash
 net.ipv4.ip_forward=1
 ```
@@ -101,32 +100,22 @@ ip route add {NETWORK/MASK} via {GATEWAYIP}
 
 ### Fichier de configuration
 
-Contient le nom du PC :
-
-- `/etc/hostname`
-
-Fichier hosts consulté avant le serveur DNS :
-
-- `/etc/hosts`
-
-Affiche ou définit le nom d'un machine
-
-- `hostname`
-
-Définire des serveur DNS
-- `/etc/resolv.con`
+- Contient le nom de la machine
+    - `/etc/hostname`
+- Fichier hosts consulter avant le serveur DNS :
+    - `/etc/hosts`
+- Affiche ou définit le nom d'une machine
+    - `hostname`
+- Définir le serveur DNS référent
+    - `/etc/resolv.con`
 
 ## Tests réseau
 
-Vérification de connexion.
-
-- `ping`
-
+- Vérification de connexion.
+    - `ping`
 Tracer un ping
-
-- `traceroute`
-
+    - `traceroute`
 
 
-Source :
+### Source :
 - [Commande réseau de CCC](commandeReseau.pdf)

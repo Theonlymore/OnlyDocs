@@ -63,9 +63,8 @@ Connaître le numéro de ligne :
   
 ## Modification de la policy
   
-Modification de la règle par défaut (Rien ne passe à travers le routeur).
-  
-  - `iptables -P FORWARD DROP`
+- Modification de la règle par défaut (Rien ne passe à travers le routeur).
+    - `iptables -P FORWARD DROP`
 
 
 ## Créer règles de filtrage : 
@@ -151,7 +150,7 @@ Restauration :
 - `iptabes-restore < /etc/filtrages.save`
 
 
-### Source :
+### Sources :
 
 - [Sécurité iptables - Azlux](https://gist.github.com/azlux/6a70bd38bb7c525ab26efe7e3a7ea8ac)
 - [Docs CCC iptable](filtragesIptables.pdf)
@@ -159,3 +158,4 @@ Restauration :
 - [doc.ubuntu](https://doc.ubuntu-fr.org/iptables)
 - [Différence des états TCP / Analogie](https://serverfault.com/questions/371316/iptables-difference-between-new-established-and-related-packets/371319#371319)
 - [Accès à internet via iptables avec état TCP](https://askubuntu.com/questions/634788/iptables-allow-just-internet-connection)
+  
