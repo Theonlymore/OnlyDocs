@@ -1,4 +1,4 @@
-# Commande linux de base :
+# Base linux :
 
 Commande de systeme :
 
@@ -18,7 +18,7 @@ Commande de systeme :
 
 Voir les droits sur les fichiers du dossier : `ls -l`
 
-### Schéma du fonctionnement des droits des fichiers.
+### Schéma du fonctionnement des droits les fichiers.
 
 ![Droits linux](image/linuxDroits.png)
 
@@ -52,13 +52,13 @@ Les droits peuvent être définit en octal : 4 pour read, 2 pour write, 1 pour e
 
 Connaitre la [taille des dossiers](https://www.it-connect.fr/connaitre-la-taille-dun-fichier-ou-dun-dossier-avec-du%EF%BB%BF/) et fichiers
 
-- Connaitre la taille  d'un dossier et les dossiers dans le dossier
+- chaque la taille dossier du dossier
 
 ```bash
 $ du -h
 ```
 
-Connaitre la taille d'un dossier
+Connaitre juste la taille d'un dossier
 
 ```bash
 $ du -sh /etc
@@ -87,7 +87,8 @@ Pour résumer :
   
 Commande tar :
 
-```bash
+
+``bash
 tar -czvf nom-de-l-archive.tar.gz /chemin/vers/répertoire-ou-fichier
 ```
 
@@ -98,7 +99,7 @@ Options :
 - `-v` : mode verbeux ( affiche la progession.)
 - `-f` : permet de spécifier le nom de l'archive.
 
-Plusieurs fichiers à la fois :
+Plusieurs fichier à la fois :
 
 ```bash
 tar -czvf archive.tar.gz ~/Images/Wallpapers/ ~/Téléchargements/photo.jpg ~/Documents/sample.odt

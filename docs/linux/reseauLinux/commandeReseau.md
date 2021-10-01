@@ -100,25 +100,21 @@ ip route add {NETWORK/MASK} via {GATEWAYIP}
 
 ### Fichier de configuration
 
-Contient le nom de la machine
-  - `/etc/hostname`
-  
-Fichier hosts consulter avant le serveur DNS :
-  - `/etc/hosts`
-  
-  Affiche ou définit le nom d'une machine
-  - `hostname`
-
-Définir le serveur DNS référent
+- Contient le nom de la machine
+    - `/etc/hostname`
+- Fichier hosts consulter avant le serveur DNS :
+    - `/etc/hosts`
+- Affiche ou définit le nom d'une machine
+    - `hostname`
+- Définir le serveur DNS référent
     - `/etc/resolv.con`
 
 ## Tests réseau
 
-Vérification de connexion.
-- `ping`
-
+- Vérification de connexion.
+    - `ping`
 Tracer un ping
-- `traceroute`
+    - `traceroute`
 
 
 ### Source :

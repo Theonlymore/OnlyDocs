@@ -72,9 +72,9 @@ config)#banner motd &
 - effacé la mémoire de `port-security`  
     - `#clear port-security {all | configured | dynamic | sticky}`
   - Information
-    - `show port-security`
-    - `#show port-security address`
-    - `#show port-security interface G0/1`
+    - show port-security
+    - #show port-security address
+    - #show port-security interface G0/1
   - Désactivation du port-security
     - `config)#interface fa0/1`
       - `config-if)#no switchport port-security maximum`
