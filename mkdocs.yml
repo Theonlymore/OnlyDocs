@@ -25,6 +25,9 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Mode par défaut
+plugins:
+  - search
+  - git-revision-date-localized
 
 
   # Don't include MkDocs' JavaScript

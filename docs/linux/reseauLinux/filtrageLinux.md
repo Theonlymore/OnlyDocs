@@ -158,4 +158,5 @@ Restauration :
 - [doc.ubuntu](https://doc.ubuntu-fr.org/iptables)
 - [Différence des états TCP / Analogie](https://serverfault.com/questions/371316/iptables-difference-between-new-established-and-related-packets/371319#371319)
 - [Accès à internet via iptables avec état TCP](https://askubuntu.com/questions/634788/iptables-allow-just-internet-connection)
+- [Vidéo tuto de xavki sur iptables](https://youtube.com/playlist?list=PLn6POgpklwWrI_ri_djf3R3RCyDOsyKoC)
   
