@@ -1,8 +1,6 @@
 site_name: OnlyDocs
 site_description: Docs d'Alexandre, Le site me permet d'accéder et de rendre publique les documentations que je fais et utilise.
-#site_author: OpenFaaS Authors
-#site_url: https://docs.openfaas.com/
-
+repo_url: https://github.com/Theonlymore/OnlyDocs
 
 # edit_uri: edit/docs-revamp/docs/
 # edit_uri: blob/docs-revamp/docs/
@@ -27,7 +25,12 @@ theme:
         name: Mode par défaut
 plugins:
   - search
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      type: timeago
+      timezone: Europe/Amsterdam
+      locale: en
+      fallback_to_build_date: false
+      enable_creation_date: true
 
 
   # Don't include MkDocs' JavaScript
