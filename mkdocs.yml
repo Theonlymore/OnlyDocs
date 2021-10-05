@@ -23,7 +23,6 @@ theme:
         name: Mode par défaut
 
 plugins:
-- search
 - git-revision-date-localized:
     type: date
 
