@@ -22,7 +22,16 @@ theme:
         icon: material/toggle-switch
         name: Mode par défaut
 
-  
+plugins:
+- search
+- git-revision-date-localized:
+    type: timeago
+    timezone: Europe/Amsterdam
+    locale: en
+    fallback_to_build_date: false
+    enable_creation_date: true
+
+
   # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
