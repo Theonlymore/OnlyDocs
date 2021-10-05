@@ -78,7 +78,7 @@ iptables -A INPUT -s 192.168.1.148/32 -d 192.168.31.250/32 -i ens192 -p TCP --dp
 
 ### Explication  :
 
-- `ìptables` : Commande pour configurer le filtre
+- `iptables` : Commande pour configurer le filtre
 - `-A` : append / ajouter ( mes la règles à la fin de la table)
     - `I` : insersion de la règles au numéro de règles choisis
     - `C` : Check : Vérifier
@@ -104,7 +104,7 @@ iptables -A INPUT -s 192.168.1.148/32 -d 192.168.31.250/32 -i ens192 -p TCP --dp
 
 Cela se base sur trois états :
 
-- `NEWS`
+- `NEW`
     - Signifie que le paquet a démarré une nouvelle connexion ou est associé d'une autre manière à une connexion qui n'a pas vu de paquets dans les deux sens
     - correspond à la demande de communicatoin TCP initiale, au premier datagramme UDP ou au premier messge ICMP.
   
@@ -122,10 +122,10 @@ Considérons un NOUVEAU paquet comme un appel téléphonique avant que le destin
 
 #### Exemple :
 
-- Autoriser le trafic entrant d'une connexion déjà établie
-    - `iptables -A INPUT -m conntrack --ctstate ESTABLISHED -j ACCEPT`
-- Autoriser à surfer sur internet
-    - `iptables -A INPUT -i eth0 -p tcp -m multiport --sport 80,443,43 -m state --ctstate ESTABLISHED,RELATED -j ACCEPT`
+- Autoriser le nouveau trafic ou le trafic établie 
+    - `iptables -A FORWARD -s 192.168.32.0/24 -d 192.168.38.10/32 -p tcp -m multiport --dport 80,443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT`
+- Autoriser le retours du trafic déjà établie
+    - `iptables -A FORWARD -s 0.0.0.0/0 -d 192.168.32.0/24 -p tcp -m multiport --sport 53,80,443 -m state --state RELATED,ESTABLISHED -j ACCEPT`
 
 ## Supprimer règles de filtrage : 
 
@@ -159,4 +159,5 @@ Restauration :
 - [Différence des états TCP / Analogie](https://serverfault.com/questions/371316/iptables-difference-between-new-established-and-related-packets/371319#371319)
 - [Accès à internet via iptables avec état TCP](https://askubuntu.com/questions/634788/iptables-allow-just-internet-connection)
 - [Vidéo tuto de xavki sur iptables](https://youtube.com/playlist?list=PLn6POgpklwWrI_ri_djf3R3RCyDOsyKoC)
+- [Gitlab xavki](https://gitlab.com/xavki/presentations-iptables/-/tree/master/5-securiser-host)
   
