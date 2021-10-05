@@ -22,8 +22,6 @@ Commande :
 - `fail2ban-client status sshd`
 
 
-:)
-
 ### Sources
 
 - [doc.ubuntu](https://doc.ubuntu-fr.org/fail2ban)
