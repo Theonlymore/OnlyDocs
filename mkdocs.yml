@@ -25,18 +25,7 @@ theme:
         name: Mode par défaut
 
 plugins:
-<<<<<<< HEAD
   - git-revision-date-localized
-=======
-  - search
-  - git-revision-date-localized:
-      type: timeago
-      timezone: Europe/Amsterdam
-      locale: en
-      fallback_to_build_date: false
-      enable_creation_date: true
-
->>>>>>> parent of 1c991fa (up)
 
   # Don't include MkDocs' JavaScript
   include_search_page: false
@@ -102,4 +91,5 @@ nav:
     - S3 Glacier : aws/s3Glacier.md
   - Langage:
     - Markdown: langage/markdown.md
+    - SQL: langage/sql.md
   - Sites sympas: niceSite.md
