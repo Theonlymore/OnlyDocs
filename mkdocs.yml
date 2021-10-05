@@ -27,7 +27,6 @@ plugins:
   - search
   - git-revision-date-localized:
       type: date 
-      locale: en
 
 
 # Copyright
