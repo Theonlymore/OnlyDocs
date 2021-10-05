@@ -1,7 +1,7 @@
 site_name: OnlyDocs
 site_description: Docs d'Alexandre, Le site me permet d'accéder et de rendre publique les documentations que je fais et utilise.
 repo_url: https://github.com/Theonlymore/OnlyDocs
- edit_uri: edit/main/docs/
+edit_uri: edit/main/docs/
 
 # remote_name: origin
 # remote_branch: gh-pages
