@@ -24,14 +24,6 @@ theme:
         icon: material/toggle-switch
         name: Mode par défaut
 
-plugins:
-  - search
-  - git-revision-date-localized:
-      type: timeago
-      timezone: Europe/Amsterdam
-      locale: en
-      fallback_to_build_date: false
-      enable_creation_date: true
 
 
   # Don't include MkDocs' JavaScript
@@ -72,6 +64,7 @@ nav:
         - OpenLda: linux/services/openLdap.md
         - Apache2 vs NGINX: linux/services/apacheVsNginx.md
         - Apache2: linux/services/apache2.md
+        - Fail2ban: linux/services/fail2ban.md
       - Vim: linux/vim.md
       - Cron: linux/cron.md
       - Commande linux: linux/commandeLinux.md
