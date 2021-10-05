@@ -25,8 +25,13 @@ theme:
         name: Mode par défaut
 
 plugins:
-  - git-revision-date-localized
-
+- git-revision-date-localized:
+      type: timeago
+      timezone: Europe/Amsterdam
+      locale: en
+      fallback_to_build_date: false
+      enable_creation_date: true
+  
   # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
