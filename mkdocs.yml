@@ -25,7 +25,18 @@ theme:
         name: Mode par défaut
 
 plugins:
+<<<<<<< HEAD
   - git-revision-date-localized
+=======
+  - search
+  - git-revision-date-localized:
+      type: timeago
+      timezone: Europe/Amsterdam
+      locale: en
+      fallback_to_build_date: false
+      enable_creation_date: true
+
+>>>>>>> parent of 1c991fa (up)
 
   # Don't include MkDocs' JavaScript
   include_search_page: false
@@ -65,7 +76,6 @@ nav:
         - OpenLda: linux/services/openLdap.md
         - Apache2 vs NGINX: linux/services/apacheVsNginx.md
         - Apache2: linux/services/apache2.md
-        - Fail2ban: linux/services/fail2ban.md
       - Vim: linux/vim.md
       - Cron: linux/cron.md
       - Commande linux: linux/commandeLinux.md
