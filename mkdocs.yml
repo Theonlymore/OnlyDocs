@@ -25,11 +25,8 @@ theme:
 plugins:
 - search
 - git-revision-date-localized:
-    type: timeago
-    timezone: Europe/Amsterdam
-    locale: en
-    fallback_to_build_date: false
-    enable_creation_date: true
+    type: date
+
 
 
   # Don't include MkDocs' JavaScript
