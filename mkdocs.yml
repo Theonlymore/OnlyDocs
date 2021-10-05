@@ -8,6 +8,7 @@ edit_uri: edit/main/docs/
 
 # Theme and overrides, i.e. language partial
 theme:
+  language: en
   name: material
   custom_dir: overrides
   palette:
@@ -25,8 +26,8 @@ theme:
 plugins:
   - search
   - git-revision-date-localized:
-      fallback_to_build_date: true
-
+      type: date 
+      locale: en
 
 
 # Copyright
