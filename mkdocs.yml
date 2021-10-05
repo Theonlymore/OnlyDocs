@@ -24,8 +24,7 @@ theme:
 
 plugins:
   - search
-  - git-revision-date-localized:
-      type: date
+
 
 
 
