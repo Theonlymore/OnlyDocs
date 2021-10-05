@@ -9,6 +9,6 @@
 L'arrivée de docker est principalement du au gros inconvénient des machines virtuelles, elles sont gourmandes en ressource et lent à démarrer. Docker permet d'éviter l'utilisation  de machine virtuelle
 
 
-> en cours
+
 
 
