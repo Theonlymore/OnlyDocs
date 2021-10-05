@@ -26,8 +26,11 @@ theme:
 plugins:
   - search
   - git-revision-date-localized:
-      fallback_to_build_date: true
-      type: date 
+      type: timeago
+      timezone: Europe/Amsterdam
+      locale: en
+      fallback_to_build_date: false
+      enable_creation_date: true
 
 
 # Copyright
