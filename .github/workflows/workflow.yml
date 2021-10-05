@@ -1,10 +1,5 @@
 name: DeployToS3
-
-on:
-  push:
-    branches:
-    - main
-
+on: [main]
 jobs:
   deploy:
     runs-on: ubuntu-latest
