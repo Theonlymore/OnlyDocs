@@ -23,7 +23,9 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Mode par défaut
+
 plugins:
+  - search
   - git-revision-date-localized:
       type: timeago
       timezone: Europe/Amsterdam
