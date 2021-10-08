@@ -6,6 +6,8 @@
     - Cette cible permet d'accepter les paquets
 - `DROP`
     - Cette cible permet de refuser les paquets sans avertir le demandeur que sa demande de connexion à été refusée.
+- `REJECT`
+    - Cette cible permet de refuser les paquets, mais en avertissant le demandeur que sa demande de connexion a été refusée en lui envoyant un paquet RESET (RST)
 
 - `-p TCP`
     - premier paramètre

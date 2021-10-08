@@ -51,6 +51,7 @@ nav:
         - OpenLda: linux/services/openLdap.md
         - Apache2 vs NGINX: linux/services/apacheVsNginx.md
         - Apache2: linux/services/apache2.md
+        - AgentRelaiDhcp: linux/service/agentRelaiDHCP.md
       - Vim: linux/vim.md
       - Cron: linux/cron.md
       - Commande linux: linux/commandeLinux.md
@@ -68,11 +69,13 @@ nav:
       - DNS : reseau/dns.md  
       - Adresse ip: reseau/adresse_ip.md
       - Filtrage: reseau/filtrage.md
+      - Vlan: reseau/vlan.md
       - Future docs: reseau/futures_docs.md
   - Windows :
     - Windows serveur :
       - Présentation: windows/windowsServeur/windowsServeur.md
       - Active directory: windows/windowsServeur/ad.md
+      - GPO: windows/windows/Serveur/gpo.md
   - Aws :
     - S3 Glacier : aws/s3Glacier.md
   - Langage:
