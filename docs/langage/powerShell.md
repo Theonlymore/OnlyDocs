@@ -60,3 +60,5 @@ Cette commande liste tout les fichiers dans le dossier c:/windows et les écrits
 
 
 Sources :
+
+- [Docs CCC](images/Powershell.pdf)
