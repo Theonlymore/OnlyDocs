@@ -23,6 +23,8 @@ Type de déploiement :
 
 ![DeploiementDeLogiciel](./images/DeploiementLogiciel.jpg)
 
+
+
 Publié :
 
 - Il ne s'installe pas automatiquement. L'utilisateur peut installer le logiciel s'il en a besoin.
@@ -30,3 +32,7 @@ Publié :
 Attribué :
 
 - Installation automatique
+
+Source :
+
+- [Support-microsoft](https://docs.microsoft.com/fr-FR/troubleshoot/windows-server/group-policy/use-group-policy-to-install-software)

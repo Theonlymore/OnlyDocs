@@ -1,5 +1,6 @@
 # SQL
 
+Localisation de base de donnée
 ## Connexion et exécution de script
 
  Connexion à une base de donnée (via console linux)
@@ -54,6 +55,18 @@ Effacer une table
 
 - `DROP TABLE nomDeLaTable;`
 
+
+## Utilisateurs / Permission
+
+Créer utilisateur :
+
+- `CREATE USER 'test'@'localhost' IDENTIFIED BY 'newpassword';`
+
+Touts les permission sur une base de donnée :
+
+- `GRANT ALL PRIVILEGES ON database_name.* TO 'database_user'@'localhost';`
+
+
 ### Modifier une table 
 
 - `ALTER  TABLE nomDeLaTable RENAME AS nouveauNomDeLaTable;`
@@ -73,4 +86,5 @@ Effacer une table
 
 - [sql.sh](images/commandeSql.pdf)
 - [w3schools](images/QuelquesCommandesMySQL.pdf)
+- [rackspace](https://docs.rackspace.com/support/how-to/create-and-edit-users-in-mysql/)
 

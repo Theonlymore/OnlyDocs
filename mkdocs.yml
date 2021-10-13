@@ -81,4 +81,5 @@ nav:
   - Langage:
     - Markdown: langage/markdown.md
     - SQL: langage/sql.md
+    - PowerShell: langage/powerShell.md
   - Sites sympas: niceSite.md
