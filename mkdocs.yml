@@ -33,8 +33,13 @@ extra:
     languages: "en"
 
 markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
   - pymdownx.tasklist:
       custom_checkbox: true
+
 
 extra_css:
   - stylesheets/extra.css
