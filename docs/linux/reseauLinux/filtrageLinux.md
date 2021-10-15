@@ -1,5 +1,6 @@
 # Filtrage :
 
+
 ## Definition  :
 
 - `ACCEPT`
@@ -151,6 +152,11 @@ Restauration :
 
 - `iptabes-restore < /etc/filtrages.save`
 
+
+## Exemple de travaux pratique que j'ai effectuer
+
+- [TP Filtrage](../reseauLinux/DmFiltrage.pdf)
+- [Correction avec mon DM](../reseauLinux/RocherAlexandre-DmFiltrage.pdf)
 
 ### Sources :
 

@@ -26,6 +26,8 @@ iface etho0 inet static
     gateway 192.168.1.254
     dns-domain exemple.com
     dns-nameservers 192.168.1.5
+
+#iface etho0 inet dhcp # mettre en mode dhcp
 ```
 
 ## Mettre en place un NAT

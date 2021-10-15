@@ -6,7 +6,7 @@ Pour que les conteneurs Docker puissent communiquer entre eux et aussi avec la m
 
 
 ## Les Différents type de réseau sur Docker
-![Docker Networking](image/dockerNetworking.png "Docker networking - Source : towardsdatascience")
+![Docker Networking](images/dockerNetworking.png "Docker networking - Source : towardsdatascience")
 
 ### Par défaut
 
@@ -31,7 +31,7 @@ Le réseau bridge est le plus couramment utilisé. Les conteneurs qui utilisent 
 Exemple de mappage de port avec run : `docker run -it -p 8000:5000 alpine` (`-p 8000:5000` permet de rediriger les paquets de l'hôte sur le port 8000 vers le port 5000 du conteneurs)
 
 #### Schéma 
-![Docker Bridge Network](image/dockerBridgeNetwork.jpg "Docker bridge schéma")
+![Docker Bridge Network](images/dockerBridgeNetwork.jpg "Docker bridge schéma")
 
 #### Approfondir sur le bridge dans docker : [ici](https://blog.alphorm.com/reseau-docker-partie-1-bridge/)
 
@@ -43,20 +43,20 @@ C’est le type de réseau idéal, si vous souhaitez interdire toute communicati
 
 Ce type de réseau permet aux conteneurs d’utiliser la même interface que l’hôte. Il supprime l’isolation réseau entre les conteneurs et seront par défaut accessibles de l’extérieur. Il prendra donc la IP que votre machine hôte.
 
-![host network docker](image/dockerHost.png)
+![host network docker](images/dockerHost.png)
 
 ### Driver overlay
 
 Si vous souhaitez une mise en réseau multi-hôte native, vous devez utiliser un driver overlay. Il crée un réseau distribué entre plusieurs hôtes possédant le moteur Docker. Docker gère de manière transparente le routage de chaque paquet vers et depuis le bon hôte et le bon conteneur.
 
-![Dockey overlay network](image/dockerOverlay.png)
+![Dockey overlay network](images/dockerOverlay.png)
 
 
 ### Driver macvlan
 
 Le driver macvlan permet d’attribuer une adresse MAC à un conteneur, le faisant apparaître comme un périphérique physique sur votre réseau. Le moteur Docker route le trafic vers les conteneurs en fonction de leurs adresses MAC.
 
-![macvlan](image/dockerMacvlan.jpg)
+![macvlan](images/dockerMacvlan.jpg)
 
 
 ## Manipulation du réseau dans Docker
@@ -251,7 +251,7 @@ docker network disconnect <NETWORK NAME> <CONTAINER NAME>
 docker run --network <NETWORK NAME> <IMAGE NAME>
 ```
 
-### Source :
+### Sources
 
 - [Wiki-tech.io](https://wiki-tech.io/Conteneurisation/Docker/R%C3%A9seau)
 - [Alphorm](https://blog.alphorm.com/reseau-docker-partie-1-bridge/)

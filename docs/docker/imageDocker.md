@@ -15,7 +15,7 @@ Cette documentation à pour but de créer vos propres images avec le Dockerfile,
 
 Schéma de l'image :
 
-![Schéma image lamp](image/dockerImageLamp.jpg)
+![Schéma image lamp](images/dockerImageLamp.jpg)
 
 ## Les différentes instructions du Dockerfile
 
@@ -93,7 +93,7 @@ ENTRYPOINT service mysql start && mysql < /articles.sql && apache2ctl -D FOREGRO
 ```
 
 
-### Source 
+### Sources
 
 - [Devopssec](https://devopssec.fr/article/creer-ses-propres-images-docker-dockerfile)
 - [Wiki-tech.io](https://wiki-tech.io/Conteneurisation/Docker/Image)

@@ -10,14 +10,14 @@ Les étapes de ce modèle sont les suivantes:
 5. Confirmation de la résolution du problème.
 6. Rédaction d’une documentation sur le problème et sa solution.
 
-  [Aller plus loin avec la doc de Rachid ezzine](7couches.md)
+  [Aller plus loin avec la doc de Rachid ezzine](images/depannage7couches.md)
 
 
 ## Comment trouvé l'origine d'un problème
 
 Utilisation des couches du modèle OSI afin de trouver la pannne, partir de la couche la plus faible pour atteindre la plus haute.
 
-![Modele OSI](image/osi-model.png)
+![Modele OSI](images/osi-model.png)
 
 
 ### Couche 1 : Physique
@@ -70,7 +70,7 @@ Problèmes possible :
 
 
 
-### Source :
+### Sources
 
 - [Pratique en réseau : slideplayer](https://slideplayer.fr/slide/9114802/)
 - [Conseils de depannage réseau : techtribune](https://fr.techtribune.net/linux/apprenez-les-conseils-de-depannage-reseau-de-base-partie-12/120778/)

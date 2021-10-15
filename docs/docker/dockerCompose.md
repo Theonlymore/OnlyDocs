@@ -2,9 +2,9 @@
 
 ## Pourquoi 
 
-- meilleure gestion des dépendances (réseau, volumes...)
-- un service comprend 1 à plusieurs conteneurs
-- comme pour dockerfile : partage facile, versionning....
+- Meilleure gestion des dépendances (réseau, volumes...)
+- Un service comprend 1 à plusieurs conteneurs
+- Comme pour dockerfile : partage facile, versionning....
 
 ## [Installation](https://docs.docker.com/compose/install/) 
 
@@ -37,7 +37,7 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 ## Gestion du service
 
-- `Docker-compose ps `
+- `docker-compose ps `
 - `docker-compose start `
 - `docker-compose stop `
 - `docker-compose rm `
@@ -54,6 +54,6 @@ services:
     container_name: MyAlpine
     entrypoint: ps aux
 ```
-### Source :
+### Source 
   
 - [Xavki](https://gitlab.com/xavki/presentations-dockercompose)

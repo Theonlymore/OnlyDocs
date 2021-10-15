@@ -1,8 +1,8 @@
 # Powershell
 
-Langage de script destiné aux systèmes Windows  et plus particulèrement aux serveurs.
+Langage de script destiner aux systèmes Windows et plus particulèrement aux serveurs.
 
-Organisation :
+## Organisation 
 
 Les commandes de powershell sont appelées des *cmdlets*. Elles sont pour la plupart concstituée de la manière suivante : `verbe`, `tiret`, `nom` : ( `verbe-nom` ).
 

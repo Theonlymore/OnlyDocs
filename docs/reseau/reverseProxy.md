@@ -4,7 +4,8 @@ Un proxy : Serveur relais (un intermédiaire chargé d'établir la liaison)
 
 Un reverse proxy c'est l'inverse donc : il joue le rôle de passerelle.
 
-Le reverse proxy agit comme la façade pour les clients 
+Le reverse proxy agit comme la façade pour les clients.
+
 
 Exemple :
 
