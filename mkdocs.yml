@@ -57,10 +57,10 @@ nav:
         - Apache2 vs NGINX: linux/services/apacheVsNginx.md
         - Apache2: linux/services/apache2.md
         - Nginx: linux/services/nginx.md
-        - AgentRelaiDhcp: linux/service/agentRelaiDHCP.md
-        - OpenLdap : linux/service/openLdap.md
+        - AgentRelaiDhcp: linux/services/agentRelaiDHCP.md
+        - OpenLdap : linux/services/openLdap.md
         - Fail2ban: linux/services/fail2ban.md
-        - Git: linux/service/git.md
+        - Git: linux/services/git.md
       - Vim: linux/vim.md
       - Cron: linux/cron.md
       - Commande linux: linux/commandeLinux.md
