@@ -72,9 +72,6 @@ Version complète
 - `pip3 install ansible --upgrade`
 
 
-
-
-
 ## Control node :
 
 -  noeud disposant de ansible et permettant de déployer
@@ -97,14 +94,13 @@ Inventory :
 - utilisaation de patterns possible (srv-p)
 
 
-## Playbooks
+## [Playbooks](playbooks.md)
  
 Document avec une série de tâches nommées et modulaires.
 
 
-### Quelque informatique pratique :
+### Quelque informatique
 
--
 - Ansible = Infrastructure as code + déploiement de configurations + installations
 - à base de python
 - Documentation : https://docs.ansible.com/

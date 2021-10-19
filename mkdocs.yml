@@ -59,7 +59,8 @@ nav:
         - Nginx: linux/services/nginx.md
         - AgentRelaiDhcp: linux/service/agentRelaiDHCP.md
         - OpenLdap : linux/service/openLdap.md
-        - Fail2ban: linux/service/fail2ban.md
+        - Fail2ban: linux/services/fail2ban.md
+        - Git: linux/service/git.md
       - Vim: linux/vim.md
       - Cron: linux/cron.md
       - Commande linux: linux/commandeLinux.md
