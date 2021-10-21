@@ -74,6 +74,7 @@ nav:
   - Ansible: 
       - Présentation Ansible: ansible/presentationAnsible.md
       - Playbook: ansible/playbooks.md
+      - Organisation d'un projet Ansible: ansible/OrganisationProjetAnsible.md
   - Réseau:     
       - Cisco:
         - Commande cisco: reseau/cisco/commandeCisco.md

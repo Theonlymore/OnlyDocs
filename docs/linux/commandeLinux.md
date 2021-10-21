@@ -36,8 +36,8 @@ Les droits peuvent être définit en octal : 4 pour read, 2 pour write, 1 pour e
 
 | Commandes| Description |
 | ---------|-------------
-|`apt-get update`| Mets à jour la liste des paquets depuis
-/etc/apt/sources.list|
+|`apt-get update`| Mets à jour la liste des paquets depuis.|
+/etc/apt/sources.list| Le fichier principale de configuration des sources d'Apt. |
 | `apt-get upgrade` | Mets à jour le système.|
 | `apt install <paquet>` |Installe le paquet.|
 | `apt-get remove <paquet>`| Désinstalle le paquet. |
