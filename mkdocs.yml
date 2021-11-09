@@ -41,7 +41,7 @@ markdown_extensions:
       custom_checkbox: true
 
 extra_javascript:
-  - assets/javascripts/extra.js
+  - javascripts/extra.js
 
 extra_css:
   - stylesheets/extra.css
