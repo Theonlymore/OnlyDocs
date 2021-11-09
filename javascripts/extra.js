@@ -3,6 +3,7 @@
   _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
   _paq.push(["setCookieDomain", "*.webstats.onlymore.net"]);
   _paq.push(["setDomains", ["*.webstats.onlymore.net"]]);
+  _paq.push(["setDoNotTrack", true]);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
