@@ -32,7 +32,8 @@ config)#banner motd &
     - Suppression de la base de données Vlan : `#delete flash:vlan.dat` [ Retourne a la configuration par défaut des vlan]
     - Afficher les fichiers racines : `#show flash:`
         
-        
+- Mettre config de zero : 
+    - `#erase nvram:`      
 
 ## Switch :
 
@@ -82,6 +83,10 @@ config)#banner motd &
       - `config-if)#no switchport port-security`
 
 
+## Activer la connexion ssh
+
+[lien](https://www.clemanet.com/activation-ssh.php)
+
 ## Packet tracer
 
 Tips : Il est possible de faire avancer le temps plus vite :
@@ -91,7 +96,8 @@ Tips : Il est possible de faire avancer le temps plus vite :
 [PDF des commandes Cisco pour la CCNA](commandesCisco.pdf)
 
 
+
 #### Source 
-
-[Cisco](https://www.cisco.com/c/en/us/support/docs/smb/switches/cisco-350-series-managed-switches/smb5722-configure-vlan-interface-ipv4-address-on-an-sx350-or-sg350x.html)
-
+- [Cisco](https://www.cisco.com/c/en/us/support/docs/smb/switches/cisco-350-series-managed-switches/smb5722-configure-vlan-interface-ipv4-address-on-an-sx350-or-sg350x.html)
+- [clemanet pour ssh](https://www.clemanet.com/activation-ssh.php)
+- [numelion.com](https://www.numelion.com/commandes-routeurs-cisco.html)

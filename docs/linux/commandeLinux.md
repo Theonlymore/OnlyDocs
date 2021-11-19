@@ -13,6 +13,7 @@ Commande de systeme :
 | `cal` |	Affiche le calendrier du mois |
 | `whoami` |	Affiche où nous sommes connecté en tant que qui |
 | `screenfetch`	|Affiche les informations systèmes (nécessite le paquet screenfetch) |
+| `lsb_release –d` | Résumé information système/version debian |
 
 
 
