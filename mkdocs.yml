@@ -62,6 +62,7 @@ nav:
         - AgentRelaiDhcp: linux/services/agentRelaiDHCP.md
         - OpenLdap : linux/services/openLdap.md
         - Fail2ban: linux/services/fail2ban.md
+        - Borg: linux/services/borgBackup.md
         - Git: linux/services/git.md
       - Vim: linux/vim.md
       - Cron: linux/cron.md
