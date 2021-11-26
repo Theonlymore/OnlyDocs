@@ -17,7 +17,10 @@ Borg fait des sauvegard découpé en une multitude de tronçons et Borg ne sauve
 
 | Commande | Description | Description supplémentaires |
 | ----     | ----  | ----- |
-| borg init -e none /path | Création d'un dépot pour gérer les sauvegardes | "-e none" signifie pas de chiffrement de la sauvegarde. |
+| borg init -e none /path | Création d'un dépot pour gérer les sauvegardes | "-e none" signifie pas de chiffrement de la sauvegarde |
+| borg create /path-to-repo::FileArchive ~/src ~/Documents | borg create -v --stats
+
+
 
 ### Sources
 - [Doc de BorgBackup](https://borgbackup.readthedocs.io/en/stable/usage/general.html)

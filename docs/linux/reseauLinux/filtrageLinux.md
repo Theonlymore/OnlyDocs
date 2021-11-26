@@ -142,6 +142,14 @@ Supprimer règle 5 en OUTPUT
 
 - `iptables -F INPUT`
 
+
+## Pat avec Iptable
+
+Exemple :
+
+iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 192.168.38.10:80
+iptables -t nat -A POSTROUTING -j MASQUERADE
+
 ## Sauvegarde et restauration des règles :
 
 Sauvegarde :
@@ -168,4 +176,5 @@ Restauration :
 - [Accès à internet via iptables avec état TCP](https://askubuntu.com/questions/634788/iptables-allow-just-internet-connection)
 - [Vidéo tuto de xavki sur iptables](https://youtube.com/playlist?list=PLn6POgpklwWrI_ri_djf3R3RCyDOsyKoC)
 - [Gitlab xavki](https://gitlab.com/xavki/presentations-iptables/-/tree/master/5-securiser-host)
+- [PAT](https://bory-diallo.over-blog.com/2020/02/le-pat-sous-linux)
   
