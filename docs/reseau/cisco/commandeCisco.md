@@ -35,6 +35,11 @@ config)#banner motd &
 - Mettre config de zero : 
     - `#erase nvram:`      
 
+- Enregistrement sur serveur TFTP :
+    - `#copy running-config tftp`
+- recuperer config d'un serveur TFTP :
+    - `#copy tftp :`
+    - `#running-config`
 ## Switch :
 
 ### Vlan :

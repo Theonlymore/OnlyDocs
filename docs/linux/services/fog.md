@@ -29,7 +29,7 @@ Enregistrement de la machine :
 2. Arriver sur l'interface Fog et faite `Quick Registration..` ![fog register](images/fogRegister.jpg)
 4. Il se retrouve dans `Host Management` ![website Host management](images/fogRegisterWebsite.jpg)
 
-### `Capture` de l'host
+### "Capture" de l'host
 
 Transformer une machine en image :
 
@@ -38,7 +38,7 @@ Transformer une machine en image :
 2. Relancer la machine où vous avez lancé la `Capture` (lance la sur Fog via pxe)
 3. La tâche est lancée
 
-### `Deploy` une image
+### "Deploy" une image
 
 1. Enregistrer la machine sur fog
 2. Attribuer lui l'image
