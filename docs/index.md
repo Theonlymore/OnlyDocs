@@ -22,9 +22,9 @@ Route 53 d'Aws me permet de gérer la zone dns du nom de domaine.
 
 J'utilise github pour le [versioning](https://github.com/Theonlymore/OnlyDocs "Lien github vers le versioning du site") des docs/code.
 
-Pour mettre à jour les docs j'utilise deux github action, une [personnalisé](https://github.com/Theonlymore/MkdocsToS3 "Lien vers le fork de la github action que j'ai modifié") qui lance mkdocs (pour pouvoir créer les fichiers web), les fichiers créés par mkdocs sont ensuite synchronisés avec S3 et pour finir la [deuxième github action](https://github.com/chetan/invalidate-cloudfront-action "Github action pour cloudfront") demande à cloudfront de mettre à jours le cache.
+Pour mettre à jour les docs j'utilise deux github action, une [personnalisé](https://github.com/Theonlymore/MkdocsToS3 "Lien vers le fork de la github action que j'ai modifié") qui lance mkdocs (pour pouvoir créer les fichiers web), les fichiers créés par mkdocs sont ensuite synchronisés avec S3 et pour finir la [deuxième github action](https://github.com/chetan/invalidate-cloudfront-action "Github action pour cloudfront") demande à cloudfront de mettre à jour le cache.
 
-La github action est lancée à chaque mise à jour de la branche principal ("fetch origin") du répo github.
+La github action est lancée à chaque mise à jour de la branche principale ("fetch origin") du répo github.
 
 ### Les Coûts
 
@@ -41,4 +41,3 @@ Coût final
 ### Bilan
 
 Pour payer le moins chère possible il faudrait passé par un autre acteur qu'Aws pour le nom de domaine.
-

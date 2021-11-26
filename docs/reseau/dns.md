@@ -1,5 +1,6 @@
 # DNS
 
+Le serveur DNS (Domain Name System, ou Système de noms de domaine en français) est un service dont la principale fonction est de traduire un nom de domaine en adresse IP.
 ## Enregistrements 
 
 Plusieurs types d'enregistrements peuvent êtres céées dans le serveur DNS. Ils permettent la résolution d'un nom de poste ou d'une adresse IP.

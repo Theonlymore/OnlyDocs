@@ -55,7 +55,6 @@ nav:
         - Filtrage sous linux: linux/reseauLinux/filtrageLinux.md
       - Services:
         - Bind: linux/services/bind.md
-        - OpenLda: linux/services/openLdap.md
         - Apache2 vs NGINX: linux/services/apacheVsNginx.md
         - Apache2: linux/services/apache2.md
         - Nginx: linux/services/nginx.md
@@ -84,20 +83,20 @@ nav:
         - Commande cisco: reseau/cisco/commandeCisco.md
       - Protocole:
         - SNMP: reseau/protocole/SNMP.md
-      - 7 couches OSI: reseau/7couches.md
+      - 7 couches OSI: reseau/modelOsi.md
       - Dépannage réseau: reseau/depannageReseau.md
       - DNS : reseau/dns.md  
       - Adresse ip: reseau/adresse_ip.md
       - Méthodologie DevOps: reseau/methodologieDevOps.md
       - Reverse proxy: reseau/reverseProxy.md
-      - Super Vision: reseau/superVision.md
+      - Supervision: reseau/superVision.md
       - Filtrage: reseau/filtrage.md
       - Vlan: reseau/vlan.md
   - Windows :
     - Windows serveur :
       - Présentation: windows/windowsServeur/windowsServeur.md
       - Active directory: windows/windowsServeur/ad.md
-      - GPO: windows/windows/Serveur/gpo.md
+      - GPO: windows/windows/windowsServeur/gpo.md
   - Aws :
     - S3 Glacier : aws/s3Glacier.md
   - Langage:
