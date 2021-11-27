@@ -2,18 +2,18 @@
 
 Commande de systeme :
 
-| Commandes| Description |
-| ---------|-------------
-|`reboot`|	Redémarre|
-|`shutdown now` |	Éteint sans délais|
-| `systemctl`| (start/stop/restart/status) <service>	Démarre/Arrête/Redémarre/Affiche le statut d’un service|
-| `hostname` | Affiche le nom d’hôte de la machine|
-| `hostname` | -I	Affiche l’adresse IP de l’hôte|
-| `date` |	Afficher la date et l’heure du système|
-| `cal` |	Affiche le calendrier du mois |
-| `whoami` |	Affiche où nous sommes connecté en tant que qui |
-| `screenfetch`	|Affiche les informations systèmes (nécessite le paquet screenfetch) |
-| `lsb_release –d` | Résumé information système/version debian |
+| Commandes        | Description                                                                                   |
+| ---------------- | --------------------------------------------------------------------------------------------- |
+| `reboot`         | Redémarre                                                                                     |
+| `shutdown now`   | Éteint sans délais                                                                            |
+| `systemctl`      | (start/stop/restart/status) <service>	Démarre/Arrête/Redémarre/Affiche le statut d’un service |
+| `hostname`       | Affiche le nom d’hôte de la machine                                                           |
+| `hostname`       | -I	Affiche l’adresse IP de l’hôte                                                             |
+| `date`           | Afficher la date et l’heure du système                                                        |
+| `cal`            | Affiche le calendrier du mois                                                                 |
+| `whoami`         | Affiche où nous sommes connecté en tant que qui                                               |
+| `screenfetch`    | Affiche les informations systèmes (nécessite le paquet screenfetch)                           |
+| `lsb_release –d` | Résumé information système/version debian                                                     |
 
 
 
@@ -35,18 +35,18 @@ Les droits peuvent être définit en octal : 4 pour read, 2 pour write, 1 pour e
 
 ## Gestion des paquets
 
-| Commandes| Description |
-| ---------|-------------
-|`apt-get update`| Mets à jour la liste des paquets depuis.|
-/etc/apt/sources.list| Le fichier principale de configuration des sources d'Apt. |
-| `apt-get upgrade` | Mets à jour le système.|
-| `apt install <paquet>` |Installe le paquet.|
-| `apt-get remove <paquet>`| Désinstalle le paquet. |
-| `apt-get remove <paquet> -- purge`| Désinstalle complètement le paquet.|
-| `apt-cache show <paquet>`| Donne des Informations sur le paquet.|
-| `apt-cache search <paquet>`| Recherche un paquet.|
-| `apt-cache depends <paquet> ` |Recherche les dépendances d’un paquet.
-| `apt-get clean` Vide le cache disque des paquets.|
+| Commandes                          | Description                                               |
+| ---------------------------------- | --------------------------------------------------------- |
+| `apt-get update`                   | Mets à jour la liste des paquets depuis.                  |
+| `/etc/apt/sources.list`            | Le fichier principale de configuration des sources d'Apt. |
+| `apt-get upgrade`                  | Mets à jour le système.                                   |
+| `apt install <paquet>`             | Installe le paquet.                                       |
+| `apt-get remove <paquet>`          | Désinstalle le paquet.                                    |
+| `apt-get remove <paquet> -- purge` | Désinstalle complètement le paquet.                       |
+| `apt-cache show <paquet>`          | Donne des Informations sur le paquet.                     |
+| `apt-cache search <paquet>`        | Recherche un paquet.                                      |
+| `apt-cache depends <paquet> `      | Recherche les dépendances d’un paquet.                    |
+| `apt-get clean`                    | Vide le cache disque des paquets.                         |
 
 
 ## Dossier de lancement de script au démarage
@@ -71,17 +71,17 @@ $ du -sh /etc
 
 ## Les processus
 
-| Commandes| Description |
-| ---------|-------------|
-| `ps` | Affiche les processus en cours d’exécution.| 
-| `pstree`| Affiche l’arborescence des processus. |
-| `top` | Affiche les processus en temps réel.|
-| `ctrl + c` | Arrête un processus.|
-| `kill` | Termine un processus. |
-| `uname -a` | Affiche le nom de la machine, le noyau,...|
-| `uptime` | Affiche l'heure d'allumage, la charge, ...|
-| `w`	| Affiche les utilisateurs actuellement connectés en SSH (date/heure/IP)|
-| `last reboot` | Afficher l’historique des redémarrages.|
+| Commandes     | Description                                                            |
+| ------------- | ---------------------------------------------------------------------- |
+| `ps`          | Affiche les processus en cours d’exécution.                            |
+| `pstree`      | Affiche l’arborescence des processus.                                  |
+| `top`         | Affiche les processus en temps réel.                                   |
+| `ctrl + c`    | Arrête un processus.                                                   |
+| `kill`        | Termine un processus.                                                  |
+| `uname -a`    | Affiche le nom de la machine, le noyau,...                             |
+| `uptime`      | Affiche l'heure d'allumage, la charge, ...                             |
+| `w`           | Affiche les utilisateurs actuellement connectés en SSH (date/heure/IP) |
+| `last reboot` | Afficher l’historique des redémarrages.                                |
 
 ## [Archivage et compression](https://lecrabeinfo.net/linux-compresser-decompresser-fichiers-dossiers-avec-tar-gzip-bzip2-xz.html)
 
