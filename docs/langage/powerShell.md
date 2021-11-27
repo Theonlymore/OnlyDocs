@@ -15,6 +15,10 @@ Listes :
 - Liste de `nom` : `Get-command -Nnoun object`
 - Liste personnaliser : `Get-command write-*`
 
+## Diagnostic
+
+Ecrire dans la console avec une concaténation
+`Write-Host ("vous avez demandé à écrire en " + $couleur)`
 
 ## Variables
 
@@ -29,11 +33,11 @@ String dans un variable :
 
 Analyser un objet / variable
 
-- `$maVariable | get-Member
+- `$maVariable | get-Member`
 
 Mettre string en maj
 
-- `$maVariable.toUpper()
+- `$maVariable.toUpper()`
 
 Nombre charactère
 
