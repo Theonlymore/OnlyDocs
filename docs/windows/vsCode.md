@@ -4,7 +4,7 @@
 
 Voir tout les raccourcis : `Ctrl+K+S`
 
-**Géneral**
+### **Géneral**
 
 | Raccourci      | Tâche                     |
 | -------------- | ------------------------- |
@@ -14,7 +14,7 @@ Voir tout les raccourcis : `Ctrl+K+S`
 | `Ctrl+G`       | Go to line...             |
 | `Ctrl+T`       | Voir les symboles (#,...) |
 
-**Editeur de texte**
+### **Editeur de texte**
 
 | Tâche               | Raccourci                              |
 | ------------------- | -------------------------------------- |
@@ -28,7 +28,7 @@ Voir tout les raccourcis : `Ctrl+K+S`
 | `Ctrl+↑/↓`          | Scroll dans les lignes                 |
 | `Ctrl+/`            | Commenter une ligne                    |
 
-**Recherche et replacement**
+### **Recherche et replacement**
 
 | Tâche         | Raccourci                         |
 | ------------- | --------------------------------- |
@@ -37,7 +37,7 @@ Voir tout les raccourcis : `Ctrl+K+S`
 | `F3/Shift+F3` | Recherche après/avant             |
 | `Alt+Entrer`  | Multi-curseurs sur les ocurrences |
 
-**Multi-curseurs et selection**
+### **Multi-curseurs et selection**
 
 | Tâche          | Raccourci                                  |
 | -------------- | ------------------------------------------ |
@@ -47,7 +47,7 @@ Voir tout les raccourcis : `Ctrl+K+S`
 | `Ctrl+L`       | Selectionner la ligne actuelle             |
 | `Ctrl+Shift+L` | Selectionner tout les ocurrences           |
 
-**Edition de Languages**
+### **Edition de Languages**
 
 | Tâche         | Raccourci                               |
 | ------------- | --------------------------------------- |
