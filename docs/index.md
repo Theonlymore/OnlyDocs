@@ -17,7 +17,6 @@ J'héberge ce site web chez Aws grâce à un lien entre S3 (Stockage) et le CDN 
 ### Nom de domaine
 
 Route 53 d'Aws me permet de gérer la zone dns du nom de domaine.
-
 ### Versioning et mise en ligne
 
 J'utilise github pour le [versioning](https://github.com/Theonlymore/OnlyDocs "Lien github vers le versioning du site") des docs/code.
