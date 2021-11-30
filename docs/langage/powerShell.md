@@ -123,7 +123,7 @@ Grâce aux pipeline, il est possible de filtrer le résultat de certaines comman
 ## Lecture de Csv
 
 `ipcsv` est l'alias d'`Importe-csv`
-
+ 
 #### Importation d'un CSV :
 
 ```powershell

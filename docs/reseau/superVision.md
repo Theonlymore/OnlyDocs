@@ -2,8 +2,6 @@
 
 ## Automatiser surveillance du système :
 
-Rends cela propre à l'aide de schéma et autre...
-
 ## Objectif :
 
 - `Surveillance` temps réel.

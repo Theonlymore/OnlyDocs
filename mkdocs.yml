@@ -96,7 +96,7 @@ nav:
     - Windows serveur :
       - Présentation: windows/windowsServeur/windowsServeur.md
       - Active directory: windows/windowsServeur/ad.md
-      - GPO: windows/windows/windowsServeur/gpo.md
+      - GPO: windows/windowsServeur/gpo.md
     - VsCode: windows/vsCode.md
   - Aws :
     - S3 Glacier : aws/s3Glacier.md
