@@ -92,6 +92,7 @@ nav:
       - Supervision: reseau/superVision.md
       - Filtrage: reseau/filtrage.md
       - Vlan: reseau/vlan.md
+      - Mail: reseau/mail.md
   - Windows :
     - Windows serveur :
       - Présentation: windows/windowsServeur/windowsServeur.md
