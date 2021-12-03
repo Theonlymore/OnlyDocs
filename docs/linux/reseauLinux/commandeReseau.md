@@ -97,6 +97,16 @@ ip route
 ip route add {NETWORK/MASK} via {GATEWAYIP}
 ```
 
+Route par défaut (à vérifier que cela sort par la bonne interface )
+
+```bash
+ip route add default {NETWORK/MASK} dev {DEVICE}
+# Ou 
+ip route add default {NETWORK/MASK} via {GATEWAYIP}
+
+
+```
+
 
 ## DNS
 
@@ -121,3 +131,4 @@ Tracer un ping
 
 ### Source :
 - [Commande réseau de CCC](commandeReseau.pdf)
+- [Ip Route](https://www.cyberciti.biz/faq/ip-route-add-network-command-for-linux-explained/)
