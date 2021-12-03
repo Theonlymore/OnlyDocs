@@ -11,7 +11,7 @@ Forcer activation de GPO :
 - cmd: `gpupdate /force`
 ### Changer les politique de mot de passe.
 
-- Editeur de gestoin des stratégies de groupe.
+- Editeur de gestion des stratégies de groupe.
 - `configOrdi/ParaWindows/ParaSecu/StratéDeCompte/StratMdp`
 
 ### Installation de package msi
