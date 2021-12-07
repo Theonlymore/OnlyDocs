@@ -92,10 +92,34 @@ WORKDIR  ${DOCUMENTROOT}
 ENTRYPOINT service mysql start && mysql < /articles.sql && apache2ctl -D FOREGROUND
 ```
 
+`.dockerignore`
+
+Il existe comme pour git un "ignore" afin de par exemple en pas `ADD` / copier certains fichiers et/ou dossiers dans le conteneurs lors de l'exécution de l'instruction `ADD`.
+
+Le fichier `.dockerignore` doit être à la racine ( avec le `dockerfile`)
+## Build de l'image
+
+```bash
+docker build -t monDockerBuild .
+```
+
+`-t` : Nom de l'image
+`.` : est le répertoire où se trouve le Dockerfile.
+
+## Publier son image dans Docker Hub
+
+Possible de les mettres en privé ou en publique.
+
+Pour cela il faut vous connecter à votre compte :
+
+```bash
+docker login
+```
 
 ### Sources
 
 - [Devopssec](https://devopssec.fr/article/creer-ses-propres-images-docker-dockerfile)
 - [Wiki-tech.io](https://wiki-tech.io/Conteneurisation/Docker/Image)
 - [Docs.docker.com](https://docs.docker.com/engine/reference/builder/)
+- [OpenClassroom](https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker/6211517-creez-votre-premier-dockerfile)
 
