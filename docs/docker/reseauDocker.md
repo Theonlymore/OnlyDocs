@@ -125,7 +125,7 @@ docker network inspect mon-bridge
 Surcharger la valeur du Subnet et mettre une gateway :
 
 ```bash
-docker network create bridge --subnet=172.16.86.0/24 --gateway=172.16.86.1 mon-bridge
+docker network create -d bridge --subnet=172.16.86.0/24 --gateway=172.16.86.1 mon-bridge
 ```
 
 ### Un exemple

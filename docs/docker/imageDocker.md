@@ -92,9 +92,9 @@ WORKDIR  ${DOCUMENTROOT}
 ENTRYPOINT service mysql start && mysql < /articles.sql && apache2ctl -D FOREGROUND
 ```
 
-`.dockerignore`
+## `.dockerignore`
 
-Il existe comme pour git un "ignore" afin de par exemple en pas `ADD` / copier certains fichiers et/ou dossiers dans le conteneurs lors de l'exécution de l'instruction `ADD`.
+Il existe comme pour git un "ignore" afin de par exemple ne pas `ADD` / copier certains fichiers et/ou dossiers dans le conteneurs lors de l'exécution de l'instruction `ADD`.
 
 Le fichier `.dockerignore` doit être à la racine ( avec le `dockerfile`)
 ## Build de l'image

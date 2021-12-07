@@ -6,3 +6,4 @@
 - [hadrienpelissier.fr](https://cours.hadrienpelissier.fr/)
 - [ARU2L](https://www.youtube.com/channel/UCNgXQ0-c5VXxSYit5srUKmA)
 - [Zwindleer.fr](https://blog.zwindler.fr/)
+- [command-not-found.com](https://command-not-found.com)
