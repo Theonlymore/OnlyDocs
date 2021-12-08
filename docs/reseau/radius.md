@@ -9,4 +9,4 @@ L'objectif visé par la mise en place de la technologie 802.1x / RADIUS va au-de
 De façon imagée, l'utilisateur qui veut entrer sur le réseau va s'adresser à un "gardien" (un équipement réseau) qui lui demande de décliner son identité. Puis va choisir le Vlan/Connexion en fonction 
 
 
-![radius](images/radiusShema.svg)
+![radius](images/radiusSchema.svg)
