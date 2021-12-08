@@ -71,6 +71,16 @@ Version complète
 - `apt install python3-pip`
 - `pip3 install ansible --upgrade`
 
+### Install via paquet debian 
+
+```
+Source apt :
+deb http://ppa.launchpad.net/ansible/ansible/ubuntu focal main
+
+apt update
+apt install ansible
+```
+
 
 ## Control node :
 
