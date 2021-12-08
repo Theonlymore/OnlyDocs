@@ -1,6 +1,6 @@
 # Base linux :
 
-Commande de systeme :
+Commande système :
 
 | Commandes        | Description                                                                                   |
 | ---------------- | --------------------------------------------------------------------------------------------- |
@@ -49,13 +49,13 @@ Les droits peuvent être définit en octal : 4 pour read, 2 pour write, 1 pour e
 | `apt-get clean`                    | Vide le cache disque des paquets.                         |
 
 
-## Dossier de lancement de script au démarage
+## Dossier de lancement de script au démarrage
 
 `/etc/init.d/`
 
 ## Manipulation de fichier
 
-Connaitre la [taille des dossiers](https://www.it-connect.fr/connaitre-la-taille-dun-fichier-ou-dun-dossier-avec-du%EF%BB%BF/) et fichiers
+Connaître la [taille des dossiers](https://www.it-connect.fr/connaitre-la-taille-dun-fichier-ou-dun-dossier-avec-du%EF%BB%BF/) et fichiers
 
 - chaque la taille dossier du dossier
 
@@ -63,7 +63,7 @@ Connaitre la [taille des dossiers](https://www.it-connect.fr/connaitre-la-taille
 $ du -h
 ```
 
-Connaitre juste la taille d'un dossier
+Connaître juste la taille d'un dossier
 
 ```bash
 $ du -sh /etc
@@ -90,7 +90,7 @@ Pour résumer :
 - tar
   - permet de créer une archive ( combiner plusieurs fichiers en un seul)
 - gzip
-  - permet la compresion pour réduire la taille d'un fichier.
+  - permet la compression pour réduire la taille d'un fichier.
   
 Commande tar :
 
@@ -103,7 +103,7 @@ Options :
 
 - `-c` : crée une archive.
 - `-z` : compresse l'archive avec gzip
-- `-v` : mode verbeux ( affiche la progession.)
+- `-v` : mode verbeux ( affiche la progression.)
 - `-f` : permet de spécifier le nom de l'archive.
 
 Plusieurs fichier à la fois :
@@ -113,7 +113,7 @@ tar -czvf archive.tar.gz ~/Images/Wallpapers/ ~/Téléchargements/photo.jpg ~/Do
 ```
 ### Décompresser une archive
 
-Dans le répertoire courrant : 
+Dans le répertoire courant : 
 
 ```bash
 tar -xzvf archive.tar.gz

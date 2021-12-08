@@ -4,7 +4,7 @@ Langage de script destiner aux systèmes Windows et plus particulèrement aux se
 
 ## Organisation 
 
-Les commandes de powershell sont appelées des *cmdlets*. Elles sont pour la plupart concstituée de la manière suivante : `verbe`, `tiret`, `nom` : ( `verbe-nom` ).
+Les commandes de powershell sont appelées des *cmdlets*. Elles sont pour la plupart constituée de la manière suivante : `verbe`, `tiret`, `nom` : ( `verbe-nom` ).
 
 Aides sur un cmdlet : `Get-Help cmdlet -Detailed | more`
 
@@ -22,7 +22,7 @@ Ecrire dans la console avec une concaténation
 
 ## Variables
 
-Commancent par `$`.
+Commencence par `$`.
 Il y a des variables systèmes, des variables à définir vous même.
 
 Exemple de commande lier au variables.

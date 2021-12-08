@@ -15,11 +15,11 @@ CNAME (Canonical Name)
   
 MX (Mail Exchange) 
      
-  - Définit les seveurs de courrier pour le domaine. (possible d'en mettre plusieurs avec priorité)
+  - Définit les serveurs de courrier pour le domaine. (possible d'en mettre plusieurs avec priorité)
 
 PTR (Pointer server)
 
-  - Associe une adressse IP à un enregistrement de nomo de domaine. ( ip to nom de domaine)
+  - Associe une adressse IP à un enregistrement de noms de domaine. ( ip to nom de domaine)
 
 NS (Name Serveur)
 - 
@@ -31,4 +31,4 @@ NS (Name Serveur)
   
   SRV
   
-  - Définir un servuer spécifique pour une application , notamment pour la répartition de charge.
+  - Définir un serveur spécifique pour une application , notamment pour la répartition de charge.

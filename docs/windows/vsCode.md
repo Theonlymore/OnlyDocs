@@ -8,7 +8,7 @@ Voir tout les raccourcis : `Ctrl+K+S`
 
 | Raccourci      | Tâche                     |
 | -------------- | ------------------------- |
-| `Ctrl+Shift+N` | Ouvrire instance VsCode   |
+| `Ctrl+Shift+N` | Ouvrir instance VsCode   |
 | `Ctrl+Shift+W` | Fermer instance VsCode    |
 | `Ctrl+P`       | Aller à un fichiers       |
 | `Ctrl+G`       | Go to line...             |

@@ -1,12 +1,12 @@
 # Borg
 
-Borg est un outil de sauvegard incrémentielle simple mais très puissant écrit en Python.
+Borg est un outil de sauvegarde incrémentielle simple mais très puissant écrit en Python.
 
-Borg fait des sauvegard découpé en une multitude de tronçons et Borg ne sauvegard que les tronçons qui ont été modifiés depuis la dernière sauvegrade.
+Borg fait des sauvegardes découpé en une multitude de tronçons et Borg ne sauvegarde que les tronçons qui ont été modifiés depuis la dernière sauvegarde.
 
 ## Particularités
 
-- **Optimisation de l'espace de disque** grace à la sauvegard incrémentielle.
+- **Optimisation de l'espace de disque** grace à la sauvegarde incrémentielle.
 - **Vitesse** 
 - **Chiffrement des données**, Toutes les données peuvent êtres chiffrer avec l'AES 256-bit
 - **Compression** Toutes les données peuvent être compressées

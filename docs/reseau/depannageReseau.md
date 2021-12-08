@@ -66,10 +66,6 @@ Problèmes possible :
 - ...
 
 
-
-
-
-
 ### Sources
 
 - [Pratique en réseau : slideplayer](https://slideplayer.fr/slide/9114802/)

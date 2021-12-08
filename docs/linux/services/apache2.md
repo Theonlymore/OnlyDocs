@@ -71,7 +71,7 @@ Nous devons maintenant crée le dossier `certs` dans `/etc/apache2/`
 
 - `mkdir /etc/apache2/certs`
 
-Mettre le certificat et la clée privé dans le dossier "certs"
+Mettre le certificat et la clé privé dans le dossier "certs"
 
 - `cp /etc/letsencrypt/live/www.rocheralexandre.com-001/cert.pem /etc/apache2/certs/alex.crt`
 - `cp /etc/letsencrypt/live/www.rocheralexandre.com-001/privkey.pem /etc/apache2/certs/alex.key`

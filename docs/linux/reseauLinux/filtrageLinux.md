@@ -109,11 +109,11 @@ Cela se base sur trois états :
 
 - `NEW`
     - Signifie que le paquet a démarré une nouvelle connexion ou est associé d'une autre manière à une connexion qui n'a pas vu de paquets dans les deux sens
-    - correspond à la demande de communicatoin TCP initiale, au premier datagramme UDP ou au premier messge ICMP.
+    - correspond à la demande de communication TCP initiale, au premier datagramme UDP ou au premier messages ICMP.
   
 - `ESTABLISHED`
     - Signifie que le paquet est associé à une connexion qui a vu des paquets dans les deux sens.
-    - Si une entrée de la table de suivi des communications correspond, alors le paquet appartient à une communicatoin de type ESTABLISHED. Dans le cas du protocole TCP, on se réfère au `ACK` après qu'une communication ait été initiée. Dans le cas de datagrammes UDP, c'est l'échange entre deux hôtes et les correspondances de numéros de ports qui sont prises en compte. Enfin, les messages ICMP echo-replyu doivent correspondre au requêtes echo-request.
+    - Si une entrée de la table de suivi des communications correspond, alors le paquet appartient à une communication de type ESTABLISHED. Dans le cas du protocole TCP, on se réfère au `ACK` après qu'une communication ait été initiée. Dans le cas de datagrammes UDP, c'est l'échange entre deux hôtes et les correspondances de numéros de ports qui sont prises en compte. Enfin, les messages ICMP echo-reply doivent correspondre au requêtes echo-request.
 - `RELATED`
     - signifie que le paquet commence une nouvelle connexion, mais qu'il est associé à une connexion existante, telle qu'un transfert de données FTP ou une erreur ICMP.
     - Se réfère aux messages d'erreurs ICMP correspondant à une "communication" TCP ou UDP déjà présente dans la tables de suivi.

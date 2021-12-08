@@ -14,7 +14,7 @@
 
 ### Règles :
 
-A : Toutes lses communications entre le poste 195.115.100.2 et toutes les autres postes sont autorisées.
+A : Toutes les communications entre le poste 195.115.100.2 et toutes les autres postes sont autorisées.
 
 ### Table de filtrage
 
