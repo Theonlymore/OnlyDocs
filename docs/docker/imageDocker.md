@@ -24,7 +24,7 @@ Inscructions Dockerfile les plus utiliser :
 -  `FROM` : Définit l'image de base qui sera utilisée par les instructions suivantes.
 - `LABEL` : Métadonnées de l'image ( auteur par exemple)
 - `ARG` : Variable temporaires utilisables dans le Dockerfile.
-- `ENV` : Variable d'environnements utilisables dans le Dockerfile et le conteneur.
+- `ENV` : Variable d'environnements utilisables dans le Dockerfile et le conteneur. **Les variables du dockerfile sont uniquement mise pendant le build**
 - `RUN` : Exécute des commandes Linux ou Windows lors de la création de l'image.
 - `COPY` : Permet de copier des fichiers depuis notre machine locale vers le conteneur Docker.
 - `ADD` : Même chose que COPY mais prend en charge des liens ou des archives (si le format est reconnu, alors il sera décompressé à la volée).
