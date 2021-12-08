@@ -93,6 +93,7 @@ nav:
       - Filtrage: reseau/filtrage.md
       - Vlan: reseau/vlan.md
       - Mail: reseau/mail.md
+      - VPN: reseau/vpn.md
   - Windows :
     - Windows serveur :
       - Présentation: windows/windowsServeur/windowsServeur.md
