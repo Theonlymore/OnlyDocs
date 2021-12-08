@@ -110,12 +110,35 @@ docker build -t monDockerBuild .
 
 Possible de les mettres en privé ou en publique.
 
-Pour cela il faut vous connecter à votre compte :
+
+1. Pour cela il faut vous connecter à votre compte :
 
 ```bash
 docker login
 ```
 
+2. Avoir un `dockerfile`
+3. Build l'image
+   
+```bash
+docker build -t onlymore/exemple
+```
+4. Push l'image
+
+```bash
+docker push onlymore/exemple
+```
+
+
+
+### Erreurs 
+
+```bash
+$docker login
+error getting credentials - err: exit status 1, out:
+
+$apt install gnupg2 pass
+```
 ### Sources
 
 - [Devopssec](https://devopssec.fr/article/creer-ses-propres-images-docker-dockerfile)
