@@ -2,6 +2,7 @@
 
 Un sort de script Ansible :
 
+
 ## Structure d'un playbook
 
 ```yaml
@@ -97,3 +98,4 @@ A runtime au moment d’appeler la CLI ansible avec `--extra-vars "version=1.23.
 ### Sources :
 
 - [cours.hadrienpelissier.fr](https://cours.hadrienpelissier.fr/01-ansible/cours2/#remarques-de-syntaxe)
+- [Devopssec](https://devopssec.fr/article/executez-premieres-commandes-ansible)

@@ -15,10 +15,10 @@ Il fait donc également partie de façon centrale du mouvement DevOps car il s�
 
 ![architectureAnsible](images/ansible_overview.jpg)
 
-Simplicité :
+Simplicité (sur la machine destinataire):
 
 - *ssh* : Connexion classique
-- *python* : multiplateforme donc adapté à tous
+- *python* : multiplateforme donc adapté à tous 
 
 ## L'inventaire
 
