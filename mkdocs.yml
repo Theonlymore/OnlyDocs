@@ -11,6 +11,8 @@ theme:
   language: en
   name: material
   custom_dir: overrides
+  features:
+    - content.code.annotate 
   palette:
     - scheme: default
       primary: green
