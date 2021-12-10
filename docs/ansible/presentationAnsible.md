@@ -2,126 +2,62 @@
 
 ## Introduction
 
-Ansible est un gestionnaire de configuration et un outil de déploiement et d’orchestration très populaire et central dans le monde de l'infrastructure as code (IaC).
+Ansible est un **gestionnaire de configuration** et un outil de déploiement et d’orchestration très populaire et central dans le monde de **l'infrastructure as code** (IaC).
 
-Il fait donc également partie de façon centrale du mouvement DevOps car il s’apparente à un véritable couteau suisse de l’automatisation des infrastructures.
+Il fait donc également partie de façon centrale du mouvement **DevOps** car il s’apparente à un véritable couteau suisse de **l’automatisation des infrastructures**.
 
+### Ansible permet d'automatiser trois types de tâches :
 
-## Histoire
+- **Provisioning** : configurer les différents serveurs dont vous avez besoin dans votre infrastructure.
+- **Configuration** : modifier la configuration d'une application, d'un système d'exploitation ou d'un périphérique, démarrer et arrêter les services, installer ou mettre à jour des applications, mettre en œuvre une politique de sécurité, ou effectuer une grande variété d'autres tâches de configuration.
+- **Déploiement d'applications** : adopter une démarche DevOps en automatisant le déploiement d'applications développées en interne sur vos environnements de production.
 
- Créé en 2012 (2015 repris par Redhat) par Michael DeHaan (Cobler, outil de provisionnement)
+## Objectifs de conception de Ansible
 
-## Architecture
+- **Le minimum par nature**. Les systèmes de gestion ne devraient pas imposer des dépendances supplémentaires sur l’environnement.
+- **La cohérence**. cf. notion de test unitaire (procédure permettant de vérifier le bon fonctionnement d’une partie précise d’un logiciel ou d’une portion d’un programme).
+- **La sécurité**. Ansible ne déploie pas des agents sur les noeuds. Un protocole de transport comme OpenSSH ou HTTPS est seulement nécessaire pour commencer une gestion.
+- **La fiabilité**. Lorsqu’il est écrit soigneusement, un livre de jeu Ansible peut être idempotent afin d’éviter des effets secondaires inattendus sur les systèmes gérés.
+- **Une courbe d’apprentissage faible**. Les livres de jeux Ansible utilisent un langage simple et descriptif basé sur YAML et les modèles Jinja2.
+
+## Principe de fonctionnement
+
+La grande force d’Ansible est qu’il facile à mettre en oeuvre car il est agent-less et ne nécessite qu’une connexion **SSH** et la présence de **python** pour lancer les taches à réaliser.
+
+Lorsqu’il y a plusieurs machines à gérer, Ansible exécute les opérations en parallèle. Cela permet de gagner un temps considérable. Cependant, les tâches sont effectuées dans un **ordre définit** par l’utilisateur lors du choix de la stratégie: Par défaut Ansible **attendra d’avoir fini une tâche** (sur **tous les hôtes**) pour passer à la suivante.
+
+Ansible et plus particulièrement ses modules sont **idempotents**. Cela signifie qu’une opération donnera le même résultat qu’on l’exécute une ou plusieurs fois. Par exemple, on va vérifier si un utilisateur existe : si c’est le cas, on ne fera rien mais si l’utilisateur n’existe pas alors on viendra le créer.
+
+## [Architecture et principe d'Ansible](https://devopssec.fr/article/introduction-cours-complet-ansible#begin-article-section)
 
 ![architectureAnsible](images/ansible_overview.jpg)
 
-Simplicité (sur la machine destinataire):
+## Composants clés
 
-- *ssh* : Connexion classique
-- *python* : multiplateforme donc adapté à tous 
+- **Node Mannager**: ou *control node*, est le poste depuis lequel tout est executé via des connexions, essentiellement en SSH, aux nodes de l’inventaire. à sa connexion SSH.
+- **Playbook**: Un **playbook Ansible** est une séquence de tâches ou de rôles décrits dans un fichier ou format yaml.
+- **Inventory**: La liste des systèmes cibles gérés par Ansible est appelé un **inventaire**. On distingue deux type d’inventaire : l’inventaire statique constitué d’un fichier décrivant la hiérarchie des serveurs.
+- **Module**:Les tâches et les rôles font appel à des modules mis à disposition avec Ansible. Je vous invite à consulter la [liste sur le site d’Ansible](https://docs.ansible.com/ansible/latest/collections/index_module.html).
+- **Template**: Comme son nom l’indique, un template est un modèle permettant de générer un fichier cible. Ansible utilise Jinja2, un gestionnaire de modèles écrit pour Python. Les « Templates » Jinja2 permettent de gérer des boucles, des tests logiques, des listes ou des variable.
+- **Rôle**: Afin d’éviter d’écrire encore et encore les mêmes playbooks, les roles Ansible apportent la possibilité de **regrouper des fonctionnalités** spécifiques dans ce qu’on appelle des **rôles**. Il seront ensuite intégrés aux playbooks Ansible.
 
-## L'inventaire
-
-La liste de machines sur lesquelles vons s'exécuter les modules Ansible.
-
-- Classées par groupe et sous groupes
-- La méthode de connexion pour chaque machine.
-- Variables à définie pour chaque groupe/machine pour contrôler dynamiquement la configuration ansible.
-
-```yaml
-[all:vars]
-ansible_ssh_user=elie
-ansible_python_interpreter=/usr/bin/python3
-
-[awx_nodes]
-awxnode1 node_state=started ansible_host=10.164.210.101 container_image=centos_ansible_20190901
-
-[dbservers]
-pgnode1 node_state=started ansible_host=10.164.210.111 container_image=centos_ansible_20190901
-pgnode2 node_state=started ansible_host=10.164.210.112 container_image=centos_ansible_20190901
-
-[appservers]
-appnode1 node_state=started ansible_host=10.164.210.121 container_image=centos_ansible_20190901
-appnode2 node_state=started ansible_host=10.164.210.122 container_image=centos_ansible_20190901
-```
 
 ## Configuration
 
 Configuration dans le dossier : `/etc/ansible`.
 
-On peu aussi configurer ansible par projet avec un fichier `ansible.cfg`.
- 
- ## Commande Ansible
+On peut aussi configurer ansible par projet avec un fichier `ansible.cfg`.
 
-Minimale
-
- - `ansible <groupe_machine> -m <module> -a <arguments_module>`
-
-Tests hôtes joinables
-
-- `ansible all -m ping`
-
-Version complète
-
-- `ansible <groupe_machine> --inventory <fichier_inventaire> --become -m <module> -a <arguments_module>`
-
-## Installation en python (pip3)
-
-
-- `apt install python3-pip`
-- `pip3 install ansible --upgrade`
-
-### Install via paquet debian 
-
-```
-Source apt :
-deb http://ppa.launchpad.net/ansible/ansible/ubuntu focal main
-
-apt update
-apt install ansible
-```
-
-
-## Control node :
-
--  noeud disposant de ansible et permettant de déployer
--  accès ssh aux autres machines
--  password ou clef ssh
--  sécurité importante
-
-Managed modes :
-
-- serveur cibles
-- permet la connexion ssh
-- élevation de privilèges via le user
-  
-Inventory :
-
-- Inventaires des machines (ip, dns)
-- format ini (plat) ou format yaml
-- les variables (host vars et group vars)
-- statique (fichiers) ou dynamique (api via script)
-- utilisaation de patterns possible (srv-p)
-
-
-## [Playbooks](playbooks.md)
- 
-Document avec une série de tâches nommées et modulaires.
-
-
-### Quelque informatique
-
-- Ansible = Infrastructure as code + déploiement de configurations + installations
-- à base de python
-- Documentation : https://docs.ansible.com/
-- orchestrateur basé sur du push > pas d’agent = serveur distant pousse les informations à la différence des outils à base d’agents > pull (puppet etc…)
 
 
 
 ### Source :
-
-- [xavki](https://www.youtube.com/watch?v=tirjpYSMkkM&list=PLn6POgpklwWoCpLKOSw3mXCqbRocnhrh-&index=4)
+- [goffinet.org](https://linux.goffinet.org/ansible/presentation-produit-ansible/)
+- [blog.stephane-robert](https://blog.stephane-robert.info/post/introduction-ansible/)
+- [Xavki](https://www.youtube.com/watch?v=tirjpYSMkkM&list=PLn6POgpklwWoCpLKOSw3mXCqbRocnhrh-&index=4)
 - Cisco Devnet
 - [Cours de Hardien Pelissier](https://cours.hadrienpelissier.fr/01-ansible/cours1/)
 - [redhat](https://www.redhat.com/fr/topics/automation/learning-ansible-tutorial)
 - [wikipedia](https://fr.wikipedia.org/wiki/Provisionnement)
+- [devopssec](https://devopssec.fr/article/introduction-cours-complet-ansible#begin-article-section)
+- [openclassroom](https://openclassrooms.com/fr/courses/2035796-utilisez-ansible-pour-automatiser-vos-taches-de-configuration/6371335-installez-ansible-dans-votre-environnement)

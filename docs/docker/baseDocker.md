@@ -19,8 +19,13 @@ Quelque options :
 Rentrer dans un conteneur : 
 - `docker exec -ti nomConteneur bash`
 
+## Installation 
+
+[DocsOfficielDocker-installDebian](https://docs.docker.com/engine/install/debian/)
+
 ### Source
 
 - [Tech2tech](https://www.tech2tech.fr/debuter-avec-docker-les-bases/)
+- [Devopssec](https://devopssec.fr/article/decouverte-et-installation-de-docker)
 
 

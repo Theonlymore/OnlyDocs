@@ -76,6 +76,7 @@ nav:
       - Docker compose: docker/dockerCompose.md
   - Ansible: 
       - Présentation Ansible: ansible/presentationAnsible.md
+      - Base d'Ansible: ansible/baseAnsible.md
       - Playbook: ansible/playbooks.md
       - Organisation d'un projet Ansible: ansible/OrganisationProjetAnsible.md
   - Réseau:     
@@ -87,7 +88,7 @@ nav:
       - Dépannage réseau: reseau/depannageReseau.md
       - DNS : reseau/dns.md  
       - Adresse ip: reseau/adresse_ip.md
-      - Méthodologie DevOps: reseau/methodologieDevOps.md
+      - DevOps: reseau/devOps.md
       - Reverse proxy: reseau/reverseProxy.md
       - Supervision: reseau/superVision.md
       - Filtrage: reseau/filtrage.md
