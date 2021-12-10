@@ -4,7 +4,7 @@ Un playbook est un fichier au format **YAML**. Ce dernier va donner une **liste*
 
 ## Structure d'un playbook
 
-```yaml
+```yaml title="uuuu"
 --- 
 
 - name: premier play # une liste de play (chaque play commence par un tiret)
@@ -83,7 +83,7 @@ Ce dictionnaire contient en particulier:
 - des variables de configuration ansible (ansible_user par exemple)
 - des facts c’est à dire des variables dynamiques caractérisant les systèmes cible (par exemple ansible_os_family) et récupéré au lancement d’un playbook.
 
-### Définition des variables :
+### ++Définition++ des variables :
 
 - La section `vars:` du playbook.
 Un fichier de variables appelé avec `var_files:`

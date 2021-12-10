@@ -18,9 +18,7 @@
 
 L'inventaire statique sous **Ansible** est un fichier au format INI.
 
-inventaire.ini :
-
-```ini
+```ini title="inventaire.ini"
 [web]
 server1
 [db]
