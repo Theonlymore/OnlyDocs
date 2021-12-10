@@ -1,7 +1,6 @@
 # Playbooks
 
-Un sort de script Ansible :
-
+Un playbook est un fichier au format **YAML**. Ce dernier va donner une **liste** d'instructions. Ces instructions sont passées à Ansible dans **l'ordre de leur déclaration**. L'avantage par rapport au mode ad hoc(ligne de commande) est que vous aurez ainsi tout décrit dans un **fichier**, y compris l'**enchaînement des opérations**.
 
 ## Structure d'un playbook
 

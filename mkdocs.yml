@@ -75,10 +75,9 @@ nav:
       - Image docker: docker/imageDocker.md
       - Docker compose: docker/dockerCompose.md
   - Ansible: 
-      - Présentation Ansible: ansible/presentationAnsible.md
-      - Base d'Ansible: ansible/baseAnsible.md
-      - Playbook: ansible/playbooks.md
-      - Organisation d'un projet Ansible: ansible/OrganisationProjetAnsible.md
+      - Présentation Ansible: ansible/ansiblePresentation.md
+      - Base d'Ansible: ansible/ansibleBase.md
+      - Playbook: ansible/ansiblePlaybooks.md
   - Réseau:     
       - Cisco:
         - Commande cisco: reseau/cisco/commandeCisco.md
