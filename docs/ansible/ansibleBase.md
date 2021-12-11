@@ -31,7 +31,7 @@ Plusieurs connexion ssh possible :
 
 Pour ma pars j'utilise use+password, je change donc le fichier `inventaire.ini` en :
 
-```ini
+```ini title="inventaire.ini"
 [web]
 server1 ansible_ssh_user=root ansible_ssh_pass=password
 [db]

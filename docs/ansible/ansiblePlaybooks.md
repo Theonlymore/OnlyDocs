@@ -4,7 +4,7 @@ Un playbook est un fichier au format **YAML**. Ce dernier va donner une **liste*
 
 ## Structure d'un playbook
 
-```yaml title="uuuu"
+```yaml title="playbook.yml"
 --- 
 
 - name: premier play # une liste de play (chaque play commence par un tiret)
