@@ -2,50 +2,47 @@
 
 Un playbook est un fichier au format **YAML**. Ce dernier va donner une **liste** d'instructions. Ces instructions sont passées à Ansible dans **l'ordre de leur déclaration**. L'avantage par rapport au mode ad hoc(ligne de commande) est que vous aurez ainsi tout décrit dans un **fichier**, y compris l'**enchaînement des opérations**.
 
-## Structure d'un playbook
+## Exemple d'un playbook d'un serveur web Apache
 
-```yaml title="playbook.yml"
---- 
+```yaml title="playbook.yml"---
+# WEB SERVER
 
-- name: premier play # une liste de play (chaque play commence par un tiret)
-  hosts: serveur_web # un premier play
-  become: yes
-  gather_facts: false # récupérer le dictionnaires d'informations (facts) relatives aux machines
+- hosts: web # Nom 
+  become: true # Activer l'élevation de privilège 
 
-  vars:
-    logfile_name: "auth.log"
-
-  var_files:
-    - mesvariables.yml
-
-  pre_tasks:
-    - name: dynamic variable
-      set_fact:
-        mavariable: "{{ inventory_hostname + 'prod' }}" #guillemets obligatoires
-
-  rôles:
-    - flaskapp
-    
   tasks:
-    - name: installer le serveur nginx
-      apt: name=nginx state=present # syntaxe concise proche des commandes ad hoc mais moins lisible
+  - name: install apache and php last version
+    apt:
+      name:
+        - apache2
+        - php
+        - php-mysql
+      state: present
+      update_cache: yes 
 
-    - name: créer un fichier de log
-      file: # syntaxe yaml extensive : conseillée
-        path: /var/log/{{ logfile_name }} #guillemets facultatifs
-        mode: 755
+  - name: Donner les droits sur le dossier http
+    file:
+      path: /var/www/html
+      state: directory
+      mode: '0755'
 
-    - import_tasks: mestaches.yml
+  - name: remove default index.html
+    file:
+      path: /var/www/html/index.html
+      state: absent
 
-  handlers:
-    - systemd:
-        name: nginx
-        state: "reloaded"
+  - name: upload web app source
+    copy:
+      src: app/
+      dest: /var/www/html/
 
-- name: un autre play
-  hosts: dbservers
-  tasks:
-    ... 
+  - name: ensure apache service is start
+    service:
+      name: apache2
+      state: started
+      enabled: yes
+
+
 ```
 
 - Playbook commence par un tiret car il s'agit d'une liste de play.
@@ -83,7 +80,7 @@ Ce dictionnaire contient en particulier:
 - des variables de configuration ansible (ansible_user par exemple)
 - des facts c’est à dire des variables dynamiques caractérisant les systèmes cible (par exemple ansible_os_family) et récupéré au lancement d’un playbook.
 
-### ++Définition++ des variables :
+### Définition des variables :
 
 - La section `vars:` du playbook.
 Un fichier de variables appelé avec `var_files:`
@@ -93,6 +90,10 @@ Un fichier de variables appelé avec `var_files:`
 - Dans une tâche avec le module `set_facts`.
 A runtime au moment d’appeler la CLI ansible avec `--extra-vars "version=1.23.45 other_variable=foo"`
 
+
+## Modules : 
+
+https://docs.ansible.com/ansible/2.9/modules/file_module.html#file-module
 
 ### Sources :
 
