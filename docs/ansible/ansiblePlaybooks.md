@@ -69,6 +69,30 @@ Les **rôles** ne sont pas des tâches à proprement parler mais un **ensemble d
 
 Pour valider la syntaxe il est possible d’installer et utiliser `ansible-linter` sur les fichiers YAML.
 
+## Utilisation 
+
+- `ansible-playbook -i inventory playbook.yml`
+
+Commande `ansible-playbook`avec options :
+
+- -i : inventory
+- -l : limit > spécifier un/des groupes ou serveurs ou patterns
+- -u : user
+- -b : become > sudo
+- -k : password de ssh (à éviter)
+- -K : password sudo
+- -C : check > dry run
+- -D diff > afficher les différences avant/après les actions du playbooks
+- --ask-vault : prompt pour le password vault
+- --vault-password-file : passer le vault password par un fichier
+- --syntax-check : vérifier la syntax
+- -e : surcharger n'importe quelle variable
+- -f : nombre de processus parallèle
+- --flush-cache : éviter l'utilisation du cache
+- --step : une tâche à la fois ( confirmation)
+- --start-at-task : commencer à une tâche spécifique
+- --list-tasks : liste des tâches qui sont être lancer
+
 ## Modules : 
 
 https://docs.ansible.com/ansible/2.9/modules/file_module.html#file-module
@@ -77,3 +101,4 @@ https://docs.ansible.com/ansible/2.9/modules/file_module.html#file-module
 
 - [cours.hadrienpelissier.fr](https://cours.hadrienpelissier.fr/01-ansible/cours2/#remarques-de-syntaxe)
 - [Devopssec](https://devopssec.fr/article/executez-premieres-commandes-ansible)
+- [xavki](https://gitlab.com/xavki/presentation-ansible-fr/-/blob/master/11-premier-playbook/slides.md)

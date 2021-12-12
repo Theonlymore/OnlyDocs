@@ -106,7 +106,7 @@ nav:
       - Présentation: windows/windowsServeur/windowsServeur.md
       - Active directory: windows/windowsServeur/ad.md
       - GPO: windows/windowsServeur/gpo.md
-    - VsCode: windows/vsCode.md
+    - vsCode: windows/vsCode.md
     - Terminal: windows/newTerminal.md
   - Aws :
     - S3 Glacier : aws/s3Glacier.md
