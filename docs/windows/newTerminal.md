@@ -37,20 +37,14 @@ Aller dans la configuration
             },
             {
                 "colorScheme": "One Half Dark",
-                "commandline": "ssh root@vps.fr -i C:/Users/Onlymore/repo/ssh/keyalex", # (1)
+                "commandline": "ssh root@vps.fr -i C:/Users/Onlymore/repo/ssh/keyalex",
                 "hidden": false,
                 "name": "VPS SSH"
             }
-        ]
+        ] 
 ```
 
-1.  :Changer le user, le serveur et l'emplacement de la clé ssh en fonction de vous.
-
- ```yaml 
- lljkjpjml # (1)
- ```
-
- 1. :jkfkdsfds
+- `commandline` : Changer le user, le serveur et l'emplacement de la clé ssh en fonction de vous.
 
 
 
