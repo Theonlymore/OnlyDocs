@@ -16,15 +16,15 @@
 
 ## Crée une clé ssh
 
-Client : 
+**Client :** 
 
 1. `ssh-keygen -t rsa -b 4096`
 2. La clé privé et publique est générer dans le dossier dans lequel vous êtes.
 
-Serveur :
+**Serveur :**
 
-1. Mettre la clé publique générer par le client dans le fichier : `/root/.ssh//authorized_keys`
-   1. 
+Mettre la clé publique générer par le client dans le fichier : `/root/.ssh//authorized_keys`
+
  
 
 
