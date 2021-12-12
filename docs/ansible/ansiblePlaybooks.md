@@ -10,7 +10,8 @@ Un playbook est un fichier au format **YAML**. Ce dernier va donner une **liste*
 - Les `handlers` sont des tâches conditionnelles qui s’exécutent à la fin (post traitements conditionnels comme le redémarrage d’un service
 ## Exemple d'un playbook d'un serveur web Apache
 
-```yaml title="playbook.yml"---
+```yaml title="playbook.yml"
+---
 # WEB SERVER
 
 - hosts: web # Nom 
