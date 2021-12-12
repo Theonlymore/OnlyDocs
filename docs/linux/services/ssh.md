@@ -2,7 +2,6 @@
 
 ## Installation : 
 
-```
 === "Serveur"
 
     ``` bash
@@ -14,7 +13,6 @@
     ``` bash
     $apt install openssh-server
     ```
-``` 
 
 ## Crée une clé ssh
 
