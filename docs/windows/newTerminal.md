@@ -25,7 +25,7 @@ Aller dans la configuration
 
 
 
-```json title="settings.json" hl_lines="10-16" .annotate
+```json title="settings.json" hl_lines="10-16"
    "defaults": {},
         "list": 
         [
