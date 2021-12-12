@@ -2,6 +2,12 @@
 
 Un playbook est un fichier au format **YAML**. Ce dernier va donner une **liste** d'instructions. Ces instructions sont passées à Ansible dans **l'ordre de leur déclaration**. L'avantage par rapport au mode ad hoc(ligne de commande) est que vous aurez ainsi tout décrit dans un **fichier**, y compris l'**enchaînement des opérations**.
 
+
+
+- Un play est un dictionnaire **yaml**
+- La section `hosts` est obligatoire. Toutes les autres sont *falcutatives* !
+- La section `tasks` peut être remplacée ou complétée par une section roles et des sections `pre_tasks` `post_tasks`
+- Les `handlers` sont des tâches conditionnelles qui s’exécutent à la fin (post traitements conditionnels comme le redémarrage d’un service
 ## Exemple d'un playbook d'un serveur web Apache
 
 ```yaml title="playbook.yml"---
@@ -26,9 +32,9 @@ Un playbook est un fichier au format **YAML**. Ce dernier va donner une **liste*
       state: directory
       mode: '0755'
 
-  - name: remove default index.html
+  - name: remove default /var/www/html
     file:
-      path: /var/www/html/index.html
+      path: /var/www/html/*
       state: absent
 
   - name: upload web app source
@@ -41,15 +47,7 @@ Un playbook est un fichier au format **YAML**. Ce dernier va donner une **liste*
       name: apache2
       state: started
       enabled: yes
-
-
 ```
-
-- Playbook commence par un tiret car il s'agit d'une liste de play.
-- Un play est un dictionnaire yaml
-- La section `hosts` est obligatoire. Toutes les autres sont *falcutatives* !
-- La section `tasks` peut être remplacée ou complétée par une section roles et des sections `pre_tasks` `post_tasks`
-- Les `handlers` sont des tâches conditionnelles qui s’exécutent à la fin (post traitements conditionnels comme le redémarrage d’un service
 
 ## Ordre d'exécution
 
@@ -59,37 +57,16 @@ Un playbook est un fichier au format **YAML**. Ce dernier va donner une **liste*
 4. post_tasks
 5. handlers
 
-Les rôles ne sont pas des tâches à proprement parler mais un ensemble de tâches et ressources regroupées dans un module, un peu comme une librairie dans le développement. 
+#### Rôles
+
+Les **rôles** ne sont pas des tâches à proprement parler mais un **ensemble de tâches** et ressources regroupées dans un module, un peu comme une librairie dans le développement. 
 
 ## Bonnes pratique
 
-- Toujours mettre un name: qui décrit lors de l’exécution la tâche en cours : un des principes de l’Infrastructure-as-Code est l’intelligibilité des opérations.
+- Toujours mettre un **name**: qui décrit lors de l’exécution la tâche en cours : un des principes de l’Infrastructure-as-Code est l’intelligibilité des opérations.
 - Utiliser les arguments au format YAML (sur plusieurs lignes) pour la lisibilité, sauf s’il y a peu d’arguments
 
 Pour valider la syntaxe il est possible d’installer et utiliser `ansible-linter` sur les fichiers YAML.
-
-## Variables ANSIBLE
-
-Ansible utilise en arrière plan un dictionnaire contenant de nombreuses variables.
-
-Pour s’en rendre compte on peut lancer :
-`ansible <hote_ou_groupe> -m debug -a "msg={{ hostvars }}"` 
-
-Ce dictionnaire contient en particulier:
-
-- des variables de configuration ansible (ansible_user par exemple)
-- des facts c’est à dire des variables dynamiques caractérisant les systèmes cible (par exemple ansible_os_family) et récupéré au lancement d’un playbook.
-
-### Définition des variables :
-
-- La section `vars:` du playbook.
-Un fichier de variables appelé avec `var_files:`
-- L’inventaire : variables pour chaque machine ou pour le groupe.
-- Dans des dossier extension de l’inventaire `group_vars`, `host_bars`
-- Dans le dossier `defaults` des rôles (cf partie sur les rôles)
-- Dans une tâche avec le module `set_facts`.
-A runtime au moment d’appeler la CLI ansible avec `--extra-vars "version=1.23.45 other_variable=foo"`
-
 
 ## Modules : 
 
