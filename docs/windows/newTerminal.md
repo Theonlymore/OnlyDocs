@@ -37,7 +37,7 @@ Aller dans la configuration
             },
             {
                 "colorScheme": "One Half Dark",
-                "commandline": "ssh root@vps.fr -i C:/Users/Onlymore/repo/ssh/keyalex", # (1)
+                "commandline": "ssh root@vps.fr -i C:/Users/Onlymore/repo/ssh/keyalex", # (1)!
                 "hidden": false,
                 "name": "VPS SSH"
             }
