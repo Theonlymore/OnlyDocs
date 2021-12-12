@@ -25,7 +25,7 @@ Aller dans la configuration
 
 
 
-```json title="settings.json" hl_lines="10-16"
+```json title="settings.json" hl_lines="10-15"
    "defaults": {},
         "list": 
         [
