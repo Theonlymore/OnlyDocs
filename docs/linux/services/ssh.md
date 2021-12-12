@@ -1,17 +1,17 @@
-# ssh
+# Ssh
 
 ## Installation : 
 
 === "Serveur"
 
     ``` bash
-    $apt install openssh-client
+    apt install openssh-client
     ```
 
 === "Client"
 
     ``` bash
-    $apt install openssh-server
+    apt install openssh-server
     ```
 
 ## Crée une clé ssh
@@ -25,6 +25,7 @@
 
 Mettre la clé publique générer par le client dans le fichier : `/root/.ssh//authorized_keys`
 
+ 
  
 
 

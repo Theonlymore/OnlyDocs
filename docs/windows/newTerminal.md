@@ -17,5 +17,34 @@ Via le [windows store](https://www.microsoft.com/fr-fr/p/windows-terminal/9n0dx2
 | `alt+droite, gauche, haut ou bas`      | Déplacer le focus             |
 
 
+## Connexion SSH via le terminal 
+
+Aller dans la configuration 
+
+![Settings terminale](images/terminalSettingsJson.jpg)
+
+Ajouter la config ssh le fichier ouvert.
+
+```json title="settings.json" hl_lines="9-"
+   "defaults": {},
+        "list": 
+        [
+            {
+                "commandline": "powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "colorScheme": "One Half Dark",
+                "commandline": "ssh root@vps.fr -i C:/Users/Onlymore/repo/ssh/keyalex",
+                "hidden": false,
+                "name": "VPS SSH"
+            }
+        ]
+```
+
+
+
 
 
