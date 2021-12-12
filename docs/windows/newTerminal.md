@@ -43,7 +43,6 @@ Aller dans la configuration
             }
         ]
 ```
-
 1.  Changer le user, le serveur et l'emplacement de la clé ssh en fonction de vous.
 
 
