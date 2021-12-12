@@ -69,6 +69,7 @@ nav:
         - Borg: linux/services/borgBackup.md
         - Fog: linux/services/fog.md
         - Git: linux/services/git.md
+        - Ssh: linux/services/ssh.md
       - Vim: linux/vim.md
       - Cron: linux/cron.md
       - Commande linux: linux/commandeLinux.md

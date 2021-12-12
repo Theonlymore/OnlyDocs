@@ -16,9 +16,9 @@ Git est un logiciel de gestion de versions décentralisé. C'est un logiciel lib
 |`git push`| Envoi la mise à jour au git distant (dit “remote”). Prends en compte le dossier dans lequel on se situe.|
 |`git pull`| Récupère les dernières mises à jours du répertoire distant.|
 
-## Clone private repo on Github
+## Clone private repo on GitHub
 
-Crée un token privé sur Github :
+Crée un token privé sur GitHub :
 
 **Etape**
 ![Github Settins](images/gitGithubSettings.jpg)
