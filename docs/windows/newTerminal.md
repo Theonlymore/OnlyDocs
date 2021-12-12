@@ -23,9 +23,9 @@ Aller dans la configuration
 
 ![Settings terminale](images/terminalSettingsJson.jpg)
 
-Ajouter la config ssh le fichier ouvert.
 
-```json title="settings.json" hl_lines="10-17"
+
+```json title="settings.json" hl_lines="10-16"
    "defaults": {},
         "list": 
         [
@@ -37,12 +37,14 @@ Ajouter la config ssh le fichier ouvert.
             },
             {
                 "colorScheme": "One Half Dark",
-                "commandline": "ssh root@vps.fr -i C:/Users/Onlymore/repo/ssh/keyalex",
+                "commandline": "ssh root@vps.fr -i C:/Users/Onlymore/repo/ssh/keyalex", # (1)
                 "hidden": false,
                 "name": "VPS SSH"
             }
         ]
 ```
+
+1.  Changer le user, le serveur et l'emplacement de la clé ssh en fonction de vous.
 
 
 
