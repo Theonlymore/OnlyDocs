@@ -25,7 +25,7 @@ Aller dans la configuration
 
 Ajouter la config ssh le fichier ouvert.
 
-```json title="settings.json" hl_lines="9-"
+```json title="settings.json" hl_lines="9-12"
    "defaults": {},
         "list": 
         [
