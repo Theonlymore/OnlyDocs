@@ -110,7 +110,7 @@ nav:
     - Terminal: windows/newTerminal.md
   - Aws :
     - S3 Glacier : aws/s3Glacier.md
-  - Langage:
+  - langages:
     - Markdown: langage/markdown.md
     - SQL: langage/sql.md
     - PowerShell: langage/powerShell.md

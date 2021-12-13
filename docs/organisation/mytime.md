@@ -26,6 +26,13 @@ Pour progresser, il faut appliquer une routine :
 
 ## Les avantages de l'amélioration continue de la productivité
 
+Gérer son temps est un **Soft Skill**.
+
+Cette compétence est très important et précieuse. Elle permet d'éviter le stress, l'anxiété, etc...
+
+Elle permet la même quantité de travail en moins de temps qu'avant.
+
+Définition : **Productivité ** (travail accompli) **=** Temps passé **x** intensité de concentration  **x** rapidité d'exécutions. 
 
 ### Sources :
 - [openclassrooms](https://openclassrooms.com/fr/courses/5944991-gerez-votre-temps-efficacement)
