@@ -114,4 +114,6 @@ nav:
     - Markdown: langage/markdown.md
     - SQL: langage/sql.md
     - PowerShell: langage/powerShell.md
+  - Organisation:
+    - Gérez votre temps efficacement: organisation/mytime.md
   - Sites sympas: niceSite.md

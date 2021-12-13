@@ -57,5 +57,5 @@ Voir tout les raccourcis : `Ctrl+K+S`
 
 
 ### Sources
-- [Documentation de VsCode];k (images/vsCodeClavier.png)
+- [Documentation de VsCode](images/vsCodeClavier.png)
 - [JeSuisUnDev](https://www.jesuisundev.com/gagne-du-temps-avec-visual-studio-code/)
