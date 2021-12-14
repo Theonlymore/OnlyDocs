@@ -28,12 +28,21 @@ theme:
 
 
 # Copyright
-copyright: "Onlydocs <3"
+copyright: "Onlydocs d'Alexandre ROCHER"
 
 # Options
 extra:
   search:
     languages: "en"
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/alexandre-rocher-pro
+    - icon: fontawesome/brands/github
+      link: https://github.com/Theonlymore
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/onlymore
+
+
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.inlinehilite
