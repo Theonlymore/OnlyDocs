@@ -41,6 +41,8 @@ extra:
       link: https://github.com/Theonlymore
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/r/onlymore
+    - icon: fontawesome/solid/link
+      link: https://www.onlymore.net
 
 
 markdown_extensions:
