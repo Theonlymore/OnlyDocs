@@ -21,6 +21,7 @@ Git est un logiciel de gestion de versions décentralisé. C'est un logiciel lib
 Crée un token privé sur GitHub :
 
 **Etape**
+
 ![Github Settins](images/gitGithubSettings.jpg)
 
 ![Githib dev settings](images/gitGithubDevSettings.jpg)
