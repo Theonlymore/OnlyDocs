@@ -14,7 +14,6 @@ theme:
   features:
     - content.code.annotate 
     - content.tabs.link
-    - navigation.indexes
   palette:
     - scheme: default
       primary: green
@@ -35,6 +34,10 @@ copyright: "Onlydocs <3"
 extra:
   search:
     languages: "en"
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/alexandre-rocher-pro
+      name: Alexandre ROCHER sur Linkedin
 
 markdown_extensions:
   - pymdownx.highlight
@@ -76,7 +79,7 @@ nav:
       - Cron: linux/cron.md
       - Commande linux: linux/commandeLinux.md
   - Docker:
-      - Présentation: docker/index.md
+      - Présentation: docker/presentationDocker.md
       - Base de docker: docker/baseDocker.md
       - Réseau dans docker: docker/reseauDocker.md
       - Volumes dans docker: docker/dockerVolumes.md
