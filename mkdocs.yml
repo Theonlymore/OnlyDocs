@@ -8,7 +8,7 @@ edit_uri: edit/main/docs/
 
 # Theme and overrides, i.e. language partial
 theme:
-  language: fr
+  language: en
   name: material
   custom_dir: overrides
   features:
@@ -28,17 +28,12 @@ theme:
 
 
 # Copyright
-copyright: "Onlydocs d'Alexandre ROCHER"
+copyright: "Onlydocs <3"
 
 # Options
 extra:
   search:
-    languages: "fr"
-  social:
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/alexandre-rocher-pro
-      name: Alexandre ROCHER sur Linkedin
-
+    languages: "en"
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.inlinehilite
@@ -49,6 +44,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true 
 
+  
 extra_javascript:
   - javascripts/extra.js
 
