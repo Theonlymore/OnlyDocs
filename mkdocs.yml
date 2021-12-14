@@ -14,6 +14,7 @@ theme:
   features:
     - content.code.annotate 
     - content.tabs.link
+    - navigation.indexes
   palette:
     - scheme: default
       primary: green
@@ -75,7 +76,7 @@ nav:
       - Cron: linux/cron.md
       - Commande linux: linux/commandeLinux.md
   - Docker:
-      - Présentation: docker/presentationDocker.md
+      - Présentation: docker/index.md
       - Base de docker: docker/baseDocker.md
       - Réseau dans docker: docker/reseauDocker.md
       - Volumes dans docker: docker/dockerVolumes.md
