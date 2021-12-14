@@ -14,7 +14,8 @@ apt install proftpd
     # Install
     apt install openssh-server
     
-    # Et simplement se connecter en sftp avec l'auth du compte linux (clé ssh ou password) depuis un client comme "FileZilla"
+    # Et simplement se connecter en sftp avec l'auth du compte linux (clé ssh ou password)
+    # depuis un client comme "FileZilla"
     ```
 
 === "proftpd"
