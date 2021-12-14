@@ -70,6 +70,7 @@ nav:
         - Fog: linux/services/fog.md
         - Git: linux/services/git.md
         - Ssh: linux/services/ssh.md
+        - Ftp: linux/services/ftp.md
       - Vim: linux/vim.md
       - Cron: linux/cron.md
       - Commande linux: linux/commandeLinux.md
@@ -89,6 +90,7 @@ nav:
         - Commande cisco: reseau/cisco/commandeCisco.md
       - Protocole:
         - SNMP: reseau/protocole/SNMP.md
+        - FTP: reseau/protocole/ftp.md
       - 7 couches OSI: reseau/modelOsi.md
       - Dépannage réseau: reseau/depannageReseau.md
       - DNS : reseau/dns.md  
