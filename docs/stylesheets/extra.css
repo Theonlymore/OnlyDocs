@@ -29,12 +29,5 @@
     --md-footer-fg-color--lighter: hsla(0, 0%, 100%, 0.3);
   }
 
-  .md-copyright__highlight {
-    display: block !important;
-  }
-
-
-  .md-copyright{
-    display: none;
-  }
+ 
 
