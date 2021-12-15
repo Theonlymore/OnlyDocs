@@ -8,7 +8,7 @@ edit_uri: edit/main/docs/
 
 # Theme and overrides, i.e. language partial
 theme:
-  language: en
+  language: fr
   name: material
   custom_dir: overrides
   features:
@@ -33,7 +33,7 @@ copyright: "Onlydocs d'Alexandre ROCHER"
 # Options
 extra:
   search:
-    languages: "en"
+    languages: "fr"
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/alexandre-rocher-pro
@@ -97,19 +97,19 @@ nav:
       - Base d'Ansible: ansible/ansibleBase.md
       - Playbook: ansible/ansiblePlaybooks.md
   - Réseau:     
+      - 7 couches OSI: reseau/modelOsi.md
       - Cisco:
         - Commande cisco: reseau/cisco/commandeCisco.md
       - Protocole:
         - SNMP: reseau/protocole/SNMP.md
         - FTP: reseau/protocole/ftp.md
-      - 7 couches OSI: reseau/modelOsi.md
-      - Dépannage réseau: reseau/depannageReseau.md
-      - DNS : reseau/dns.md  
       - Adresse ip: reseau/adresse_ip.md
+      - DNS : reseau/dns.md  
+      - Dépannage réseau: reseau/depannageReseau.md
       - DevOps: reseau/devOps.md
-      - Reverse proxy: reseau/reverseProxy.md
-      - Supervision: reseau/superVision.md
       - Filtrage: reseau/filtrage.md
+      - Supervision: reseau/superVision.md
+      - Reverse proxy: reseau/reverseProxy.md
       - Vlan: reseau/vlan.md
       - Mail: reseau/mail.md
       - Radius: reseau/radius.md
@@ -119,14 +119,14 @@ nav:
       - Présentation: windows/windowsServeur/windowsServeur.md
       - Active directory: windows/windowsServeur/ad.md
       - GPO: windows/windowsServeur/gpo.md
-    - vsCode: windows/vsCode.md
     - Terminal: windows/newTerminal.md
+    - vsCode: windows/vsCode.md
   - Aws :
     - S3 Glacier : aws/s3Glacier.md
   - langages:
     - Markdown: langage/markdown.md
-    - SQL: langage/sql.md
     - PowerShell: langage/powerShell.md
+    - SQL: langage/sql.md
   - Organisation:
         Gérez votre temps efficacement: organisation/timeEfficiently.md
         Journée structurer: organisation/structureDays.md
