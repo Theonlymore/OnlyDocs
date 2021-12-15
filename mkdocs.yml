@@ -123,7 +123,7 @@ nav:
     - vsCode: windows/vsCode.md
   - Aws :
     - S3 Glacier : aws/s3Glacier.md
-  - langages:
+  - Langages:
     - Markdown: langage/markdown.md
     - PowerShell: langage/powerShell.md
     - SQL: langage/sql.md
