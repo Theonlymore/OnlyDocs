@@ -75,7 +75,7 @@ Inventory =
                   srv5:
     ```
 
-Passer un groupe à un autre groupe :
+Passer un groupe à un autre groupe (avec et sans paterne) :
 
 === "inventory.yaml"
 
@@ -141,7 +141,7 @@ Passer un groupe à un autre groupe :
 
 monitoring qui semble lié à toutes les machines users > monitoring
 
-```yaml
+```yaml title="inventoryPratique.yaml"
 all:
   children:
     common:
