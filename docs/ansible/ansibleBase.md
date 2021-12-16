@@ -14,16 +14,16 @@
 | [`ansible-galaxy`](https://docs.ansible.com/ansible/latest/cli/ansible-galaxy.html)| Permet d'installer des roles et des collections Ansible |  |
 | [`ansible-doc`](https://docs.ansible.com/ansible/latest/cli/ansible-doc.html)| Permet d'obtenir de l'aide pour utiliser Ansible. Plutôt pratique pour se guider. |`ansible-doc ping`. |
 
-## Inventaire
+## [Inventaire](ansibleInventory.md)
 
-L'inventaire statique sous **Ansible** est un fichier au format INI.
+L'inventaire statique sous **Ansible** est un fichier au format INI,Yaml ou Json.
 
 ```ini title="inventaire.ini"
 [web]
 server1
 [db]
 server2
-```
+``` 
 
 Plusieurs connexion ssh possible :
 - user+password
