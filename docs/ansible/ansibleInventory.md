@@ -15,7 +15,7 @@ Inventaire des **machines** et de leurs **variables**.
 - **yaml** = plus homogène
 - **json** = pour manipuler
 
-Inventory = 
+#### Inventory :
 - fichier d'inventaire
 - répertoire group_vars
 - répertoire host_vars
