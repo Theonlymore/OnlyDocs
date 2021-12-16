@@ -95,6 +95,7 @@ nav:
   - Ansible: 
       - Présentation Ansible: ansible/ansiblePresentation.md
       - Base d'Ansible: ansible/ansibleBase.md
+      - Inventory: ansible/ansibleInventory.md
       - Playbook: ansible/ansiblePlaybooks.md
   - Réseau:     
       - 7 couches OSI: reseau/modelOsi.md
