@@ -69,14 +69,99 @@ Inventory =
             enfant2:
               hosts:
                 srv3:
-            children
+            children:
               enfant3:
                 hosts:
                   srv5:
     ```
 
+Passer un groupe à un autre groupe :
+
+=== "inventory.yaml"
+
+    ``` yaml
+    all: 
+    children:
+        parent1:
+        parent2:
+        hosts:
+            srv4:
+        children:
+            enfant1:
+            hosts:
+                srv1:
+                srv2:
+            enfant2:
+            hosts:
+                srv3:
+            children
+                enfant3:
+                hosts:
+                    srv5:
+        parent2:
+        hosts:
+            srv6:
+            srv7:
+            srv8:
+            srv9:
+    ```
+
+=== "paterneInventory.yaml"
+
+    ``` yaml
+    all: 
+    children:
+        parent1:
+        parent2:
+        hosts:
+            srv4:
+        children:
+            enfant1:
+            hosts:
+                srv[1:2]:
+            enfant2:
+            hosts:
+                srv3:
+            children
+                enfant3:
+                hosts:
+                    srv5:
+        parent2:
+        hosts:
+            srv[6:9]:
+    ```
 
 
+### Exemple pratique
+
+-  couche commune > common
+-  serveurs web nginx > webserver
+-  bases de données > dbserver
+-  applications dockerisées ou non > app / appdock
+
+monitoring qui semble lié à toutes les machines users > monitoring
+
+```yaml
+all:
+  children:
+    common:
+      children:
+        webserver:
+          hosts:
+            srv[1:4]:
+        dbserver:
+          hosts:
+            srv[5:6]:
+        app:
+          hosts:
+            srv[7:10]:
+        appdock:
+          hosts:
+            srv[11:15]:
+    monitoring:
+      children:
+        common:
+```
 
 ### Sources
 - [xavki](https://gitlab.com/xavki/presentation-ansible-fr/-/tree/master/08-inventory-fichier-structure)
