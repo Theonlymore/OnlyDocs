@@ -1,5 +1,14 @@
 # Le DevOps
 
+## La culture DevOps
+
+Le DevOps résout les problèmes humain, communication et de responsabilités entre équipes.Il permet l'**agilité** afin de délivrer un produit de qualité.
+
+## Automatisation
+
+
+
+
 ![devops](images/DevOpsAll.png)
 
 Source :

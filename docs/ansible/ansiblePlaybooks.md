@@ -8,6 +8,7 @@ Un playbook est un fichier au format **YAML**. Ce dernier va donner une **liste*
 - La section `hosts` est obligatoire. Toutes les autres sont *falcutatives* !
 - La section `tasks` peut être remplacée ou complétée par une section roles et des sections `pre_tasks` `post_tasks`
 - Les `handlers` sont des tâches conditionnelles qui s’exécutent à la fin (post traitements conditionnels comme le redémarrage d’un service
+
 ## Exemple d'un playbook d'un serveur web Apache
 
 ```yaml title="playbook.yml"
@@ -97,6 +98,22 @@ Commande `ansible-playbook`avec options :
 
 ## Modules : 
 
+Un modules ansible correspond à une fonction Python avec des paramètres en entrée qui sera exécutée sur les serveurs distants.
+
+Il est possible d'écrire ses propres modules en Python.
+
+**Exemple :**
+
+Le module package permet d'installer un package système indépendamment du gestionnaire de paquet.
+
+```yaml title="modulePackage"
+- name: install ntpdate
+package:
+name: ntpdate
+state: present
+```
+
+
 https://docs.ansible.com/ansible/2.9/modules/file_module.html#file-module
 
 ### Sources :
@@ -104,3 +121,4 @@ https://docs.ansible.com/ansible/2.9/modules/file_module.html#file-module
 - [cours.hadrienpelissier.fr](https://cours.hadrienpelissier.fr/01-ansible/cours2/#remarques-de-syntaxe)
 - [Devopssec](https://devopssec.fr/article/executez-premieres-commandes-ansible)
 - [xavki](https://gitlab.com/xavki/presentation-ansible-fr/-/blob/master/11-premier-playbook/slides.md)
+- [kaibbe.fr](https://kaibee.fr/jouons-avec-les-playbooks-ansible/)

@@ -23,7 +23,7 @@
 
 **Serveur :**
 
-Mettre la clé publique générer par le client dans le fichier : `/root/.ssh//authorized_keys`
+Mettre la clé publique générer par le client dans le fichier : `/root/.ssh/authorized_keys`
 
  
  
