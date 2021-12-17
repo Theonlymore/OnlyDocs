@@ -22,7 +22,7 @@ La mémoire des images est particulièrement développée par le cerveau comme d
 
 ## Logiciel
 
-Pour ma part, j'utilise le logiciel open-source [diagrams.net](https://www.diagrams.net/) pour créer mes cartes mental.
+Pour ma part, j'utilise le logiciel open-source [diagrams.net](https://www.diagrams.net/) pour créer mes cartes mentales.
 
 ### Sources
 - [mindmapping.com](https://www.mindmapping.com/fr/mind-map)

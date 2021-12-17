@@ -1,6 +1,6 @@
 # Une to-do list efficace
 
-La to-do list permet de **découpée les chose à faire par tâche**, cela fait partie des bonnes pratiques à adopter pour **accélérer ça productivité**.
+La to-do list permet de **découpée les choses à faire par tâches**, cela fait partie des bonnes pratiques à adopter pour **accélérer ça productivité**.
 
 ## Les pièges des to-do list
 
@@ -29,8 +29,20 @@ Inscrire une sous-tâche ou une check-list à l'intérieur de “serveur backup 
     - procédure reinstall services ( Voir pdf ci-jointe)
 
 
-https://openclassrooms.com/fr/courses/5944991-gerez-votre-temps-efficacement/6500291-creez-une-to-do-list-efficace#/id/r-6709483
+## Les priorité sur les actions
 
+urgente : (est-ce que ça peut attendre 2 ou 3 jours ?)
+importante : (est-ce que c’est grave si ce n’est pas fait ?) 
+
+
+Schéma de qualification des tâches :
+
+![Matrice d'Einsenhower](images/todoEinsenhower.png)
+*La Matrice d'Eisenhower permet d'isoler les tâches urgents et importantes du reste. Un bon outil d'aide à la décision donc !*
+
+## Le challenge
+
+Le **challenge de temps pour un tâche permet de nous rendre plus productif et créatif** sur une tâche, plus nous avons de temps pour réaliser une tâche et plus la tâche va grandir et s'étaler dans le temps.
 
 ### Sources : 
 - [openclassrooms Jonathan Fechner](https://openclassrooms.com/fr/courses/5944991-gerez-votre-temps-efficacement/6500291-creez-une-to-do-list-efficace)
