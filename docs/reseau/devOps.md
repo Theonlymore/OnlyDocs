@@ -6,7 +6,7 @@ Le DevOps résout les problèmes humain, communication et de responsabilités en
 
 ## Automatisation
 
-
+**Déployez plus fréquemment**
 
 
 ![devops](images/DevOpsAll.png)

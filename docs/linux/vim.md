@@ -52,4 +52,11 @@ On peut utiliser les flèches du clavier, page up/down ou les touches h j k l
 
 ### Source : 
 - [Syloe](https://www.syloe.com/utiliser-vim-guide/)
+- [Alexis Madrzejewski](https://www.tutoriels-video.fr/apprendre-a-utiliser-lediteur-vi/)
 - [Ubuntu](https://doc.ubuntu-fr.org/vim) 
+- [CoursPdf](image/vim.pdf)
+
+**Jeux pour apprendre vim :**
+- [vim-adventures.com/](https://vim-adventures.com/)
+- [vimgenius](http://www.vimgenius.com/lessons/vim-intro/)
+

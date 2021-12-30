@@ -66,6 +66,7 @@ extra_css:
 nav:
   - Accueil: index.md
   - Linux:
+      - Commande linux: linux/commandeLinux.md
       - Réseau linux:
         - Commande réseau: linux/reseauLinux/commandeReseau.md
         - Filtrage sous linux: linux/reseauLinux/filtrageLinux.md
@@ -83,8 +84,9 @@ nav:
         - Ssh: linux/services/ssh.md
         - Ftp: linux/services/ftp.md
       - Vim: linux/vim.md
+      - Man: linux/man.md
+      - Find: linux/find.md
       - Cron: linux/cron.md
-      - Commande linux: linux/commandeLinux.md
   - Docker:
       - Présentation: docker/presentationDocker.md
       - Base de docker: docker/baseDocker.md

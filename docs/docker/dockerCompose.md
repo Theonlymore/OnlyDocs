@@ -118,6 +118,12 @@ service:
     - "80:80"
 ```
 
+### Scale 
+
+`docker-compose scale container=10`
+
+Cette commande lance 10 fois le container.
+
 ### Source 
 - [Xavki](https://gitlab.com/xavki/presentations-dockercompose)
 - [Devopssec](https://devopssec.fr/article/gerez-vos-conteneurs-docker-compose#begin-article-section)

@@ -25,7 +25,18 @@ Voir les droits sur les fichiers du dossier : `ls -l`
 
 ![Droits linux](image/linuxDroits.png)
 
-Les droits peuvent être définit en octal : 4 pour read, 2 pour write, 1 pour execute : [ r w x] [ r - x] [ - - -] => 750
+Les droits peuvent être définit en octal : 4 pour read, 2 pour write, 1 pour execute : 
+
+| **Type**| Utilisateur | Groupe | Restes |
+|-- |------ | -----| ----|
+|R : Read; W = Write; X = Exectute |[ r w x ] | [ r - x ] | [ - - -] | 
+| **Octal**| 7 | 5 | 0
+
+| Octal | read,write,execute |
+|--- | --- |
+| 1 | juste executer, execute |
+| 2 | Juste écrire, write |
+| 4 | Juste lire, read |
 
 ### Manipulation des droits
 
