@@ -2,7 +2,7 @@
 
 Exemple d'un playbook qui utilise des modules docker pour lancer deux container.
 
-```yaml title="playbookDocker" hl_lines="44-61"
+```yaml title="playbookDocker" hl_lines="45-62"
 ---
 # WEB SERVER
 
@@ -69,3 +69,4 @@ Exemple d'un playbook qui utilise des modules docker pour lancer deux container.
 
 ### Sources
 - [Nickjj Github](https://github.com/nickjj/ansible-docker)
+- [docs Ansible sur le module](https://docs.ansible.com/ansible/2.6/modules/docker_module.html)

@@ -100,8 +100,9 @@ nav:
       - Inventory: ansible/ansibleInventory.md
       - Playbook: ansible/ansiblePlaybooks.md
       - Modules:
-        - Modules: ansible/modules/modules.md
+        - Modules: ansible/modules/ansibleModules.md
         - Docker: ansible/modules/ansibleDocker.md
+      - Rôles: ansible/ansibleRoles.md
   - Réseau:     
       - 7 couches OSI: reseau/modelOsi.md
       - Cisco:
