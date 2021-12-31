@@ -94,6 +94,7 @@ nav:
       - Volumes dans docker: docker/dockerVolumes.md
       - Image docker: docker/imageDocker.md
       - Docker compose: docker/dockerCompose.md
+      - Traefik: docker/traefik.md
   - Ansible: 
       - Présentation Ansible: ansible/ansiblePresentation.md
       - Base d'Ansible: ansible/ansibleBase.md
