@@ -2,9 +2,11 @@
 
 Exemple d'un playbook qui utilise des modules docker pour lancer deux container.
 
+`sansRolePlaybook` : install docker puis lancer deux container.
 
+`avecRolePlaybook.yml` : install docker, docker compose puis lance deux container avec le module : `docker-compose`
 
-=== "sansRolePlaybook"
+=== "sansRolePlaybook.yml"
 
     ``` yaml 
     ---
@@ -71,7 +73,7 @@ Exemple d'un playbook qui utilise des modules docker pour lancer deux container.
           - "8000:3001"
     ```
 
-=== "avecRolePlaybook"
+=== "avecRolePlaybook.yml"
 
     ``` yaml
     ---
@@ -103,8 +105,6 @@ Exemple d'un playbook qui utilise des modules docker pour lancer deux container.
               - docker-compose.yml
 
     ```
-
-
 
 ### Sources
 - [Nickjj Github](https://github.com/nickjj/ansible-docker)
