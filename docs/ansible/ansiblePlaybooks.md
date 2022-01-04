@@ -96,26 +96,6 @@ Commande `ansible-playbook`avec options :
 | --start-at-task       | commencer à une tâche spécifique                                |
 | --list-tasks          | liste des tâches qui sont être lancer                           |
 
-## Modules : 
-
-Un modules ansible correspond à une fonction Python avec des paramètres en entrée qui sera exécutée sur les serveurs distants.
-
-Il est possible d'écrire ses propres modules en Python.
-
-**Exemple :**
-
-Le module package permet d'installer un package système indépendamment du gestionnaire de paquet.
-
-```yaml title="modulePackage"
-- name: install ntpdate
-package:
-name: ntpdate
-state: present
-```
-
-
-https://docs.ansible.com/ansible/2.9/modules/file_module.html#file-module
-
 ### Sources :
 
 - [cours.hadrienpelissier.fr](https://cours.hadrienpelissier.fr/01-ansible/cours2/#remarques-de-syntaxe)
