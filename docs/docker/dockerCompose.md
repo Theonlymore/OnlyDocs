@@ -124,7 +124,23 @@ service:
 
 Cette commande lance 10 fois le container.
 
+### Réseau dans docker-compose
+
+Mettre le service dans un réseau qui existe déjà.
+
+```yaml
+services:
+  # ...
+networks:
+  default:
+    external: true
+    name: my-pre-existing-network
+```
+
 ### Source 
 - [Xavki](https://gitlab.com/xavki/presentations-dockercompose)
 - [Devopssec](https://devopssec.fr/article/gerez-vos-conteneurs-docker-compose#begin-article-section)
 - [Baeldung limite Ram/cpu](https://www.baeldung.com/ops/docker-memory-limit)
+
+#### -Cheat sheet
+- [devhints.io](https://devhints.io/docker-compose)

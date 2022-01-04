@@ -8,3 +8,4 @@
 - [Zwindleer.fr](https://blog.zwindler.fr/)
 - [command-not-found.com](https://command-not-found.com)
 - [Devopssec](https://devopssec.fr/)
+- [devHints.io / cheat cheat](https://devhints.io/)

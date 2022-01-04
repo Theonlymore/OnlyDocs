@@ -17,7 +17,7 @@ Via le [windows store](https://www.microsoft.com/fr-fr/p/windows-terminal/9n0dx2
 | `alt+droite, gauche, haut ou bas`      | Déplacer le focus             |
 
 
-## Connexion SSH via le terminal 
+## Connexion SSH via le terminal "semi-automatique"
 
 Aller dans la configuration 
 
@@ -45,6 +45,11 @@ Aller dans la configuration
 ```
 
 - `commandline` : Changer le user, le serveur et l'emplacement de la clé ssh en fonction de vous.
+
+## Faire un copier copier coller vers windows depuis `vim`
+
+- `Shift+selection/clique gauche'
+- `Ctrl+c`
 
 
 
