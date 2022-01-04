@@ -50,6 +50,7 @@ services:
 ## [Traefik avec l'HTTPS/TLS](https://github.com/siavee/traefik-letsencrypt-compose)
 
 L'exercice se compose en 3 fichiers :
+
 - le docker-compose de **traefik**
 - le docker-compose du **serveur web**
 - les **variables** d'environnement 
@@ -118,10 +119,10 @@ L'exercice se compose en 3 fichiers :
       web:
         image: httpd
         labels:
-          - traefik.http.routers.https.rule=Host(`test.${DOMAIN}`) # A changer entre sous domaine !
-          - traefik.http.routers.https.entrypoints=https
-          - traefik.http.routers.https.tls=true
-          - traefik.http.routers.https.tls.certresolver=${CERT_RESOLVER}
+          - traefik.http.routers.httpd.rule=Host(`test.${DOMAIN}`) # A changer entre sous domaine !
+          - traefik.http.routers.httpd.entrypoints=https
+          - traefik.http.routers.httpd.tls=true
+          - traefik.http.routers.httpd.tls.certresolver=${CERT_RESOLVER}
         networks:
           - proxy
 
