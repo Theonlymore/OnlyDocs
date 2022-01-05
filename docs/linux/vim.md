@@ -51,6 +51,7 @@ On peut utiliser les flèches du clavier, page up/down ou les touches h j k l
 
 
 ### Source : 
+- [devhints](https://devhints.io/vim)
 - [Syloe](https://www.syloe.com/utiliser-vim-guide/)
 - [Alexis Madrzejewski](https://www.tutoriels-video.fr/apprendre-a-utiliser-lediteur-vi/)
 - [Ubuntu](https://doc.ubuntu-fr.org/vim) 
