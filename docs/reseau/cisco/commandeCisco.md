@@ -2,23 +2,16 @@
 
 ## Cli
 
-Noms d'hôte du switch :
-    - `#hostname Sw1`
+| Description | Commandes | 
+| --------- | ----------- |
+| Noms d'hôte du switch | `#hostname Sw1` |
+| Désactivez la recherche DNS | `#no ip domain-lookup` | 
+| Mettre un mots de passe `enable` | `config)#enable secret azerty` (`secret` pour que le mot de passe sois chiffré) | 
+| Mettre un mots de passe en console | `config)#line console 0` <br>`config-line)#password azerty`<br>`config-line)#login`|
+| Mdp en telnet [source](https://formip.com/securisation-ios-cisco/) | `config)#line vty 0 15` (15 pour switch et 5 routeurs) <br>`config-line)#password azerty`|
+| Enregistrer la configuration actuelle pour chaque restart | `#copy running-config startup-config` | 
   
-Désactivez la recherche DNS :
-    -  `#no ip domain-lookup`
-- Mettre un mots de passe :
-    - enable / exécution
-        - `config)#enable secret azerty` (`secret` pour que le mot de passe sois chiffré)
-    - Connexions en console
-        - `config)#line console 0`
-        - `config-line)#password azerty`
-        - `config-line)#login`
-    - Connexions telnet [source](https://formip.com/securisation-ios-cisco/)
-        - `config)#line vty 0 15` (15 pour switch et 5 routeurs)
-        - `config-line)#password azerty`
-    - Enregistrer la configuration actuelle pour chaque restart : `#copy running-config startup-config`
-    - Mettre une bannière au démarrage : 
+Mettre une bannière au démarrage : 
 
 ```bash
 config)#banner motd &
@@ -94,9 +87,13 @@ Désactivation du port-security
   - `config-if)#no switchport port-security`
 
 
-## Activer la connexion ssh
+### Activer la connexion ssh
 
 [lien](https://www.clemanet.com/activation-ssh.php)
+
+
+## Routeurs
+
 
 ## Packet tracer
 
