@@ -103,6 +103,7 @@ nav:
       - Modules:
         - Modules: ansible/modules/ansibleModules.md
         - Docker: ansible/modules/ansibleDocker.md
+        - Template: ansible/modules/ansibleTemplate.md
       - Rôles: ansible/ansibleRoles.md
       - Organisation: ansible/ansibleOrga.md
   - Réseau:     
@@ -123,6 +124,7 @@ nav:
       - Mail: reseau/mail.md
       - Radius: reseau/radius.md
       - VPN: reseau/vpn.md
+      - NAT et PAT: reseau/nat-pat.md
   - Windows :
     - Windows serveur :
       - Présentation: windows/windowsServeur/windowsServeur.md
@@ -136,6 +138,7 @@ nav:
     - Markdown: langage/markdown.md
     - PowerShell: langage/powerShell.md
     - SQL: langage/sql.md
+    - Regex: langage/regex.md
   - Organisation:
         Gérez votre temps efficacement: organisation/timeEfficiently.md
         Journée structurer: organisation/structureDays.md

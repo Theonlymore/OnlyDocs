@@ -2,9 +2,10 @@
 
 ## Cli
 
-- Noms d'hôte du switch :
+Noms d'hôte du switch :
     - `#hostname Sw1`
-- Désactivez la recherche DNS :
+  
+Désactivez la recherche DNS :
     -  `#no ip domain-lookup`
 - Mettre un mots de passe :
     - enable / exécution
@@ -32,60 +33,65 @@ config)#banner motd &
     - Suppression de la base de données Vlan : `#delete flash:vlan.dat` [ Retourne a la configuration par défaut des vlan]
     - Afficher les fichiers racines : `#show flash:`
         
-- Mettre config de zero : 
-    - `#erase nvram:`      
+Mettre config de zero : 
+  - `#erase nvram:`      
 
-- Enregistrement sur serveur TFTP :
-    - `#copy running-config tftp`
-- recuperer config d'un serveur TFTP :
-    - `#copy tftp :`
-    - `#running-config`
+Enregistrement sur serveur TFTP :
+  - `#copy running-config tftp`
+Récupérer config d'un serveur TFTP :
+  - `#copy tftp :`
+  - `#running-config`
 ## Switch :
 
 ### Vlan :
 
-- Voir les vlan et port affecter :`#show vlan`
-- Ajout de vlan :
- `config)#vlan 1` ou `config)#vlan 1,2,3,4`
--  Nom du vlan : `config-vlan)#name prod`
-- Supprimer vlan : `config)#no vlan 1`
+Voir les vlan et port affecter :
+- `#show vlan`
+
+Ajout de vlan :
+    - `config)#vlan 1` ou `config)#vlan 1,2,3,4`
+  
+Nom du vlan : 
+- `config-vlan)#name prod`
+
+Supprimer vlan : `config)#no vlan 1`
 - Vlan à un port :
     - Un seul port :`config)#interface fastEthernet 0/1`
     - Plusieurs ports :`config)#interface range fastEthernet 0/1-10`
         - `config-if)#switchport mode access`
         - `config-if)#switchport access vlan 3`
-- Mettre une ip sur l'interface Vlan du switch :
+Mettre une ip sur l'interface Vlan du switch :
     - `config)#interface vlan 99`
     - `config-if)#ip address 192.168.56.11 255.255.255.0`
     - `no shutdown`
 
 ### Mettre en place un trunk :
 
-- Mettre le mode trunk : `config)#interface fa0/1`
-  - `config-if)#switchport mode trunk`
+Mettre le mode trunk : `config)#interface fa0/1`
+- `config-if)#switchport mode trunk`
 
 
 
 ### [Sécurité du port : ](https://cisco.goffinet.org/ccna/ethernet/switchport-port-security-cisco-ios/)
 
-- Interface utilisable par une seul adresse mac :
-    - `config)#interface fa0/1`
-    - `config-if)#switchport mode access`
-    - `config-if)#switchport port-security`  
-    - `config-if)#switchport port-security maximum 2` 
-    - `config-if)#switchport port-security mac-address sticky` 
-    - `config-if)#switchport port-security violation shutdown`
-- effacé la mémoire de `port-security`  
-    - `#clear port-security {all | configured | dynamic | sticky}`
-  - Information
-    - show port-security
-    - #show port-security address
-    - #show port-security interface G0/1
-  - Désactivation du port-security
-    - `config)#interface fa0/1`
-      - `config-if)#no switchport port-security maximum`
-      - `config-if)#no  switchport port-security mac-address sticky`
-      - `config-if)#no switchport port-security`
+Interface utilisable par une seul adresse mac :
+- `config)#interface fa0/1`
+- `config-if)#switchport mode access`
+- `config-if)#switchport port-security`  
+- `config-if)#switchport port-security maximum 2` 
+- `config-if)#switchport port-security mac-address sticky` 
+- `config-if)#switchport port-security violation shutdown`
+effacé la mémoire de `port-security`  
+- `#clear port-security {all | configured | dynamic | sticky}`
+Information / Diagnostique
+- `show port-security`
+- `#show port-security address`
+- `#show port-security interface G0/1`
+Désactivation du port-security
+- `config)#interface fa0/1`
+  - `config-if)#no switchport port-security maximum`
+  - `config-if)#no  switchport port-security mac-address sticky`
+  - `config-if)#no switchport port-security`
 
 
 ## Activer la connexion ssh
