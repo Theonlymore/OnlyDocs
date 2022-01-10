@@ -7,6 +7,10 @@ Cacher une ip dernière une autre ip.
 
 ![NAT](images/ciscoNat.jpg)
 
+Il existe plusieurs type de NAT (pool,..), les voici avec un exemple pour chaque.
+
+![difNat](images/natDiff.jpg)
+
 # PAT - Port Address Translation
 
 Similaire à NAT, il traduit également les adresses IP privées d’un réseau interne à l’adresse IP publique à l’aide de numéros de port.
@@ -14,6 +18,7 @@ Similaire à NAT, il traduit également les adresses IP privées d’un réseau 
 Cacher le port d'une ip dernière une autre ip
 
 ![PAT](images/pat.png)
+
 
 
 ### Sources

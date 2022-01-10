@@ -96,6 +96,41 @@ Commande `ansible-playbook`avec options :
 | --start-at-task       | commencer à une tâche spécifique                                |
 | --list-tasks          | liste des tâches qui sont être lancer                           |
 
+
+# Boucle : [ici](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/items_lookup.html) ou [ici](https://ansible-docs.readthedocs.io/zh/stable-2.0/rst/playbooks_loops.html)
+
+Boucle dans un dictionnaire 
+
+Exemple :
+
+```yaml title="dictPlaybook.yml
+---
+
+# docker.yml
+
+- hosts: web
+  become: true
+
+  vars:
+    foo:
+      field1: one
+      field2: two
+  tasks:
+
+  - name: root user ; folder structure
+    ansible.builtin.file:
+      path: "/root/{{ item.value }}"
+      state: directory
+      owner: root
+      group: root
+      mode: '0750'
+    with_dict:
+      - "{{foo}}"
+```
+
+
+
+
 ### Sources :
 
 - [cours.hadrienpelissier.fr](https://cours.hadrienpelissier.fr/01-ansible/cours2/#remarques-de-syntaxe)

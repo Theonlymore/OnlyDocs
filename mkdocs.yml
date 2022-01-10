@@ -87,6 +87,7 @@ nav:
       - Man: linux/man.md
       - Find: linux/find.md
       - Cron: linux/cron.md
+      - Terminal: linux/terminal.md
   - Docker:
       - Présentation: docker/presentationDocker.md
       - Base de docker: docker/baseDocker.md

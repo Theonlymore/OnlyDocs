@@ -17,7 +17,7 @@
 | --------- | ----------- |
 | Suppression du fichiers de configuration initiale |  `#erase startup-config` | 
 | Suppression de la base de données Vlan |  `#delete flash:vlan.dat` [ Retourne a la configuration par défaut des vlan] | 
-| Afficher les fichiers racines : `#show flash:` | 
+| Afficher les fichiers racines | `#show flash:` | 
 | Mettre config de zero | `#erase nvram:` |       
 | Enregistrement sur serveur TFTP |  `#copy running-config tftp`|
 | Récupérer config d'un serveur TFTP |  `#copy tftp :` <br> `#running-config` |
@@ -32,6 +32,7 @@ config)#banner motd &
 - UTILISATEURS AUTHENTIFIES UNIQUEMENT   -
 ------------------------------------------
 ```
+
 - "&" à la fin pour finir le motd (après le avoir coller)
 ## Switch :
 
@@ -50,31 +51,38 @@ Voir les vlan et port affecter | `#show vlan` |
 
 ### [Sécurité du port : ](https://cisco.goffinet.org/ccna/ethernet/switchport-port-security-cisco-ios/)
 
+| Description | Commandes | 
+| --------- | ----------- |
+| Interface utilisable par une seul adresse mac | `config)#interface fa0/1` <br> `config-if)#switchport mode access`<br> `config-if)#switchport port-security`<br> `config-if)#switchport port-security maximum 2`<br> `config-if)#switchport port-security mac-address sticky`<br> `config-if)#switchport port-security violation shutdown` |
+| Effacé la mémoire de `port-security` | `#clear port-security {all | configured | dynamic | sticky}`|
 
-Interface utilisable par une seul adresse mac :
-- `config)#interface fa0/1`
-- `config-if)#switchport mode access`
-- `config-if)#switchport port-security`  
-- `config-if)#switchport port-security maximum 2` 
-- `config-if)#switchport port-security mac-address sticky` 
-- `config-if)#switchport port-security violation shutdown`
-effacé la mémoire de `port-security`  
-- `#clear port-security {all | configured | dynamic | sticky}`
 Information / Diagnostique
-- `show port-security`
-- `#show port-security address`
-- `#show port-security interface G0/1`
-Désactivation du port-security
-- `config)#interface fa0/1`
-  - `config-if)#no switchport port-security maximum`
-  - `config-if)#no  switchport port-security mac-address sticky`
-  - `config-if)#no switchport port-security`
+
+| Description | Commandes | 
+| --------- | ----------- |
+| voir tout les infos | `show port-security` |
+|   | `#show port-security address` |
+| voir infos sur interface | `#show port-security interface G0/1` |
+| Désactivation du port-security |`config)#interface fa0/1`<br> `config-if)#no switchport port-security maximum`<br> `config-if)#no  switchport port-security mac-address sticky` <br> `config-if)#no switchport port-security` |
 
 
 ### Activer la connexion ssh
 
 [lien](https://www.clemanet.com/activation-ssh.php)
 ## Routeurs
+
+**Route**
+
+| Description | Commandes | 
+| --------- | ----------- |
+| Route par défaut | `Router(config)# ip route 0.0.0.0 0.0.0.0 192.168.5.254` |
+
+
+**Information / Diagnostique 
+
+| Description | Commandes | 
+| --------- | ----------- |
+| Voir les packet passer en cli | `debug ip packet` |
 
 
 ## Packet tracer
