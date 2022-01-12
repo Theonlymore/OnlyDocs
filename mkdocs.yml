@@ -111,6 +111,7 @@ nav:
       - 7 couches OSI: reseau/modelOsi.md
       - Cisco:
         - Commande cisco: reseau/cisco/commandeCisco.md
+        - Nat: reseau/cisco/ciscoNAT.md
       - Protocole:
         - SNMP: reseau/protocole/SNMP.md
         - FTP: reseau/protocole/ftp.md
@@ -126,6 +127,7 @@ nav:
       - Radius: reseau/radius.md
       - VPN: reseau/vpn.md
       - NAT et PAT: reseau/nat-pat.md
+      - Chiffrement: reseau/chiffrement.md
   - Windows :
     - Windows serveur :
       - Présentation: windows/windowsServeur/windowsServeur.md

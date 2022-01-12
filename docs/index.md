@@ -27,7 +27,7 @@ La github action est lancée à chaque mise à jour de la branche principale ("f
 
 ### Les Coûts
 
-95% des coûts sont du au nom de domaine (le reste stockage et CDN), le site me coûte environ 0,5 euro par mois hors prix de nom de domaine.
+95% des coûts sont dû au nom de domaine (le reste stockage et CDN), le site me coûte environ 0,5 euro par mois hors prix de nom de domaine.
 
 Nom de domaine : 13 euros par ans.
 - Ils étaient possibles d'avoir un domaine à un coût plus faible voire nul mais j'ai opté pour ce nom de domaine via route 53 d'aws
@@ -39,4 +39,4 @@ Coût final
 
 ### Bilan
 
-Pour payer le moins chère possible il faudrait passé par un autre acteur qu'Aws pour le nom de domaine.
+Pour payer le moins cher possible il faudrait passé par un autre acteur qu'Aws pour le nom de domaine.

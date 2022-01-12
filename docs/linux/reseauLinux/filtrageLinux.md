@@ -22,7 +22,7 @@
 
 - `INPUT` : Entrer dans la machine ( routeur )
 - `OUTPUT` : En sortis de la machine ( routeur )
-- `FORWARD` : Qui travers le routeur
+- `FORWARD` : Qui traverse le routeur
 
 
 ### Schéma des chaînes :
@@ -166,8 +166,7 @@ Restauration :
 - [TP Filtrage](../reseauLinux/DmFiltrage.pdf)
 - [Correction avec mon DM](../reseauLinux/RocherAlexandre-DmFiltrage.pdf)
 
-### Sources :
-
+### Sources
 - [Sécurité iptables - Azlux](https://gist.github.com/azlux/6a70bd38bb7c525ab26efe7e3a7ea8ac)
 - [Docs CCC iptable](filtragesIptables.pdf)
 - [tlpd.org](https://tldp.org/pub/Linux/docs/HOWTO/translations/fr/html-1page/Masquerading-Simple-HOWTO.html)
