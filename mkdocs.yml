@@ -83,6 +83,7 @@ nav:
         - Git: linux/services/git.md
         - Ssh: linux/services/ssh.md
         - Ftp: linux/services/ftp.md
+        - Nagios: linux/services/nagios.md
       - Vim: linux/vim.md
       - Man: linux/man.md
       - Find: linux/find.md
@@ -117,7 +118,6 @@ nav:
         - FTP: reseau/protocole/ftp.md
         - HSRP: reseau/protocole/ciscoHrsp.md
         - VTP: reseau/protocole/ciscoVtp.md
-        
       - Adresse ip: reseau/adresse_ip.md
       - DNS : reseau/dns.md  
       - Dépannage réseau: reseau/depannageReseau.md
