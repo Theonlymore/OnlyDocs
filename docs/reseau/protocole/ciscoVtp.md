@@ -11,3 +11,5 @@ Plusieurs mode :
 **VTP Client :** Switch qui reçoit et se synchronise puis propage les annonces VTP
 
 **VTP Transparent :** Switch qui ne traite pas les annonces VTP.
+
+![VTP Mind MAP](images/vtpMindMap.png)

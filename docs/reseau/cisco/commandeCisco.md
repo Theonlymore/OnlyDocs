@@ -10,6 +10,7 @@
 | Mettre un mots de passe en console | `config)#line console 0` <br>`config-line)#password azerty`<br>`config-line)#login`|
 | Mdp en telnet [source](https://formip.com/securisation-ios-cisco/) | `config)#line vty 0 15` (15 pour switch et 5 routeurs) <br>`config-line)#password azerty`|
 | Enregistrer la configuration actuelle pour chaque restart | `#copy running-config startup-config` | 
+| Mettre une passerelle | `ip default gateway 192.168.1.254` |
 
 **Mémoire :**
 

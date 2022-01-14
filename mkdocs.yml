@@ -113,10 +113,11 @@ nav:
       - Cisco:
         - Commande cisco: reseau/cisco/commandeCisco.md
         - Nat: reseau/cisco/ciscoNat.md
+        - Hsrp: reseau/cisco/ciscoHsrp.md
       - Protocole:
         - SNMP: reseau/protocole/SNMP.md
         - FTP: reseau/protocole/ftp.md
-        - HSRP: reseau/protocole/ciscoHrsp.md
+        - HSRP: reseau/protocole/ciscoHsrp.md
         - VTP: reseau/protocole/ciscoVtp.md
       - Adresse ip: reseau/adresse_ip.md
       - DNS : reseau/dns.md  
