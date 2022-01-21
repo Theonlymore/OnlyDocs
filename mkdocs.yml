@@ -89,6 +89,9 @@ nav:
       - Find: linux/find.md
       - Cron: linux/cron.md
       - Terminal: linux/terminal.md
+      - ElasticStack:
+        - Elasticsearch: linux/elasticStack/elasticsearch.md
+        - Filebeat: linux/elasticStack/filebeat.md
   - Docker:
       - Présentation: docker/presentationDocker.md
       - Base de docker: docker/baseDocker.md
