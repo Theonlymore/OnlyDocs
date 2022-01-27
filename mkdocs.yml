@@ -123,6 +123,7 @@ nav:
         - FTP: reseau/protocole/ftp.md
         - HSRP: reseau/protocole/ciscoHsrp.md
         - VTP: reseau/protocole/ciscoVtp.md
+        - Routage: reseau/protocole/routage.md
       - Adresse ip: reseau/adresse_ip.md
       - DNS : reseau/dns.md  
       - Dépannage réseau: reseau/depannageReseau.md
@@ -149,6 +150,7 @@ nav:
     - Markdown: langage/markdown.md
     - PowerShell: langage/powerShell.md
     - SQL: langage/sql.md
+    - NoSQL: langage/nosql.md
     - Regex: langage/regex.md
   - Organisation:
         Gérez votre temps efficacement: organisation/timeEfficiently.md
