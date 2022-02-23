@@ -139,8 +139,10 @@ nav:
       - NAT et PAT: reseau/nat-pat.md
       - Chiffrement: reseau/chiffrement.md
   - Windows :
+    - Windows: windows/windows.md
     - Windows serveur :
       - Présentation: windows/windowsServeur/windowsServeur.md
+      - Diagnostic: windows/windowsServeur/diagnostic.md
       - Active directory: windows/windowsServeur/ad.md
       - GPO: windows/windowsServeur/gpo.md
       - Kerberos: windows/windowsServeur/kerberos.md
