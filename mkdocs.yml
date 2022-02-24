@@ -147,6 +147,7 @@ nav:
       - GPO: windows/windowsServeur/gpo.md
       - Kerberos: windows/windowsServeur/kerberos.md
       - RDP: windows/windowsServeur/rdp.md
+      - Registre: windows/windowsServeur/registre.md
     - Terminal: windows/newTerminal.md
     - vsCode: windows/vsCode.md
   - Aws :
