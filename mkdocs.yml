@@ -93,7 +93,6 @@ nav:
       - Find: linux/find.md
       - Cron: linux/cron.md
       - Terminal: linux/terminal.md
-
   - Docker:
       - Présentation: docker/presentationDocker.md
       - Base de docker: docker/baseDocker.md
@@ -125,6 +124,9 @@ nav:
         - HSRP: reseau/protocole/ciscoHsrp.md
         - VTP: reseau/protocole/ciscoVtp.md
         - Routage: reseau/protocole/routage.md
+      - Principe:
+        - MPLS: reseau/principe/mpls.md
+        - Sd-WAN: reseau/principe/sd-wan.md
       - Adresse ip: reseau/adresse_ip.md
       - DNS : reseau/dns.md  
       - Dépannage réseau: reseau/depannageReseau.md
