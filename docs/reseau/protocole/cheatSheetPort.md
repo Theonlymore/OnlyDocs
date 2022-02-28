@@ -4,7 +4,7 @@
 | ------ | ------------------ | ---------------------- | ----- |
 | 22     | SSH - Secure Shell | Communication sécurisé |
 | 25 | SMTP - Simple Mail Transfer Protocol | Expéditeur des emails | Le serveur SMTP joue le rôle d'éxpéditeur. |
-| 53 | DNS - Domain Name System | Nom de domaines |
+| 53 | DNS - Domain Name System | Nom de domaines |git
 
 
 ### Sources

@@ -119,6 +119,7 @@ nav:
         - Nat: reseau/cisco/ciscoNat.md
         - Hsrp: reseau/cisco/ciscoHsrp.md
       - Protocole:
+        - Les Ports: reseau/protocole/cheatSheetPort.md
         - SNMP: reseau/protocole/SNMP.md
         - FTP: reseau/protocole/ftp.md
         - HSRP: reseau/protocole/ciscoHsrp.md
