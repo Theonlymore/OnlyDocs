@@ -125,6 +125,7 @@ nav:
         - HSRP: reseau/protocole/ciscoHsrp.md
         - VTP: reseau/protocole/ciscoVtp.md
         - Routage: reseau/protocole/routage.md
+        - Checksum: reseau/protocole/checksum.md
       - Principe:
         - MPLS: reseau/principe/mpls.md
         - Sd-WAN: reseau/principe/sd-wan.md
