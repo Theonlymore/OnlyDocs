@@ -151,6 +151,7 @@ nav:
       - GPO: windows/windowsServeur/gpo.md
       - Kerberos: windows/windowsServeur/kerberos.md
       - RDP: windows/windowsServeur/rdp.md
+    - Master: windows/makeMaster.md
     - Terminal: windows/newTerminal.md
     - vsCode: windows/vsCode.md
     - Registre: windows/registre.md
@@ -168,3 +169,4 @@ nav:
         La to-do liste: organisation/todo.md
         Carte mental: organisation/mindmap.md
   - Sites sympas: niceSite.md
+  - Tool: tool.md

@@ -11,6 +11,7 @@
 | Mdp en telnet [source](https://formip.com/securisation-ios-cisco/) | `config)#line vty 0 15` (15 pour switch et 5 routeurs) <br>`config-line)#password azerty`|
 | Enregistrer la configuration actuelle pour chaque restart | `#copy running-config startup-config` | 
 | Mettre une passerelle | `ip default gateway 192.168.1.254` |
+| Faire une commande à l'exterieur de `config)#` (dans `SW#`) | `do` exemple : `do write` |
 
 **Mémoire :**
 
@@ -65,6 +66,7 @@ Information / Diagnostique
 |   | `#show port-security address` |
 | voir infos sur interface | `#show port-security interface G0/1` |
 | Désactivation du port-security |`config)#interface fa0/1`<br> `config-if)#no switchport port-security maximum`<br> `config-if)#no  switchport port-security mac-address sticky` <br> `config-if)#no switchport port-security` |
+| Voir config d'une interface | `show run interface gig 1/0/15` |
 
 
 ### Activer la connexion ssh

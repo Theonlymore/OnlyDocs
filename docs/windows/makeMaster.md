@@ -16,7 +16,8 @@ La création d'un Master permet permet par exemple au entreprises d'avoir une im
 
 ### Rendre sont image moins lourd
 
-Supprimer :
+#### Supprimer :
+
 - **profils** `système > Paramètres avancés du système > Paramètres système avancés > [Profil ds utilisateurs > Paramètres]
 - **temp** : `Windows + R` > `cleanmgr`
 - `c:/Windows/Temp`
