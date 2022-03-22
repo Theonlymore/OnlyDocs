@@ -16,4 +16,6 @@ mv cheat-linux-amd64 /usr/local/bin/cheat
 ```
 
 ### Souces
+
+- [Officiel Github](https://github.com/cheat/cheat)
 - [wiki-tech - papamica](https://www.tech2tech.fr/mon-terminal-ideal/)
