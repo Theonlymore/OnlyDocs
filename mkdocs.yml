@@ -88,6 +88,7 @@ nav:
         - ElasticStack:
           - Elasticsearch: linux/services/elasticStack/elasticsearch.md
           - Filebeat: linux/services/elasticStack/filebeat.md
+      - CheatsheetInTerminal: linux/cheatSheetInTerminal.md
       - Vim: linux/vim.md
       - Man: linux/man.md
       - Find: linux/find.md
