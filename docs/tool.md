@@ -8,6 +8,7 @@
 | Packet tracer | Logiciel libre pour l'émulation/simulation de réseau |
 | Wireshark | Analyse de traffic  |
 | Iperf | Simuler du trafic/test bande passante                                                      |
+| Netdisco | Permet la découvert réseau en SNMP sur les switch/routeur |
 
 
 

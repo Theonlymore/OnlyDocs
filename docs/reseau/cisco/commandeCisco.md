@@ -67,6 +67,7 @@ Information / Diagnostique
 | voir infos sur interface | `#show port-security interface G0/1` |
 | Désactivation du port-security |`config)#interface fa0/1`<br> `config-if)#no switchport port-security maximum`<br> `config-if)#no  switchport port-security mac-address sticky` <br> `config-if)#no switchport port-security` |
 | Voir config d'une interface | `show run interface gig 1/0/15` |
+| Voir les voisin réseau | `show lldp neighbor` |
 
 
 ### Activer la connexion ssh
