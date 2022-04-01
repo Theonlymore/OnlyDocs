@@ -83,16 +83,17 @@ nav:
         - Git: linux/services/git.md
         - Ssh: linux/services/ssh.md
         - Ftp: linux/services/ftp.md
+        - NMAP: linux/services/nmap.md
         - Nagios: linux/services/nagios.md
         - ElasticStack:
           - Elasticsearch: linux/services/elasticStack/elasticsearch.md
           - Filebeat: linux/services/elasticStack/filebeat.md
+      - CheatsheetInTerminal: linux/cheatSheetInTerminal.md
       - Vim: linux/vim.md
       - Man: linux/man.md
       - Find: linux/find.md
       - Cron: linux/cron.md
       - Terminal: linux/terminal.md
-
   - Docker:
       - Présentation: docker/presentationDocker.md
       - Base de docker: docker/baseDocker.md
@@ -119,11 +120,16 @@ nav:
         - Nat: reseau/cisco/ciscoNat.md
         - Hsrp: reseau/cisco/ciscoHsrp.md
       - Protocole:
+        - Les Ports: reseau/protocole/cheatSheetPort.md
         - SNMP: reseau/protocole/SNMP.md
         - FTP: reseau/protocole/ftp.md
         - HSRP: reseau/protocole/ciscoHsrp.md
         - VTP: reseau/protocole/ciscoVtp.md
         - Routage: reseau/protocole/routage.md
+        - Checksum: reseau/protocole/checksum.md
+      - Principe:
+        - MPLS: reseau/principe/mpls.md
+        - Sd-WAN: reseau/principe/sd-wan.md
       - Adresse ip: reseau/adresse_ip.md
       - DNS : reseau/dns.md  
       - Dépannage réseau: reseau/depannageReseau.md
@@ -138,12 +144,18 @@ nav:
       - NAT et PAT: reseau/nat-pat.md
       - Chiffrement: reseau/chiffrement.md
   - Windows :
+    - Windows: windows/windows.md
     - Windows serveur :
       - Présentation: windows/windowsServeur/windowsServeur.md
+      - Diagnostic: windows/windowsServeur/diagnostic.md
       - Active directory: windows/windowsServeur/ad.md
       - GPO: windows/windowsServeur/gpo.md
+      - Kerberos: windows/windowsServeur/kerberos.md
+      - RDP: windows/windowsServeur/rdp.md
+    - Master: windows/makeMaster.md
     - Terminal: windows/newTerminal.md
     - vsCode: windows/vsCode.md
+    - Registre: windows/registre.md
   - Aws :
     - S3 Glacier : aws/s3Glacier.md
   - Langages:
@@ -158,3 +170,4 @@ nav:
         La to-do liste: organisation/todo.md
         Carte mental: organisation/mindmap.md
   - Sites sympas: niceSite.md
+  - Tool: tool.md

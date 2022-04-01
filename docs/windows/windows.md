@@ -11,3 +11,15 @@ Windows est un système d'exploitation.
 1. `Windows+R`
 2. `shell:startup`
 
+### Executer pratique
+
+| Ouvrir | Description            |
+| ------ | ---------------------- |
+| resmon | Moniteur de ressources |
+
+
+## CMD : rapidement
+
+- `cmd /K ipconfig /all`
+
+Autres : `cmd /?`

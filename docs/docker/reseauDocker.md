@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Pour que les conteneurs Docker puissent communiquer entre eux et aussi avec la machine hôte et les réseaux externes, une couche réseau doit être mise en place. 
+Pour que les conteneurs Docker puissent communiquer entre eux et aussi avec la machine hôte et les réseaux externes, une couche réseau doit être mise en place.
 
 
 ## Les Différents type de réseau sur Docker
@@ -28,7 +28,7 @@ Lorsqu'un conteneurs utilisant le bridge est lancé, il est possible de voir ave
 
 Le réseau bridge est le plus couramment utilisé. Les conteneurs qui utilisent ce driver, ne peuvent communiquer qu’entre eux, cependant ils ne sont pas accessibles depuis l’extérieur si un mappage de port n'est pas mise en place.
 
-Exemple de mappage de port avec run : `docker run -it -p 8000:5000 alpine` (`-p 8000:5000` permet de rediriger les paquets de l'hôte sur le port 8000 vers le port 5000 du conteneurs)
+Exemple de mappage de port avec run : `docker run -it -p 8000:5000 alpine` (`-p 8000:5000` permet de rediriger les paquets de l'hôte sur le port 8000 vers le port 5000 du conteneurs).
 
 #### Schéma 
 ![Docker Bridge Network](images/dockerBridgeNetwork.jpg "Docker bridge schéma")
@@ -130,7 +130,7 @@ docker network create -d bridge --subnet=172.16.86.0/24 --gateway=172.16.86.1 mo
 
 ### Un exemple
 
-connecter deux conteneurs à notre réseau bridge créé précédemment
+Connecter deux conteneurs à notre réseau bridge créé précédemment.
 
 ```bash
 docker run -dit --name alpine1 --network mon-bridge alpine
@@ -173,7 +173,7 @@ docker network inspect mon-bridge
 ]
 ```
 
-On ne peux pas créer de network host car on utilise l'interface de la machine hôte. Cela donne une erreur
+On ne peux pas créer de network host car on utilise l'interface de la machine hôte. Cela donne une erreur.
 
 ### Supprimer, déconnecter et connecter un réseau docker
 

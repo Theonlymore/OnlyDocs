@@ -10,3 +10,9 @@
 - [command-not-found.com](https://command-not-found.com)
 - [Devopssec](https://devopssec.fr/)
 - [devHints.io / cheat cheat](https://devhints.io/)
+- [ExplainShell](https://www.explainshell.com/)
+
+## Pour certaine question :)
+
+- [letmegooglethat](https://letmegooglethat.com/) ou [giybf](https://giybf.com/)
+

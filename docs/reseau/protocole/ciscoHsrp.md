@@ -22,3 +22,10 @@ Solution :
 
 - cisco utilise le md5 pour le hachage de mot de passe
 - Vérification stricte des adresse ip
+
+
+# Virtual Router Redundancy Protocol
+
+VRRP est un protocole de **redondance de routeur**, dont le but est d'**augmenter la disponibilité de la passerelle** des hôtes d'un même réseau.
+
+
