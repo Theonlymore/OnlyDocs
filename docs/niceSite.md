@@ -1,6 +1,7 @@
 # Sites Sympas
 
 - [lafor.ge](https://lafor.ge)
+- [explaine-shell](https://explainshell.com/)
 - [wiki-tech](https://wiki-tech.io)
 - [docs.khroners.fr](https://docs.khroners.fr/)
 - [hadrienpelissier.fr](https://cours.hadrienpelissier.fr/)
