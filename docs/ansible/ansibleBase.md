@@ -56,7 +56,13 @@ Il est maintenant possible de lancer des commande Ansible : `ansible -i inventai
 
 La commande a fonctionné avec succès. Cet exemple est assez simple mais pour des tâches plus évoluées nous allons faire appel au [**playbook**](ansiblePlaybooks.md) (livre de recette) d’Ansible.
 
+## DEBUG
 
+Permet de débugger un script Ansible en voyant chaque étade de la commande.
+ 
+```console
+ansible-playbook -i Inv playbook.yml --step -vvv
+```
 ### Sources
 - [blog.stephane-robert](https://blog.stephane-robert.info/post/ansible-inventaire-static-precedence-tips/)
 
