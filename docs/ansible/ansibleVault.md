@@ -7,4 +7,4 @@ Afin de par exemple de pas leak un mot de passe via github
 `ansible-playbook -i stagingInv vps.yml --ask-vault-pass --step`
 
 
-j
+jj
