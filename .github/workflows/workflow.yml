@@ -15,7 +15,7 @@ jobs:
           username: mkdocs
           server: rocheralexandre.com
           port: 22
-          local_path: './*'
+          local_path: './github/workspace/site/*'
           remote_path: '/apps/web/mkdocs'
           sftp_only: true
           password: ${{ secrets.SFTP_PASSWORD }}
