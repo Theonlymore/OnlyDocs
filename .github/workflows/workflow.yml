@@ -1,4 +1,4 @@
-name: DeployToS3
+name: hugo
 
 on:
   push:
