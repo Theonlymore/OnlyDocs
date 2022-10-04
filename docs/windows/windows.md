@@ -21,5 +21,8 @@ Windows est un système d'exploitation.
 ## CMD : rapidement
 
 - `cmd /K ipconfig /all`
+  
+
+
 
 Autres : `cmd /?`

@@ -162,6 +162,7 @@ nav:
   - Langages:
     - Markdown: langage/markdown.md
     - PowerShell: langage/powerShell.md
+    - Python: langage/python.md
     - SQL: langage/sql.md
     - NoSQL: langage/nosql.md
     - Regex: langage/regex.md
