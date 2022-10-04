@@ -146,6 +146,7 @@ nav:
   - Windows :
     - Windows: windows/windows.md
     - Windows serveur :
+      - Base : windows/windowsServeur/base.md
       - Présentation: windows/windowsServeur/windowsServeur.md
       - Diagnostic: windows/windowsServeur/diagnostic.md
       - Active directory: windows/windowsServeur/ad.md
@@ -156,18 +157,20 @@ nav:
     - Terminal: windows/newTerminal.md
     - vsCode: windows/vsCode.md
     - Registre: windows/registre.md
-  - Aws :
-    - S3 Glacier : aws/s3Glacier.md
+  - Cloud :
+    - Aws - S3 Glacier : aws/s3Glacier.md
   - Langages:
     - Markdown: langage/markdown.md
     - PowerShell: langage/powerShell.md
     - SQL: langage/sql.md
     - NoSQL: langage/nosql.md
     - Regex: langage/regex.md
+  - Hardware:
+    - Stockage: hardware/stockage.md
   - Organisation:
-        Gérez votre temps efficacement: organisation/timeEfficiently.md
-        Journée structurer: organisation/structureDays.md
-        La to-do liste: organisation/todo.md
-        Carte mental: organisation/mindmap.md
+    - Gérez votre temps efficacement: organisation/timeEfficiently.md
+    - Journée structurer: organisation/structureDays.md
+    - La to-do liste: organisation/todo.md
+    - Carte mental: organisation/mindmap.md
   - Sites sympas: niceSite.md
   - Tool: tool.md
