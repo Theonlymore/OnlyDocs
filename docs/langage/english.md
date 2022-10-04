@@ -2,8 +2,7 @@
 
 
 word : 
-| word | trad   |
-| ---- | ------ |
-| budy | occupé |
-
- 
+| word     | trad     |
+| -------- | -------- |
+| budy     | occupé   |
+| although | bien que |
