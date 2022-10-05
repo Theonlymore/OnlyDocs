@@ -112,6 +112,7 @@ nav:
         - Docker: ansible/modules/ansibleDocker.md
         - Template: ansible/modules/ansibleTemplate.md
       - Rôles: ansible/ansibleRoles.md
+      - Vault: ansible/ansibleVault.md
       - Organisation: ansible/ansibleOrga.md
   - Réseau:     
       - 7 couches OSI: reseau/modelOsi.md
