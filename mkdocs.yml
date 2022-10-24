@@ -120,6 +120,8 @@ nav:
         - Commande cisco: reseau/cisco/commandeCisco.md
         - Nat: reseau/cisco/ciscoNat.md
         - Hsrp: reseau/cisco/ciscoHsrp.md
+      - Virtualisation:
+        - VM: reseau/vm/vm.md
       - Protocole:
         - Les Ports: reseau/protocole/cheatSheetPort.md
         - SNMP: reseau/protocole/SNMP.md

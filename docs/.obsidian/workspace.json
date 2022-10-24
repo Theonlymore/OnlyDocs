@@ -1,0 +1,149 @@
+{
+  "main": {
+    "id": "16531389e5f958e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "28d4813b009a2509",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "219363a4dfc07e0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "link.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "846395b73b27a948",
+    "type": "split",
+    "children": [
+      {
+        "id": "46391dc86e0cf6ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "14c378ac01c32943",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "60a11dc82b21ff5f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c0f693cc969e08ac",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6a1101d2cbdc89ee",
+    "type": "split",
+    "children": [
+      {
+        "id": "98206eacc03988da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "88a3ae3b6ca10b27",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "link.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6a58ad7daae95449",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "link.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1157776b9151adc1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3c45b303225a8498",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "link.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "219363a4dfc07e0f",
+  "lastOpenFiles": [
+    "index.md",
+    "niceSite.md",
+    "tool.md",
+    "toUpdateDocs.md"
+  ]
+}
