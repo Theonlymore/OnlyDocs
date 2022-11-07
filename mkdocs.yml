@@ -160,6 +160,8 @@ nav:
     - Terminal: windows/newTerminal.md
     - vsCode: windows/vsCode.md
     - Registre: windows/registre.md
+  - Entreprise:
+    - Support: entreprise/support.md
   - Cloud :
     - Aws - S3 Glacier : aws/s3Glacier.md
   - Langages:
