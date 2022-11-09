@@ -27,26 +27,32 @@ switch(eth-1)# name "TO Switch SW2"
 
 #### Assignment d'un vlan à un port
 
-| Nom | Description | Commentaire |
-| --- | ----------- | ----------- |
-| `Tagged`| trunker - faire passer des plusieurs vlans à travert le même port | | 
-`Untagged`| access - forcer un vlan sur un port par exemple | impossible d'avoir plusieurs "untagged" sur le même port|
+| Nom        | Description                              | Commentaire                           |
+| ---------- | ----------------------------------------------------------------- | ------------------------- |
+| `Tagged`   | trunker - faire passer des plusieurs vlans à travert le même port | |
+| `Untagged` | access - forcer un vlan sur un port par exemple | impossible d'avoir plusieurs "untagged" sur le même port |
 
 
 **Mode trunk(tagged) pour faire passer le vlan 99-101 dans les port 5 à 10**
 
-```sh
-switch(config)#vlan 99
-switch(vlan-99)#tagged ethernet 5-10
+=== "Tagged"
 
-switch(config)#vlan 99
-switch(vlan-100)#tagged ethernet 5-10
+    ```sh
+    switch(config)#vlan 99
+    switch(vlan-99)#tagged ethernet 5-10
 
-switch(config)#vlan 99
-switch(vlan-101)#tagged ethernet 5-10
-```
+    switch(config)#vlan 101
+    switch(vlan-101)#tagged ethernet 5-10
+    ```
 
-**Mode access(untagged) pour mettre "forcer" un vlan sur un port**
+=== "Short"
+
+    ```
+    switch(config)#vlan 99 tagged 5-10
+    switch(config)#vlan 99 tagged 5,7,9,12
+    ```
+
+**Les trames non tagger(pas de vlan id) sont mis dans ce VLAN.**
 
 ```sh
 switch(config)#vlan 99
@@ -55,57 +61,77 @@ switch(vlan-99)#untagged ethernet 1
 
 ## LACP
 
-Switch A
+=== "Switch A"
 
-```sh
+    ``` sh
+    SwitchA(config)# trunk 23-24 trk1 lacp
+    ```
 
-switchA(config)# interface 2,4
-switchA(eth-2,4)# speed-duplex auto
-switchA(eth-2,4)# lacp active
-```
+=== "Switch B"
 
-Switch B
+    ``` bash
+    SwitchB(config)# trunk 23-24 trk1 lacp
+    ```
 
-```sh
+=== "Remove lacp/trunk"
 
-switchB(config)# interface 2,4
-switchB(eth-2,4)# speed-duplex auto
-switchB(eth-2,4)# lacp passive
-```
+    ```sh
+    SwitchB(config)# no trunk 23-24 trk1
+
+    ### Si lacp encore la
+    
+    SwitchB(config)# interface 23-24
+    SwitchB(eth-2-3)# no lacp
+    ```
+
+**Tagged le lacp : `vlan 5 tagged trk1`**
+
+
 
 
 ## Trunks (dans hp)
 
-- supprimer un trunks
-
 
 - transpondeur 
-- enelver lacp ?; mettre vlan sur un grp lacp ?
 - activier snmp
-
 
 
 ## Mémoire 
 
-| Description            | Commandes      |
-| ---------------------- | -------------- |
-| Enregister (ram > rom) | `write memory` |
-| Reset usine | `erase startup-config`|
+| Description            | Commandes              |
+| ---------------------- | ---------------------- |
+| Enregister (ram > rom) | `write memory` `save`         |
+| Reset usine            | `erase startup-config` |
 
+
+## Interfaces
+
+| Description            | Commandes              |
+| ---------------------- | ---------------------- |
+| Voir les interfaces| `show interface`         |
+| Information sur le tranceiver | `show interfaces transceiver` |
+
+
+
+## Diagnostique
+
+| Description            | Commandes              |
+| ---------------------- | ---------------------- |
+| Voir tout la conf | `show run`         |
+| Voir les vlan           | `show vlan` |
 
 A tester / voir : 
 
-- lacp
-- 
 ## Sources
 
+- [CLi docs hp](./sources/hpCliDocs.pdf)
 - [Network vlan/trunk and native VLANs](https://networkdirection.net/articles/network-theory/taggeduntaggedandnativevlans/)
 - [coindunet](https://www.lecoindunet.com/comprendre-notion-vlan-tagged-untagged-1629#:~:text=Si%20un%20appareil%20peut%20ajouter,et%20rediriger%20correctement%20le%20trafic.)
 - [lacp - itconnect](https://www.it-connect.fr/mise-en-place-du-protocole-lacp-sur-hp-procurve/#:~:text=Pr%C3%A9sentation,et%20de%20r%C3%A9partition%20de%20charge.)
+- [lacp - stormshield](https://documentation.stormshield.eu/SNS/v3/fr/Content/LACP_link_aggregation/Configuring_the_switch.htm)
 - [networklab.fr](https://www.networklab.fr/guide-de-configuration-hp-procurve-switch/)
 - [Pdf-HP](./sources/hp-procurve.pdf)
 - [Vlan](https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c03182828)
-
 
 
 
