@@ -120,6 +120,8 @@ nav:
         - Commande cisco: reseau/cisco/commandeCisco.md
         - Nat: reseau/cisco/ciscoNat.md
         - Hsrp: reseau/cisco/ciscoHsrp.md
+      - HP:
+        - SwitchHp: reseau/hp/hpSwitch.md
       - Virtualisation:
         - VM: reseau/vm/vm.md
       - Protocole:
