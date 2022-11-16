@@ -47,7 +47,7 @@ switch(eth-1)# name "TO Switch SW2"
 
 === "Short"
 
-    ```
+    ```sh
     switch(config)#vlan 99 tagged 5-10
     switch(config)#vlan 99 tagged 5,7,9,12
     ```
@@ -69,7 +69,7 @@ switch(vlan-99)#untagged ethernet 1
 
 === "Switch B"
 
-    ``` bash
+    ``` sh
     SwitchB(config)# trunk 23-24 trk1 lacp
     ```
 
@@ -109,7 +109,7 @@ switch(vlan-99)#untagged ethernet 1
 | Description            | Commandes              |
 | ---------------------- | ---------------------- |
 | Voir les interfaces| `show interface`         |
-| Information sur le tranceiver | `show interfaces transceiver` |
+| Information sur le tranceiver | `show interfaces transceiver 28 detail` |
 
 
 
@@ -129,6 +129,7 @@ A tester / voir :
 - [coindunet](https://www.lecoindunet.com/comprendre-notion-vlan-tagged-untagged-1629#:~:text=Si%20un%20appareil%20peut%20ajouter,et%20rediriger%20correctement%20le%20trafic.)
 - [lacp - itconnect](https://www.it-connect.fr/mise-en-place-du-protocole-lacp-sur-hp-procurve/#:~:text=Pr%C3%A9sentation,et%20de%20r%C3%A9partition%20de%20charge.)
 - [lacp - stormshield](https://documentation.stormshield.eu/SNS/v3/fr/Content/LACP_link_aggregation/Configuring_the_switch.htm)
+- [transceiver](https://techhub.hpe.com/eginfolib/networking/docs/switches/WB/15-18/5998-8162_wb_2920_mcg/content/ch11s05.html)
 - [networklab.fr](https://www.networklab.fr/guide-de-configuration-hp-procurve-switch/)
 - [Pdf-HP](./sources/hp-procurve.pdf)
 - [Vlan](https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c03182828)

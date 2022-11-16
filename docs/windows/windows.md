@@ -13,9 +13,11 @@ Windows est un système d'exploitation.
 
 ### Executer pratique
 
-| Ouvrir | Description            |
-| ------ | ---------------------- |
-| resmon | Moniteur de ressources |
+| Ouvrir      | Description                   |
+| ----------- | ----------------------------- |
+| resmon      | Moniteur de ressources        |
+| mmc         | Console admin mmc             |
+| lusmrgr.msc | Console User et groupe locaux |
 
 
 ## CMD : rapidement
