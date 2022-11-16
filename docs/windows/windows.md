@@ -20,6 +20,14 @@ Windows est un système d'exploitation.
 | lusmrgr.msc | Console User et groupe locaux |
 
 
+### Logicle sympa 
+
+| Logiciel | Description                                          |
+| -------- | ---------------------------------------------------- |
+| Foxy pdf | interface moins (moins de fonctionnalité en gratuit) |
+| PDf24    | Outil complet pour les pdf                           |
+
+
 ## CMD : rapidement
 
 - `cmd /K ipconfig /all`
