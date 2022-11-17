@@ -6,6 +6,10 @@ Windows est un système d'exploitation.
 
 ![local connect](images/windowsLocalConnect.jpg)
 
+Refuser de mettre un compte microsoft pour la création de compte ou autre.
+En email : `no@thankyou.com`
+pass : n'importe quoi
+
 ### Dossier lancer au démarrage de Windows
 
 1. `Windows+R`

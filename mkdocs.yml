@@ -158,9 +158,10 @@ nav:
       - GPO: windows/windowsServeur/gpo.md
       - Kerberos: windows/windowsServeur/kerberos.md
       - RDP: windows/windowsServeur/rdp.md
+    - Logicels:
+      - vsCode: windows/soft/vsCode.md
     - Master: windows/makeMaster.md
     - Terminal: windows/newTerminal.md
-    - vsCode: windows/vsCode.md
     - Registre: windows/registre.md
   - Entreprise:
     - Support: entreprise/support.md
