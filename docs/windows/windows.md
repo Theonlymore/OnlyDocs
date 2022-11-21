@@ -2,6 +2,10 @@
 
 Windows est un système d'exploitation.
 
+## Recupe des driver : 
+
+[doubledriver](https://www.pcastuces.com/logitheque/double_driver.htm)
+
 ### Connection sur la machine et non le domaine : `.\`
 
 ![local connect](images/windowsLocalConnect.jpg)
