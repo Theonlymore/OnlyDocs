@@ -36,7 +36,10 @@ Comment faire pour que ce que j'ai à dire soit comprit et accepté par ceux qui
    1. logique/rationnel
    2. Emotion, vécu et vie personnel
    3. étho : la confiance que l'on m'acorde
-3. 
+3. S'adapté à son public
+4. Doit inclure son public
+5. Ne sera jamais parfait
+6. Doit toujours être structuré et suivre un fil logique clair
 
 ### Sources
 
