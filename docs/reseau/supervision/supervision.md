@@ -27,6 +27,3 @@ Technique industrielle de suivi et pilotage informatique
 
 - [DocsOfficel](https://www.zabbix.com/documentation/current/en/)
 - esgiCours
-
-
-

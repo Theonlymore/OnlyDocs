@@ -1,4 +1,4 @@
-# DHCP - **Dynamic Host Configuration Protocol**
+# DHCP - Dynamic Host Configuration Protocol
 
 Avantages :
 
@@ -17,26 +17,26 @@ Inconvénients :
 - Un masque
 - Une durée de baie
 
-=== "Obtention d'un bail - **DORA**"
+=== "Obtention d'un bail - DORA"
 
     ``` markdown
-    - **D**iscover - **D**emande
-    - **O**ffer - **O**ffre
-    - **R**equest - **R**éponse (acceptation du bail)
-    - **A**cknowledge - **A**cceptation du bail
+    - Discover - Demande
+    - Offer - Offre
+    - Request - Réponse (acceptation du bail)
+    - Acknowledge - Acceptation du bail
     ```
 
-=== "Renouvellement du bail - **RA**"
+=== "Renouvellement du bail - RA"
 
     ``` markdown
     à 3/4 de la durée de bail :
-    - **R**equest - **R**éponse
-    - **A**cknowledge - **A**cceptation
+    - Request - Réponse
+    - Acknowledge - Acceptation
     ```
-=== "Résiliation du bail - **R**"
+=== "Résiliation du bail - R"
 
     ``` markdown
-    - **R**elease - **R**éponse
+    - Release - Réponse
     ```
 
 ## Configuration de l'étendue
@@ -46,13 +46,17 @@ Inconvénients :
 - Exclusions : 192.168.0.5 - 192.168.0.5
 - Un durée de bail : 2 jours
 
-Ciblé une machine : réservation d'une ip pour une machine via son **adresse mac**
+Ciblé une machine : réservation d'une ip pour une machine via son adresse mac
 
 Gestion des options : 
 
-- **Routeur** : 3 : Définit la passrelle par défaut
-- **Serveur de noms de domaine** : 6 : Définit le serveur DNS
-- **Nom de domaine DNS** : 12 : Définit le suffixe DNS
+- Routeur : 3 : Définit la passrelle par défaut
+- Serveur de noms de domaine : 6 : Définit le serveur DNS
+- Nom de domaine DNS : 12 : Définit le suffixe DNS
+- ...
+  
+
+
 
 
 

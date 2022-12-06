@@ -150,6 +150,10 @@ nav:
       - VPN: reseau/vpn.md
       - NAT et PAT: reseau/nat-pat.md
       - Chiffrement: reseau/chiffrement.md
+  - Securite:
+    - Fortinet:
+      - Fortigate: securite/fortinet/cliFortinet.md
+      - Fortigate: securite/fortinet/erreur.md
   - Windows :
     - Windows: windows/windows.md
     - Windows serveur :
@@ -160,10 +164,13 @@ nav:
       - GPO: windows/windowsServeur/gpo.md
       - Kerberos: windows/windowsServeur/kerberos.md
       - RDP: windows/windowsServeur/rdp.md
+      - dhcp: windows/windowsServeur/dhcp.md
     - Logicels:
       - vsCode: windows/soft/vsCode.md
+      - Terminal: windows/soft/terminal.md
+      - Office365:
+        - mail: windows/soft/office365/mail.md
     - Master: windows/makeMaster.md
-    - Terminal: windows/newTerminal.md
     - Registre: windows/registre.md
   - Entreprise:
     - Support: entreprise/support.md
@@ -171,6 +178,7 @@ nav:
     - Aws - S3 Glacier : aws/s3Glacier.md
   - Langages:
     - Markdown: langage/markdown.md
+    - AutoHotKey: langage/ahk.md
     - PowerShell: langage/powerShell.md
     - Python: langage/python.md
     - SQL: langage/sql.md
