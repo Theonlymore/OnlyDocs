@@ -119,6 +119,7 @@ switch(vlan-99)#untagged ethernet 1
 | ---------------------- | ---------------------- |
 | Voir tout la conf | `show run`         |
 | Voir les vlan           | `show vlan` |
+| Voir les vlan sur un port |` show vlans ports ethernet 31 detail`
 
 A tester / voir : 
 

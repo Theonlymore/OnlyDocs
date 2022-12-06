@@ -7,3 +7,6 @@
 - Le par-feux bloque les ICMP (mettre le bon protocole) autorise plus que le "domaine"
 
 - Le forti à une interface down avec une ip et cette ip est déjà utiliser par un autre équipement. Finalité, impossible d'acceder a l'équipement (cela va directement sur l'interface du forti) 
+
+- Bien mettre les ips vers (local address et remote address) sur chaque forti
+
