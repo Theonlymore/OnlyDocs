@@ -18,7 +18,7 @@ enjeux
 ## Afficher sa propre conviction :
 
 - Mon opinion
-- Mes idées forte, claire qui structure l'ensemble
+- Mes idées forte, claire qui structure l'ensemblegit
 
 
 
