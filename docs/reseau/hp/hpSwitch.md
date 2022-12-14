@@ -52,7 +52,9 @@ switch(eth-1)# name "TO Switch SW2"
     switch(config)#vlan 99 tagged 5,7,9,12
     ```
 
-**Les trames non tagger(pas de vlan id) sont mis dans ce VLAN.**
+**Les trames non taggées (pas d'ID de VLAN) sont mises dans ce VLAN.**
+
+**/!\ Un port ne peut pas être taggé et non-taggé en même temps.**
 
 ```sh
 switch(config)#vlan 99

@@ -7,6 +7,8 @@ La création d'un Master permet permet par exemple au entreprises d'avoir une im
 
 ### Sysprep
 
+Path : `%WINDIR%\system32\sysprep`
+
 `sysprep /oobe /generalize /shutdown /unattend=fichier.xml`
 
 - `/oobe` : permet d'avoir  l'écran de configuration initiale dans lequel, il est possible de personnaliser les informations sur le système d'exploitation.
