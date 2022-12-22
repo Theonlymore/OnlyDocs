@@ -11,6 +11,7 @@
 - [Devopssec](https://devopssec.fr/)
 - [devHints.io / cheat cheat](https://devhints.io/)
 - [ExplainShell](https://www.explainshell.com/)
+- [Outil sympa en ligne de commandes](https://blog.stephane-robert.info/post/devops-outils-linux-indispensables/#lazydocker)
 
 ## Pour certaine question :)
 
