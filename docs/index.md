@@ -1,27 +1,10 @@
+
 # OnlyDocs
 
-Bonjour, je vous souhaite la bienvenue sur mon site de documentation ! Vous trouverez ici mes notes sur les technologie que j'utilise ou apprends.
+Bonjour et bienvenue sur ma documentation technique ! Ici, vous trouverez des informations sur les technologies que j'utilise ou apprends.
 
+Pour ce faire, j'utilise un outil en python appelé MkDocs qui me permet de convertir des fichiers markdown en fichiers web (html, css, etc.). Ces fichiers sont ensuite hébergés sur un serveur virtuel hébergé par [Contabo](https://contabo.com/).
 
+En outre, j'utilise Github pour le [versioning](https://github.com/Theonlymore/OnlyDocs) des documents et du code. Une [Github action](https://github.com/Theonlymore/MkdocsToS3) est configurée pour mettre à jour mes documents automatiquement. Cette action Github permet de surveiller les changements dans le code et de lancer MkDocs pour créer les fichiers web. Une fois que les fichiers web sont créés, ils sont envoyés en SFTP sur mon serveur.
 
-N'hésitez pas à me contacter via Discord (Alex_#7263) si des information son incorrect ou àposer des questions ! 
-
-Merci pour votre visite.
-
-
-## Comment
-
-### Outil 
-
-MkDocs est un outil en python qui me permet de faire passer des fichiers markdown en fichier web(html, css,..)
-
-### Serveur
-
-J'héberge mes sites sur serveur virtuel heberger par [Contabo](https://contabo.com/).
-
-
-### Versioning et mise en ligne
-
-J'utilise github pour herberger le [versioning](https://github.com/Theonlymore/OnlyDocs "Lien github vers le versioning du site") des docs/code.
-
-Pour mettre à jour m'a docs, j'utilise une [github action](https://github.com/Theonlymore/MkdocsToS3 "Lien vers le fork de la github action que j'ai modifié") qui lance mkdocs pour créer les fichiers web envoyer ensuite en SFTP sur mon serveur.
+Je vous invite à explorer mes documents et à me contacter via Discord ([Alex_#7263](https://discordapp.com/users/302518030750056450)) si vous avez des questions ou des informations incorrectes. De plus, je vous encourage à vérifier les informations sur d'autres sources pour vous assurer qu'elles sont à jour. Merci pour votre visite !
