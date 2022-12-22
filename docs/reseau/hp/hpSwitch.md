@@ -6,17 +6,30 @@ trunk
 
 ## Interface 
 
-```sh
-# Activation / Desctivation interface
-switch(config)# interface ethernet 1
-switch(eth-1)# enable
-switch(eth-1)# disable
+=== "Base interfaces"
 
-# Description d'une interface
-switch(config)# interface ethernet 1
-switch(eth-1)# name "TO Switch SW2"
+    ```sh
+    # Activation / Desctivation interface
+    switch(config)# interface ethernet 1
+    switch(eth-1)# enable
+    switch(eth-1)# disable
 
-```
+    # Description d'une interface
+    switch(config)# interface ethernet 1
+    switch(eth-1)# name "TO Switch SW2"
+
+    ```
+
+=== "transceiver unspported"
+
+    ```sh
+    switch(config)# interface ethernet 1
+    switch(eth-1)# allow-unsupported-transceiver
+    ```
+
+
+
+
 
 ## Vlan
 
@@ -45,7 +58,7 @@ switch(eth-1)# name "TO Switch SW2"
     switch(vlan-101)#tagged ethernet 5-10
     ```
 
-=== "Short"
+=== "Short method"
 
     ```sh
     switch(config)#vlan 99 tagged 5-10
@@ -89,13 +102,11 @@ switch(vlan-99)#untagged ethernet 1
 **Tagged le lacp : `vlan 5 tagged trk1`**
 
 
+## SNMP
 
+Commande : active le snmp sur le switch (all)
 
-## Trunks (dans hp)
-
-
-- transpondeur 
-- activier snmp
+- `snmp-server community "public" unrestricted`
 
 
 ## Mémoire 
@@ -128,6 +139,7 @@ A tester / voir :
 ## Sources
 
 - [CLi docs hp](./sources/hpCliDocs.pdf)
+- [autres](http://notionsinformatique.free.fr/administration/switchhp.html)
 - [Network vlan/trunk and native VLANs](https://networkdirection.net/articles/network-theory/taggeduntaggedandnativevlans/)
 - [coindunet](https://www.lecoindunet.com/comprendre-notion-vlan-tagged-untagged-1629#:~:text=Si%20un%20appareil%20peut%20ajouter,et%20rediriger%20correctement%20le%20trafic.)
 - [lacp - itconnect](https://www.it-connect.fr/mise-en-place-du-protocole-lacp-sur-hp-procurve/#:~:text=Pr%C3%A9sentation,et%20de%20r%C3%A9partition%20de%20charge.)
@@ -136,6 +148,7 @@ A tester / voir :
 - [networklab.fr](https://www.networklab.fr/guide-de-configuration-hp-procurve-switch/)
 - [Pdf-HP](./sources/hp-procurve.pdf)
 - [Vlan](https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c03182828)
+
 
 
 
