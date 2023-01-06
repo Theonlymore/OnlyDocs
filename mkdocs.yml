@@ -161,10 +161,11 @@ nav:
       - Présentation: windows/windowsServeur/windowsServeur.md
       - Diagnostic: windows/windowsServeur/diagnostic.md
       - Active directory: windows/windowsServeur/ad.md
-      - GPO: windows/windowsServeur/gpo.md
       - Kerberos: windows/windowsServeur/kerberos.md
       - RDP: windows/windowsServeur/rdp.md
       - dhcp: windows/windowsServeur/dhcp.md
+      - GPO: windows/windowsServeur/gpo/gpo.md
+        - GPO: windows/windowsServeur/gpo/adminLocal.md
     - Logicels:
       - vsCode: windows/soft/vsCode.md
       - Terminal: windows/soft/terminal.md

@@ -12,6 +12,8 @@
 - [devHints.io / cheat cheat](https://devhints.io/)
 - [ExplainShell](https://www.explainshell.com/)
 - [Outil sympa en ligne de commandes](https://blog.stephane-robert.info/post/devops-outils-linux-indispensables/#lazydocker)
+- [MindMap linux Commands](https://xmind.app/m/WwtB/)*
+- [jovelinantoine](https://wiki.jovelinantoine.fr)
 
 ## Pour certaine question :)
 
