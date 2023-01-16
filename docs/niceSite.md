@@ -2,6 +2,7 @@
 
 - [lafor.ge](https://lafor.ge)
 - [explaine-shell](https://explainshell.com/)
+- [thebidouilleur](thebidouilleur.xyz)
 - [wiki-tech](https://wiki-tech.io)
 - [docs.khroners.fr](https://docs.khroners.fr/)
 - [hadrienpelissier.fr](https://cours.hadrienpelissier.fr/)
