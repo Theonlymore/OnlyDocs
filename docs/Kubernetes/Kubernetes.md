@@ -2,10 +2,6 @@
 
 Il permet d'automatisatoin du déploiement à l'échelle ainsi que la gestion de conteneurs.
 
-- Equilibrage de charge
-
-
-
 
 
 ### Sources

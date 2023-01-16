@@ -14,6 +14,8 @@ Commande système :
 | `whoami`         | Affiche où nous sommes connecté en tant que qui                                               |
 | `screenfetch`    | Affiche les informations systèmes (nécessite le paquet screenfetch)                           |
 | `lsb_release –d` | Résumé information système/version debian                                                     |
+| `whereis`        | Affiche l’emplacement d’un programme                                                          |
+| `wc -l ou -w`          | Compte le nombre de ligne ou mots d’un fichier                                                        |
 
 
 
@@ -80,6 +82,18 @@ Connaître juste la taille d'un dossier
 $ du -sh /etc
 ```
 
+Systemctl :
+
+- `systemctl status <service>` : Affiche le statut du service.
+- `systemctl start <service>` : Démarre le service.
+- `systemctl stop <service>` : Arrête le service.	
+- `systemctl restart <service>` : Redémarre le service.
+- `systemctl enable <service>` : Active le service au démarrage.
+- `systemctl disable <service>` : Désactive le service au démarrage.
+- `systemctl is-enabled <service>` : Vérifie si le service est activé au démarrage.
+- `systemctl is-active <service>` : Vérifie si le service est actif.
+- `systemctl list-unit-files` : Liste les services actifs au démarrage.
+
 ## Les processus
 
 | Commandes     | Description                                                            |
@@ -136,4 +150,7 @@ Dans un répertoire spécifique :
 tar -xzvf archive.tar.gz -C / tmp
 ```
 
+### Sources
 
+- Plein de trucs
+- [Cours ESGI](image/Linux.pdf)
