@@ -154,7 +154,7 @@ nav:
     - Fortinet:
       - Fortigate: securite/fortinet/cliFortinet.md
       - Fortigate: securite/fortinet/erreur.md
-  - Windows :
+  - Windows:
     - Windows: windows/windows.md
     - Windows serveur :
       - Base : windows/windowsServeur/base.md
@@ -163,8 +163,8 @@ nav:
       - Active directory: windows/windowsServeur/ad.md
       - Kerberos: windows/windowsServeur/kerberos.md
       - RDP: windows/windowsServeur/rdp.md
-      - dhcp: windows/windowsServeur/dhcp.md
-      - GPO: windows/windowsServeur/gpo/gpo.md
+      - DHCP: windows/windowsServeur/dhcp.md
+      - Des GPO: windows/windowsServeur/gpo/gpo.md
         - GPO: windows/windowsServeur/gpo/adminLocal.md
     - Logicels:
       - vsCode: windows/soft/vsCode.md
