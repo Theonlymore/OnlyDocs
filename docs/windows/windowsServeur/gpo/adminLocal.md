@@ -10,6 +10,8 @@
     - Au niveau de "Ce groupe est membre de " mettre `Administrateurs` (sans faire "Parcourir")
 
 
+
+
 ### Sources
 
 - [it-connect](https://www.it-connect.fr/gpo-definir-un-utilisateur-administrateur-local-de-tous-les-pcs/)
