@@ -16,6 +16,6 @@ jobs:
           server: 'rocheralexandre.com'
           port: 22
           local_path: './site/*'
-          remote_path: '/apps/web/mkdocs'
+          remote_path: '/apps/web/mkdocs/'
           sftp_only: true
           password: ${{ secrets.SFTP_PASSWORD }}
