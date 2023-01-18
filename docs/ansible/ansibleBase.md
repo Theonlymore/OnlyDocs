@@ -3,6 +3,7 @@
 ## Les principales commandes d'Ansible
 
 
+
 | Outils           | Description | Exemple |
 | ---------------- | ----------- | ----- |
 | [`ansible`](https://docs.ansible.com/ansible/latest/cli/ansible.html) | Permet d'exécuter un simple **module** Ansible sur un **inventaire** mode ad-hoc(en ligne de commandes)| `ansible all -m ping`|
