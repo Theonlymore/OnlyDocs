@@ -164,8 +164,9 @@ nav:
       - Kerberos: windows/windowsServeur/kerberos.md
       - RDP: windows/windowsServeur/rdp.md
       - DHCP: windows/windowsServeur/dhcp.md
-      - Des GPO: windows/windowsServeur/gpo/gpo.md
+      - Des GPO:
         - GPO: windows/windowsServeur/gpo/adminLocal.md
+        - Autres:  windows/windowsServeur/gpo/gpo.md
     - Logicels:
       - vsCode: windows/soft/vsCode.md
       - Terminal: windows/soft/terminal.md
