@@ -18,3 +18,5 @@ jobs:
           local_path: './site/*'
           remote_path: '/apps/web/mkdocs/'
           password: ${{ secrets.SFTP_PASSWORD }}
+
+  
