@@ -164,6 +164,7 @@ nav:
       - Kerberos: windows/windowsServeur/kerberos.md
       - RDP: windows/windowsServeur/rdp.md
       - DHCP: windows/windowsServeur/dhcp.md
+      6 Partitions: windows/windowsServeur/partition.md
       - Des GPO: windows/windowsServeur/gpo/gpo.md
         - GPO: windows/windowsServeur/gpo/adminLocal.md
     - Logicels:
