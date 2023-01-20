@@ -183,7 +183,9 @@ nav:
     - Markdown: langage/markdown.md
     - AutoHotKey: langage/ahk.md
     - PowerShell: langage/powerShell.md
-    - Python: langage/python.md
+    - Python:
+      - Présentation: langage/python/python.md
+      - Base: langage/python/python2.md
     - SQL: langage/sql.md
     - NoSQL: langage/nosql.md
     - Regex: langage/regex.md

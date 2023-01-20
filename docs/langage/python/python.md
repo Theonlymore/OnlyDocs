@@ -6,12 +6,20 @@
 | ----------------- | ----------- |
 | `print`           |
 | `type`            |
+| `input`           |
+| `len`             |	
+| `dir`             |
 
 
 Python est un language à typage **dynamique**. ( auto string, int, autres)
 
+Toutes les méthode sur un objet : `dir(liste)`
+help(list.append)
 
-Les boucles :
+## Les Conditions/tests
+
+
+## Les boucles
 
 | Franglo    | pythonSynt        |
 | ---------- | ----------------- |
@@ -19,19 +27,22 @@ Les boucles :
 | `jusqu'a`  | `for .. in range` |
 | `pour`     | `for`             |
 
+
 ## Liste
+
 
 ```py
 exemple = ["papi", "mami", "papa", "maman"]
 
-exemple[1]
-'mami'
+exemple[1] : 'mami'
+exemple[1:3] : ['mami', 'papa']
 
 #Ajouter élément
 exemple.append("soeur")
 
 # Retirer un élément ( si par exemple mami meur)
 exemple.remove("mami")
+del exemple[1]
 
 #Parcourir une liste
 for i in range(len(exemple)):
@@ -69,8 +80,79 @@ with open("legumes.csv", encoding='utf-8-sig') as legumes_file:
         if legumes_data.line_num >1:
             legumes_list.append(row)
 
+s = 'egg egg beans'
+a = s.split() : ['egg', 'egg', 'beans'] # Split sur les espaces
+a.join(' ') : 'egg egg beans'
 
 ```
+
+### Tuple
+
+```py
+
+
+### Compréhensions de listes :
+
+```py
+# Crée une liste de 0 à 9
+liste = [1,2,3,4,5,6,7,8,9,10]
+
+liste = []
+liste = [1,2,3,4,5,6,7,8,9,10]
+
+def addOne(p):
+    return p+1
+
+p = []
+p = [i+1 for i in liste if i > 5] :
+
+p : [7, 8, 9, 10, 11]
+
+prenom = ["Alice", "bbeBnn", "JfffdPf", "jklJ"]
+
+prenom = [i.title() for i in prenom] : ['Alice', 'Bebnn', 'Jfffdpf', 'Jklj']
+```
+
+## Import
+
+Savoir les fonction dans un modules :
+    
+    ```py
+    import math
+    dir(math)
+    ```
+
+## Chaines de caractères
+
+dir(str)
+
+```py
+# Concaténation
+"Bonjour" + " " + "tout le monde"
+quelque fonction
+'123'.isdecimal()
+
+age = '20'
+n = 'alex'
+"{} {}".format(n, age)
+```
+## Les séquences
+
+
+```py
+s = 'egg, bacon'
+s[0]: 'e'
+# Concaténation
+s + ' and spam': 'egg, bacon and spam'
+s[0:3]: 'egg' # Jusqu'a 3 exclu
+s[0:10:2]: 'eg,an' # Jusqu'a 10 exclu, de 2 en 2
+s[-10:-7]: 'egg' # 
+```
+
+
+
+
+
 
 ## Source
 
