@@ -15,6 +15,6 @@
 
 
 ### Sources
-
+- [FortinetCLI](FortiWebCLI.pdf)
 - [geekstuff.org](https://geekstuff.org/ping-options-fortigate/)
 - [resetForti](https://community.fortinet.com/t5/FortiGate/Technical-Tip-Resetting-a-lost-Admin-password/ta-p/197045)
