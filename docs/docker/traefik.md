@@ -165,6 +165,7 @@ Générer hash de mots de passe : [ici](https://www.web2generators.com/apache-to
 
 
 ### Sources
+- [Theparktree Config avancer](https://blog.thesparktree.com/traefik-advanced-config)
 - [doc.traefik](https://doc.traefik.io/traefik/)
 - [mondedie.fr](https://mondedie.fr/d/11234-traefik-v2-un-vrai-reverse-proxy)
 - [wiki-tech](https://wiki-tech.io/Conteneurisation/Docker/Traefik)

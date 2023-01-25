@@ -23,9 +23,12 @@ pass : n'importe quoi
 
 | Ouvrir      | Description                   |
 | ----------- | ----------------------------- |
+| Systeminfo  | Informations sur la machine   |
 | resmon      | Moniteur de ressources        |
 | mmc         | Console admin mmc             |
 | lusmrgr.msc | Console User et groupe locaux |
+| services.msc| Console des services          |
+| gpedit.msc  | Console de GPO                |
 
 
 ### Logicle sympa 
