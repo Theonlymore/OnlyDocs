@@ -88,7 +88,11 @@ a.join(' ') : 'egg egg beans'
 
 ### Tuple
 
-```py
+à faire
+
+### Autres
+
+Savoir le temps pour executer un instruction.
 
 
 ### Compréhensions de listes :
@@ -99,6 +103,7 @@ liste = [1,2,3,4,5,6,7,8,9,10]
 
 liste = []
 liste = [1,2,3,4,5,6,7,8,9,10]
+```
 
 def addOne(p):
     return p+1
