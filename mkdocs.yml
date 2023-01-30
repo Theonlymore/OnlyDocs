@@ -151,6 +151,7 @@ nav:
       - NAT et PAT: reseau/nat-pat.md
       - Chiffrement: reseau/chiffrement.md
   - Securite:
+    - Info et lien: securite/info.md
     - Fortinet:
       - Fortigate: securite/fortinet/cliFortinet.md
       - Fortigate: securite/fortinet/erreur.md
@@ -165,6 +166,7 @@ nav:
       - RDP: windows/windowsServeur/rdp.md
       - Partition: windows/windowsServeur/partition.md
       - DHCP: windows/windowsServeur/dhcp.md
+      - Observateur d'événement: windows/windowsServeur/observateurEvenement.md
       - Des GPO:
         - GPO: windows/windowsServeur/gpo/adminLocal.md
         - Autres:  windows/windowsServeur/gpo/gpo.md
