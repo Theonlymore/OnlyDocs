@@ -2,15 +2,16 @@
 
 ## Introduction
 
-Pour que les conteneurs Docker puissent communiquer entre eux et aussi avec la machine hôte et les réseaux externes, une couche réseau doit être mise en place.
-
+Pour que les conteneurs puissent communiquer entre eux et avec la machine hôte, une couche réseau doit être mise en place.
 
 ## Les Différents type de réseau sur Docker
 ![Docker Networking](images/dockerNetworking.png "Docker networking - Source : towardsdatascience")
 
 ### Par défaut
 
-Lors de l’installation de Docker, trois réseaux sont créés automatiquement. On peut voir ces réseaux avec la commande docker network ls. Un réseau de type bridge est créé :
+Lors de l’installation de Docker, trois réseaux sont créés automatiquement. On peut voir ces réseaux avec la commande `docker network ls`. 
+
+Un réseau de type bridge est créé :
 
 ```bash
 #docker network ls
@@ -24,13 +25,20 @@ Le réseau Bridge est présent sur tous les hôtes Docker. Lors de la création 
 
 Lorsqu'un conteneurs utilisant le bridge est lancé, il est possible de voir avec `ip addr` l'interface : "docker0"
 
+```bash
+ip a | grep "docker"
+docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+```
+
 ### Driver Bridge
 
 Le réseau bridge est le plus couramment utilisé. Les conteneurs qui utilisent ce driver, ne peuvent communiquer qu’entre eux, cependant ils ne sont pas accessibles depuis l’extérieur si un mappage de port n'est pas mise en place.
 
-Exemple de mappage de port avec run : `docker run -it -p 8000:5000 alpine` (`-p 8000:5000` permet de rediriger les paquets de l'hôte sur le port 8000 vers le port 5000 du conteneurs).
+Exemple de mappage de port avec run : `docker run -it -p 8000:80 httpd` (`-p 8000:80` permet de rediriger les paquets du port hôte 8000 vers le port 80 du conteneur).
 
 #### Schéma 
+
 ![Docker Bridge Network](images/dockerBridgeNetwork.jpg "Docker bridge schéma")
 
 #### Approfondir sur le bridge dans docker : [ici](https://blog.alphorm.com/reseau-docker-partie-1-bridge/)
@@ -39,11 +47,19 @@ Exemple de mappage de port avec run : `docker run -it -p 8000:5000 alpine` (`-p 
 
 C’est le type de réseau idéal, si vous souhaitez interdire toute communication interne et externe avec votre conteneur, car votre conteneur sera dépourvu de toute interface réseau (sauf l’interface loopback).
 
+Peux être utile pour connecter un serveur web à une base de donnée par exemple.
+
 ### Driver host
 
 Ce type de réseau permet aux conteneurs d’utiliser la même interface que l’hôte. Il supprime l’isolation réseau entre les conteneurs et seront par défaut accessibles de l’extérieur. Il prendra donc la IP que votre machine hôte.
 
 ![host network docker](images/dockerHost.png)
+
+### Driver macvlan
+
+Le driver macvlan permet d’attribuer une adresse MAC à un conteneur, le faisant apparaître comme un périphérique physique sur votre réseau. Le moteur Docker route le trafic vers les conteneurs en fonction de leurs adresses MAC.
+
+![macvlan](images/dockerMacvlan.jpg)
 
 ### Driver overlay
 
@@ -52,11 +68,6 @@ Si vous souhaitez une mise en réseau multi-hôte native, vous devez utiliser un
 ![Dockey overlay network](images/dockerOverlay.png)
 
 
-### Driver macvlan
-
-Le driver macvlan permet d’attribuer une adresse MAC à un conteneur, le faisant apparaître comme un périphérique physique sur votre réseau. Le moteur Docker route le trafic vers les conteneurs en fonction de leurs adresses MAC.
-
-![macvlan](images/dockerMacvlan.jpg)
 
 
 ## Manipulation du réseau dans Docker
@@ -122,13 +133,13 @@ docker network inspect mon-bridge
 ]
 ```
 
-Surcharger la valeur du Subnet et mettre une gateway :
+Changer la valeur du Subnet et mettre une gateway :
 
 ```bash
 docker network create -d bridge --subnet=172.16.86.0/24 --gateway=172.16.86.1 mon-bridge
 ```
 
-### Un exemple
+### Appliquer un réseau à un conteneur
 
 Connecter deux conteneurs à notre réseau bridge créé précédemment.
 
@@ -173,13 +184,12 @@ docker network inspect mon-bridge
 ]
 ```
 
-On ne peux pas créer de network host car on utilise l'interface de la machine hôte. Cela donne une erreur.
 
 ### Supprimer, déconnecter et connecter un réseau docker
 
-Avant de supprimer votre réseau docker, il est nécessaire au préalable de supprimer tout conteneur connecté à votre réseau docker, ou sinon il suffit juste de déconnecter votre conteneur de votre réseau docker sans forcément le supprimer.
+Avant de supprimer votre réseau docker, il est nécessaire au préalable de **supprimer tout conteneur connecté à votre réseau** docker, ou sinon il suffit juste de **déconnecter votre conteneur de votre réseau** docker sans forcément le supprimer.
 
-Nous allons choisir la méthode 2, en déconnectant tous les conteneurs utilisant le réseau docker `mon-bridge` :
+Nous allons choisir la **méthode 2**, en déconnectant tous les conteneurs utilisant le réseau docker `mon-bridge` :
 
 ```bash
 docker network disconnect mon-bridge alpine1
@@ -214,11 +224,7 @@ docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}
 /alpine1 - 172.17.0.2
 ```
 
-## Conclusion
 
-Vous pouvez créer autant de réseaux bridge que vous souhaitez, ça reste un bon moyen pour sécuriser la communication entre vos conteneurs, car les conteneurs connectés au bridge1 ne peuvent pas communiquer avec les conteneurs du bridge2, limitant ainsi les communications inutiles.
-
-Concernant le driver overlay, j’essayerais de vous montrer son utilisation dans un autre article car le sujet est très vaste et demande des connaissances sur d'autres sujets que nous n'avons pas eu encore l'occasion de voir, notamment le docker swarm.
 
 ## Aide mémoire 
 
