@@ -18,8 +18,6 @@ Exemple : `www.perdu.com.`
 
 Récursives(client) et itératives(serveur de dns) [image](https://www.omnisecu.com/images/tcpip/recursive-iterative-dns-query.jpg?ezimgfmt=ngcb3/notWebP)
 
-Le servuer répondant doit fournir une réponse coomplète
-
 
 ## Enregistrements 
 
