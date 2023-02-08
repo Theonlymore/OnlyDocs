@@ -1,5 +1,15 @@
 # Switch HP
 
+## Bonne pratique 
+
+Restart un switch après un temps. Cela permet de ne pas ce couper en cas de modification.
+
+```sh
+reload after 30 (en sec)
+no reload
+```
+
+
 trunk
 
 2 switch avec deux fibre
