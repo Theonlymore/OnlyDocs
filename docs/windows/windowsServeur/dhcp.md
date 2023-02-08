@@ -1,6 +1,9 @@
 # DHCP - Dynamic Host Configuration Protocol
 
-Avantages :
+### Bonne pratique : 
+
+Crée une étendu au max puis mettre des exclution (impossible d'augmenter une étendu)
+Avantages.
 
 - Propagation rapide des informations
 - Réduction des erreurs
