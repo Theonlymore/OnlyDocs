@@ -1,5 +1,7 @@
 # Algo avancé 
 
+test Git depuis linux
+
 ## Strutures de données
 
 ### Pile (Stack)
