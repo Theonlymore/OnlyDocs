@@ -188,6 +188,7 @@ nav:
     - Python:
       - Présentation: langage/python/python.md
       - Base: langage/python/python2.md
+      - Orienté objet: langage/python/pythonObjet.md
     - SQL: langage/sql.md
     - NoSQL: langage/nosql.md
     - Regex: langage/regex.md
