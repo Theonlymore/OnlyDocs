@@ -24,9 +24,7 @@ Le contructeur est la méthode qui détermine comment elle va être construite.
 ```py
 class Chambre():
     ouverte = False
-    code_secret = 2512
-    pays = "suisse"
-    departement = "75"
+    code_secret = 0000
 
     def __init__(self, pays, departement):
         self.pays = pays    
@@ -53,20 +51,21 @@ class Chambre():
             return True
         return False
 
+class Villageois():
+    
+    def __init__(self, prenom, code, maison):
+        self.prenom = prenom
+        self.code = code
+        self.maison = maison
 
-AlexRoom = Chambre("france", "53")  # Création d'une instance de la classe Chambre
+    def ouvrirChambre(self):
+        return self.maison.ouvrir(self.code)
 
-print(AlexRoom.ouverte) # Affiche si la chambre est ouverte ou non
 
-AlexRoom.ouvrir(2512) # Ouvre la chambre avec le code 2512
+Room = Chambre("france", "53")  # Création d'une instance de la classe Chambre
+Room.modifier_code(0000, 2512)
 
-AlexRoom.modifier_code(2512, 1234) # Modifie le code de la chambre
+Alex = Villageois("Alexandre",2512, Room) # Création d'une instance de la classe Villageois
 
-AlexRoom.ouvrir(2512) # Tente d'ouvrir la chambre avec l'ancien code
-AlexRoom.ouvrir(1234) # Tente d'ouvrir la chambre avec le nouveau code
-
-print(AlexRoom.pays) # Affiche le pays de la chambre pour être sur que le constructeur a bien fonctionné
-print(AlexRoom.departement)
+print(Alex.ouvrirChambre()) # Ouvrir la chambre avec le mot de passe en memoire d'Alex
 ``` 
-
-
