@@ -56,6 +56,11 @@ markdown_extensions:
       alternate_style: true 
   - attr_list
   - md_in_html
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
   
 extra_javascript:
@@ -185,6 +190,9 @@ nav:
     - Markdown: langage/markdown.md
     - AutoHotKey: langage/ahk.md
     - PowerShell: langage/powerShell.md
+    - English:
+      - Présentation: langage/english/english.md
+      - Conjugaison: langage/english/conjugaison.md
     - Python:
       - Présentation: langage/python/python.md
       - Base: langage/python/python2.md
