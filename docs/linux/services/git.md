@@ -2,6 +2,8 @@
 
 Git est un logiciel de gestion de versions décentralisé. C'est un logiciel libre créé par Linus Torvalds, auteur du noyau Linux.
 
+
+
 ## Commandes
 
 | Commandes | Description |
@@ -17,6 +19,31 @@ Git est un logiciel de gestion de versions décentralisé. C'est un logiciel lib
 |`git pull`| Récupère les dernières mises à jours du répertoire distant.|
 
 ![Git pull vs fetch vs commit](images/gitDef.png)
+
+## Github clone with sshkey 
+
+### Generate ssh key
+
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+``` 
+
+Ensuite la mettre la clé publique dans les clé ssh de github
+
+### Clone private repo on GitHub
+
+```bash
+git clone git@github.com:Theonlymore/OnlyDocs.git
+``` 
+
+#### Push le code
+
+```bash
+git add .
+git commit -m "message"
+git push
+```
+
 ## Clone private repo on GitHub
 
 Crée un token privé sur GitHub :
@@ -28,6 +55,7 @@ Crée un token privé sur GitHub :
 ![Githib dev settings](images/gitGithubDevSettings.jpg)
 
 ![Github tokens](images/gitGithubMakeTokens.jpg)
+
 
 ```bash
 git clone https://github.com/theonlymore/private.git
