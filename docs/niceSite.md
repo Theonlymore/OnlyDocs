@@ -20,4 +20,6 @@
 ## Pour certaine question :)
 
 - [letmegooglethat](https://letmegooglethat.com/) ou [giybf](https://giybf.com/)
+- [Juste demande](https://dontasktoask.com/fr/)
+- [noHello](https://nohello.net/fr/)
 
