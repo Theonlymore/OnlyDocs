@@ -96,6 +96,7 @@ nav:
           - Elasticsearch: linux/services/elasticStack/elasticsearch.md
           - Filebeat: linux/services/elasticStack/filebeat.md
       - CheatsheetInTerminal: linux/cheatSheetInTerminal.md
+      - Logs: linux/logs.md
       - Vim: linux/vim.md
       - Man: linux/man.md
       - Find: linux/find.md
@@ -188,6 +189,7 @@ nav:
     - Aws - S3 Glacier : aws/s3Glacier.md
   - Langages:
     - Markdown: langage/markdown.md
+    - Bash: langage/bash.md
     - AutoHotKey: langage/ahk.md
     - PowerShell: langage/powerShell.md
     - English:
