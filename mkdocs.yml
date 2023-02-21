@@ -161,6 +161,7 @@ nav:
     - Fortinet:
       - Fortigate: securite/fortinet/cliFortinet.md
       - Fortigate: securite/fortinet/erreur.md
+      - Dns par tunnel: securite/fortinet/dnsPerTunnel.md
   - Windows:
     - Windows: windows/windows.md
     - Windows serveur :
