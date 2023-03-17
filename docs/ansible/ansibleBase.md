@@ -66,5 +66,4 @@ ansible-playbook -i Inv playbook.yml --step -vvv
 ```
 ### Sources
 - [blog.stephane-robert](https://blog.stephane-robert.info/post/ansible-inventaire-static-precedence-tips/)
-
-test
+- [bonne pratique](https://blog.stephane-robert.info/post/ansible-best-practices-tips/)
