@@ -1,6 +1,16 @@
 # Cheatsheet
 
-Cela permet d'avoir une cheatsheet dans sont terminal pratique pour certain chose à la place de faire une rechreche Google.
+tldr : https://tldr.sh/
+
+`apt install tldr`
+
+tldr -u
+
+tldr tar
+
+## Cheat 
+
+Cela permet d'avoir une cheatsheet dans sont terminal pratique pour certain chose à la place de faire une recherche Google.
 
 Avec brew :
 

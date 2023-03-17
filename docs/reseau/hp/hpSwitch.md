@@ -142,7 +142,8 @@ Commande : active le snmp sur le switch (all)
 | ---------------------- | ---------------------- |
 | Voir tout la conf | `show run`         |
 | Voir les vlan           | `show vlan` |
-| Voir les vlan sur un port |` show vlans ports ethernet 31 detail`
+| Voir les vlan sur un port |` show vlans ports ethernet 31 detail` |
+| `Savoir qu'elle switch sur qu'elle port` | ` show lldp info remote-device` |
 
 A tester / voir : 
 
