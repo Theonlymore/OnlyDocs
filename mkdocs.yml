@@ -42,7 +42,7 @@ extra:
       link: https://github.com/Theonlymore
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/r/onlymore
-    - icon: fontawesome/solid/link
+    - icon: fontawesome/solid/house
       link: https://www.onlymore.net
 
 
