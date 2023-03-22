@@ -1,14 +1,16 @@
-# Cheatsheet
+# Cheatsheet en cli
 
-tldr : https://tldr.sh/
+## [Tldr](https://tldr.sh/) permet d'avoir des cheatsheet dans son terminal (simple et rapidement)
 
-`apt install tldr`
+Install : `apt install tldr`
 
-tldr -u
+- `tldr -u`
 
-tldr tar
+- `tldr tar``
 
-## Cheat 
+
+
+## Cheat permet d'avoir le personnalisé sois même.
 
 Cela permet d'avoir une cheatsheet dans sont terminal pratique pour certain chose à la place de faire une recherche Google.
 

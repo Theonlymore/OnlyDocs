@@ -1,6 +1,6 @@
 # Commande HSRP 
 
-Pour mettre en place l'HSRP, il faut que chaque adresse IP physique possède un réelle.
+Pour mettre en place l'HSRP, il faut que chaque machine possède une adresse IP.
 
 Et ensuite configurer le protocole HSRP. 
 
