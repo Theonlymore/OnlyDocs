@@ -1,5 +1,5 @@
 site_name: OnlyDocs
-site_description: Docs d'Alexandre, Le site me permet d'accéder et de rendre publique les documentations que je fais et utilise.
+site_description: Documentation technique d'Alexandre, ce site peut être vue comme une prises de notes technique.
 repo_url: https://github.com/Theonlymore/OnlyDocs
 edit_uri: edit/main/docs/
 
@@ -28,7 +28,7 @@ theme:
 
 
 # Copyright
-copyright: "Onlydocs d'Alexandre ROCHER"
+copyright: "Documentation technique d'Alexandre ROCHER"
 
 # Options
 extra:
