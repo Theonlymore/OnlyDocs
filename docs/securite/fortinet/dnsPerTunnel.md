@@ -53,8 +53,9 @@ end
 - Il y a une configuration supérieure (`config vpn ssl settings`) qui écrase la configuration de la CLI 
 - La configuration n'était pas prise en compte par le fortigate (sans avoir mis "end"  après le set)
 
+### Autre solution
 
-
+- utilisation du "split.dns" : faire attention d'avoir une version de fortiClient à jours. PS : Cela marche avec forticlient 7.
 ### Sources
 
 - [DocsFortinet](https://docs.fortinet.com/document/fortigate/7.2.4/administration-guide/988717/ssl-vpn-split-dns)

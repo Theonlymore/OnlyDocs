@@ -1,6 +1,6 @@
 # NGINX
 
-NGINX est un serveur Web asynchrone
+NGINX est un serveur Web et un reverse proxy.
 
 ## Installation
 

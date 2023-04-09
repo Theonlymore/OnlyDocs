@@ -62,6 +62,7 @@ Les droits peuvent être définit en octal : 4 pour read, 2 pour write, 1 pour e
 | `apt-get clean`                    | Vide le cache disque des paquets.                         |
 
 
+
 ## Dossier de lancement de script au démarrage
 
 `/etc/init.d/`
@@ -154,3 +155,4 @@ tar -xzvf archive.tar.gz -C / tmp
 
 - Plein de trucs
 - [Cours ESGI](image/Linux.pdf)
+- https://makelinux.github.io/kernel/map/

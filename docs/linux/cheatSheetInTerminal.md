@@ -1,6 +1,18 @@
-# Cheatsheet
+# Cheatsheet en cli
 
-Cela permet d'avoir une cheatsheet dans sont terminal pratique pour certain chose à la place de faire une rechreche Google.
+## [Tldr](https://tldr.sh/) permet d'avoir des cheatsheet dans son terminal (simple et rapidement)
+
+Install : `apt install tldr`
+
+- `tldr -u`
+
+- `tldr tar``
+
+
+
+## Cheat permet d'avoir le personnalisé sois même.
+
+Cela permet d'avoir une cheatsheet dans sont terminal pratique pour certain chose à la place de faire une recherche Google.
 
 Avec brew :
 
