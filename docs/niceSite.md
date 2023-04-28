@@ -23,3 +23,6 @@
 - [Juste demande](https://dontasktoask.com/fr/)
 - [noHello](https://nohello.net/fr/)
 
+## Autres
+
+- [vectorizer](https://vectorizer.ai/)
