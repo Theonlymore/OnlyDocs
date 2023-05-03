@@ -31,6 +31,16 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 Ensuite la mettre la clé publique dans les clé ssh de github
 
+## Bien nommer ses commits
+
+- **feat** : nouvelle fonctionnalité
+- **fix** : correction d’un bug
+- **perf** : amélioration des performances
+- **refactor** : modification du code qui n’apporte ni nouvelle fonctionnalité ni d’amélioration de performances
+- **style** : modification du style du code (sans changer le code lui-même)
+- **docs** : rédaction ou mise à jour de documentation
+- **test** : ajout ou modification de tests
+
 ### Clone private repo on GitHub
 
 ```bash
