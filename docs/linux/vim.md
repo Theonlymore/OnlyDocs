@@ -6,17 +6,26 @@ Changer de mode : esc
 - `a` : apprend
 - `i` : insertion
 
-## enregistrer et quitter
+## Déplacement de base dans vim
+
+- `h` : gauche
+- `j` : bas
+- `k` : haut
+- `l` : droite
+
+## Enregistrer / quitter
 
 - `:w` (enregistrer le fichier en cours d'édition sans quitter)
-- `:w` /chemin/vers/le/fichier (enregistrer sous)
 - `:x` ou `:wq` (enregistrer et quitter)
-- `:q` (quitter)
+- `:q!` (quitter sans enregistrer)
 
 ## Se déplacer dans le fichier
-On peut utiliser les flèches du clavier, page up/down ou les touches h j k l
 
-- `:1` (aller au début du fichier)
+- `gg`  : début du fichier
+- `G` : fin du fichier
+- `w` : mot suivant 
+- `e` : fin du mot
+- `b` : mot précédent
 - `:10` (aller à la 10e ligne)
 - `:$` (aller à la fin du fichier)
 - `$` (place le curseur à la fin d'une ligne)
@@ -60,4 +69,5 @@ On peut utiliser les flèches du clavier, page up/down ou les touches h j k l
 **Jeux pour apprendre vim :**
 - [vim-adventures.com/](https://vim-adventures.com/)
 - [vimgenius](http://www.vimgenius.com/lessons/vim-intro/)
+- [vim-avec-une-tasse-de.cafe](https://vim.avec.une-tasse-de.cafe/)
 
