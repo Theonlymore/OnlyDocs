@@ -33,6 +33,13 @@ Ensuite la mettre la clé publique dans les clé ssh de github
 
 ## Bien nommer ses commits
 
+``sh
+type(portée): sujet
+
+description
+``
+### Type
+
 - **feat** : nouvelle fonctionnalité
 - **fix** : correction d’un bug
 - **perf** : amélioration des performances
@@ -40,6 +47,16 @@ Ensuite la mettre la clé publique dans les clé ssh de github
 - **style** : modification du style du code (sans changer le code lui-même)
 - **docs** : rédaction ou mise à jour de documentation
 - **test** : ajout ou modification de tests
+
+### Portée
+
+La portée d'un commit 
+
+### Footer
+
+
+
+
 
 ### Clone private repo on GitHub
 
