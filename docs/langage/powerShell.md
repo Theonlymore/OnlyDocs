@@ -17,8 +17,10 @@ Listes :
 
 ## Diagnostic
 
-Ecrire dans la console avec une concaténation
-`Write-Host ("vous avez demandé à écrire en " + $couleur)`
+Lister : 
+- `Get-Module`
+- `Get-command`
+- `Get-help -full <commande>`
 
 ## Variables
 
@@ -47,6 +49,42 @@ Nombre charactère
 
 Il s'agit de la variable correspondant à la valeur actuelle dans le pipeline.
 
+### Caractères génériques
+
+| Opérateur | Description                                         | Exemple                         |
+| --------- | --------------------------------------------------- | ------------------------------- |
+| `*`       | Correspond à zéro ou plusieurs caractères.          | `Get-Process -Name *host*`      |
+| `?`       | Correspond à zéro ou un caractère à cette position. | `Get-Process -Name svch?st`     |
+| `.`       | Mettre en correspondance 1 caractère.               | `Get-Process -Name svch.st`     |
+| `[]`      | Correspondance d'une plage de caractères            | `Get-Process -Name svch[0-9]st` |
+| `[]`      | Correspondance des caractères spécifiés             | `Get-Process -Name svch[012]st` |
+| `*`       | N'importe quel caractère                            | `Get-Process -Name svch*st`     |
+
+### Opérateurs de comparaison numérique
+
+| Type de comparaison | Opérateur |
+| ------------------- | --------- |
+| Égalité             | `-eq`     |
+| Inégalité           | `-ne`     |
+| Inférieur à         | `-lt`     |
+| Inférieur ou égal à | `-le`     |
+| Supérieur à         | `-gt`     |
+| Supérieur ou égal à | `-ge`     |
+
+### Opérateurs de comparaison de chaînes de caractères
+
+| Type de comparaison             | Opérateur      |
+| ------------------------------- | -------------- |
+| Egal à                          | `-like`        |
+| Inégal à                        | `-notlike`     |
+| Egal à (sensible à la casse)    | `-clike`       |
+| Egal à(accepte regex)           | `-match`       |
+| Inégal à (accepte regex)        | `-notmatch`    |
+| Egale à (insensible à la casse) | `-cmatch`      |
+| Contient                        | `-contains`    |
+| Ne contient pas                 | `-notcontains` |
+
+
 ### Input variable 
 
 `Read-Host`  permet d'input une variable.
@@ -57,7 +95,6 @@ $prenom = Read-Host -Prompt 'Entre ton prénom'
 Write-Host "Bonjour, '$prenom' '$nom'" 
 ```
 
-Cache l'input pour un mots de passe par exemple :
 
 ```powershell
 $adminPassword = Read-Host -AsSecureString -Prompt 'Entre ton mots de passe administrateur'
@@ -151,5 +188,6 @@ foreach ($Ligne in $csv) {
 
 Sources :
 
-- [Docs CCC](images/Powershell.pdf)
+- [Docs CCC](images/Powershell-bts.pdf)
+- [Docs mastere](images/Powershell-mastere.pdf)
 - [it-connect.fr](https://www.it-connect.fr/comment-lire-le-contenu-dun-fichier-csv-avec-powershell/)
