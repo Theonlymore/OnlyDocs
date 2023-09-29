@@ -24,32 +24,24 @@ Lister :
 
 ## Variables
 
-Commencence par `$`.
+Comence par `$`.
 Il y a des variables systèmes, des variables à définir vous même.
 
 Exemple de commande lier au variables.
 
-String dans un variable :
+String dans un variable : `$maVariable= 'Bonjour le monde'`
 
-- `$maVariable= 'Bonjour le monde'`
+Analyser un objet / variable : `$maVariable | get-Member`
 
-Analyser un objet / variable
+Mettre string en maj `$maVariable.toUpper()`
 
-- `$maVariable | get-Member`
-
-Mettre string en maj
-
-- `$maVariable.toUpper()`
-
-Nombre charactère
-
-- `$maVariable.length`
+Nombre charactère `$maVariable.length`
 
 ### Variable `$_`
 
 Il s'agit de la variable correspondant à la valeur actuelle dans le pipeline.
 
-### Caractères génériques
+## Caractères génériques
 
 | Opérateur | Description                                         | Exemple                         |
 | --------- | --------------------------------------------------- | ------------------------------- |
@@ -60,7 +52,7 @@ Il s'agit de la variable correspondant à la valeur actuelle dans le pipeline.
 | `[]`      | Correspondance des caractères spécifiés             | `Get-Process -Name svch[012]st` |
 | `*`       | N'importe quel caractère                            | `Get-Process -Name svch*st`     |
 
-### Opérateurs de comparaison numérique
+## Opérateurs de comparaison numérique
 
 | Type de comparaison | Opérateur |
 | ------------------- | --------- |
@@ -71,7 +63,7 @@ Il s'agit de la variable correspondant à la valeur actuelle dans le pipeline.
 | Supérieur à         | `-gt`     |
 | Supérieur ou égal à | `-ge`     |
 
-### Opérateurs de comparaison de chaînes de caractères
+## Opérateurs de comparaison de chaînes de caractères
 
 | Type de comparaison             | Opérateur      |
 | ------------------------------- | -------------- |
@@ -95,10 +87,6 @@ $prenom = Read-Host -Prompt 'Entre ton prénom'
 Write-Host "Bonjour, '$prenom' '$nom'" 
 ```
 
-
-```powershell
-$adminPassword = Read-Host -AsSecureString -Prompt 'Entre ton mots de passe administrateur'
-```
 ## Tableau 
 
 | Commandes                               | Description                          |
