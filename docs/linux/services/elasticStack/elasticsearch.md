@@ -1,5 +1,9 @@
 # Elasticsearch
 
+Moteur de recherche et d'analyse de données distribué et open source.
+
+L'outil permet de stocker, de rechercher et d'analyser des données rapidement et presque en temps réel car Elasticsearch index plutôt de chercher le directement dans la base de données.
+
 Intérêts :
 - nosql : atout principale c'est la facilité à disposer d'un système distribué
 
@@ -43,6 +47,7 @@ Dans la console, il est possible d'envoyer directement des requets rest a elasti
 
 ### Sources 
 
+- [Openclassroms - CentraleSupélec](https://openclassrooms.com/fr/courses/4462426-maitrisez-les-bases-de-donnees-nosql/4474691-etudiez-le-fonctionnement-d-elasticsearch)
 - [xavki](https://www.youtube.com/watch?v=_nmDN9nf1Lw)
 - [Tuto officiel](https://www.youtube.com/watch?v=gS_nHTWZEJ8)
 - https://codingexplained.com/coding/elasticsearch/understanding-replication-in-elasticsearch

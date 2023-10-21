@@ -14,6 +14,7 @@ Git est un logiciel de gestion de versions décentralisé. C'est un logiciel lib
 |`git log`|Affiche les dernières actions réalisées sur le repository (incluant les métadatas, les commit ID, commit messages…)|
 |`git clone`| Clone un projet sur sa machine.|
 |`git commit` -am “message”| Met à jour le commit avec un message défini.|
+|`git checkout`| Permet de changer de brancher ou de revenir à un commit précédent.|
 |`git fetch`| Récupère les informations d’un repository sans télécharger sur la machine.|
 |`git push`| Envoi la mise à jour au git distant (dit “remote”). Prends en compte le dossier dans lequel on se situe.|
 |`git pull`| Récupère les dernières mises à jours du répertoire distant.|
@@ -29,6 +30,33 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ``` 
 
 Ensuite la mettre la clé publique dans les clé ssh de github
+
+## Bien nommer ses commits
+
+``sh
+type(portée): sujet
+
+description
+``
+### Type
+
+- **feat** : nouvelle fonctionnalité
+- **fix** : correction d’un bug
+- **perf** : amélioration des performances
+- **refactor** : modification du code qui n’apporte ni nouvelle fonctionnalité ni d’amélioration de performances
+- **style** : modification du style du code (sans changer le code lui-même)
+- **docs** : rédaction ou mise à jour de documentation
+- **test** : ajout ou modification de tests
+
+### Portée
+
+La portée d'un commit 
+
+### Footer
+
+
+
+
 
 ### Clone private repo on GitHub
 
