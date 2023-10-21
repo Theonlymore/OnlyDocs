@@ -1,5 +1,14 @@
 # Terminal
 
+## Mon terminal 
+
+Même ~/.bashrc utiliser le bashrc du user pour quand on sudo
+
+```bash
+sudo -u root bash --rcfile ~/.bashrc
+```
+
+
 ## ZSH
 
 install
