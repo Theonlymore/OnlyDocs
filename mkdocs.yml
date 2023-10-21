@@ -120,6 +120,8 @@ nav:
       - Organisation: ansible/ansibleOrga.md
   - Réseau:     
       - 7 couches OSI: reseau/modelOsi.md
+      - Juniper
+        - Juniper: reseau/juniper/juniper.md
       - Cisco:
         - Commande cisco: reseau/cisco/commandeCisco.md
         - Nat: reseau/cisco/ciscoNat.md
