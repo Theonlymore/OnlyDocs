@@ -203,5 +203,7 @@ nav:
     - Journée structurer: organisation/structureDays.md
     - La to-do liste: organisation/todo.md
     - Carte mental: organisation/mindmap.md
+  - Vie:
+    - Nutrtion: vie/nutrition/nutrition.md
   - Sites sympas: niceSite.md
   - Tool: tool.md
