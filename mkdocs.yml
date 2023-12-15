@@ -203,9 +203,9 @@ nav:
     - Journée structurer: organisation/structureDays.md
     - La to-do liste: organisation/todo.md
     - Carte mental: organisation/mindmap.md
-  - escalade: vie/escalade.md
-  - Vie:
-    - Nutrtion: vie/nutrition/nutrition.md
+  - Autre:
+    - Escalade: autre/escalade.md
+    - Nutrition: autre/nutrition/nutrition.md
   - Sites sympas: niceSite.md
   - Tool: tool.md
   
