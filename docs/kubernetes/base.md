@@ -25,7 +25,11 @@ Permet de contrôler le cluster depuis la cli (liste des ressources, créer et s
  
 ## Install avec kubeadm
 
-Kubeadm permet de créer un cluster de type prod j
+Kubeadm permet de créer un cluster, kubSpray est un playbook ansible pour installer un cluster
+
+## Les fichiers descriptifs
+
+ 
 
 ### Sources
 
