@@ -106,6 +106,8 @@ nav:
       - Image docker: docker/imageDocker.md
       - Docker compose: docker/dockerCompose.md
       - Traefik: docker/traefik.md
+  - Kubernetes:
+      - pods: kubernetes/pods.yml
   - Ansible: 
       - Présentation Ansible: ansible/ansiblePresentation.md
       - Base d'Ansible: ansible/ansibleBase.md
