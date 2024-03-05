@@ -60,6 +60,8 @@ spec:
       type: DirectoryOrCreate
 ``` 
 
+kubectl create -f pods.yml
+
 ### Sources
 
 - https://devopssec.fr/article/gerer-manipuler-pods-kubernetes
