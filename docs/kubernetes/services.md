@@ -10,7 +10,6 @@ Les type de services :
 - `ExternalName` : redi
 
 
-il march
 ### Sources
 
 - [wiki.sfeir](https://wiki.sfeir.com/kubernetes/architecture/composants/services/)

@@ -7,6 +7,8 @@ Ces un groupe d'un ou plusieurs conteneurs avec stockage et réseau.
 
 ## Création du Pod
 
+- `kubectl run busyboxalex --image=busybox --restart=Never -n alex-ns -it -- /bin/sh  -c 'env'`
+
 - `kubectl create` : permet de crée des objet Kubernetes
 
 ### Pod avec 1 conteneur
@@ -61,6 +63,12 @@ spec:
 ``` 
 
 kubectl create -f pods.yml
+
+kubectl cp file.txt my-pod:/path/file.txt
+
+
+kubectl get pod -A
+
 
 ### Sources
 
