@@ -107,9 +107,12 @@ nav:
       - Docker compose: docker/dockerCompose.md
       - Traefik: docker/traefik.md
   - Kubernetes:
+      - base: kubernetes/base.md
       - pods: kubernetes/pods.md
       - replica: kubernetes/replica.md
       - services: kubernetes/services.md
+      - deploy: kubernetes/deploy.md
+      - namespaces: kubernetes/ns.yml
   - Ansible: 
       - Présentation Ansible: ansible/ansiblePresentation.md
       - Base d'Ansible: ansible/ansibleBase.md
