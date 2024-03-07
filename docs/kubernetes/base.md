@@ -7,6 +7,7 @@ deployment : représentation logique d'un ou plusieurs pod
 service : moyen d'accéder à nos pods
  
 
+Cheatsheet kubectl : [ici](https://kubernetes.io/fr/docs/reference/kubectl/cheatsheet/)
 ### Sources
 
 - [hadrienpelissier](https://cours.hadrienpelissier.fr/03-kubernetes/cours_1_presentation_k8s/)

@@ -112,7 +112,9 @@ nav:
       - replica: kubernetes/replica.md
       - services: kubernetes/services.md
       - deploy: kubernetes/deploy.md
-      - namespaces: kubernetes/ns.yml
+      - namespaces: kubernetes/ns.md
+      - volumes: kubernetes/volumes.md
+      - manifest: kubernetes/manifest.md
   - Ansible: 
       - Présentation Ansible: ansible/ansiblePresentation.md
       - Base d'Ansible: ansible/ansibleBase.md
