@@ -18,12 +18,19 @@ spec:
       containers:
         - name: nginx
           image: nginx
-```
+
+## Auto-scalling
+
+- `sudo kubectl create deployment web --image nginx`
+- `sudo kubectl set resources deploy web --limits=memory=10Mi,cpu=6m`
+- `sudo kubectl autoscale deployment web --min 1 --max 4`
+- `sudo kubectl create service nodeport web --node-port 30009 --tcp 80:80`
 
 
 ## Debug
 
-- kubectl describe rs alex-nginx
+- `kubectl describe rs alex-nginx`
+- `kubectl scale --replicas 4 deployment web`
 
 
 ### Sources
