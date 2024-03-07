@@ -12,6 +12,9 @@ https://docs.k3s.io/storage
 Volumes partager entre les nodes :
 
 longhorn : 
+
+
+## Exemple d'un deploy 
 ### Sources
 
 - https://devopssec.fr/article/fonctionnement-manipulation-volumes-kubernetes

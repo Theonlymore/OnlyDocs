@@ -26,5 +26,8 @@ liste des ressource qui peuve être dans un namespace :
 kubectl api-resources --namespaced=false
 ```
 
+## Rentrer dans un namespace
+
+- `kubectl config set-context --current --namespace=alex-ns`
 
 

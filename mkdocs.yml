@@ -115,6 +115,7 @@ nav:
       - namespaces: kubernetes/ns.md
       - volumes: kubernetes/volumes.md
       - manifest: kubernetes/manifest.md
+      - exemple: kubernetes/exemple.md
   - Ansible: 
       - Présentation Ansible: ansible/ansiblePresentation.md
       - Base d'Ansible: ansible/ansibleBase.md
