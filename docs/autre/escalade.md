@@ -27,6 +27,7 @@ Je suis débutant en escalade et je liste les conseils que j'ai eu et trouver. (
 
 ## Tips par priorité
 
+- Vouloir toujours utiliser le minimum d'energie (entropie minimum) 
 - Ne pas hésitez à se filmer pour evaluer ça technique
 - Si mes mains sont trop fatiguées, travailler les abdos
 - Travailler les doigts pour pouvoir être plus facilement les bras tendus
