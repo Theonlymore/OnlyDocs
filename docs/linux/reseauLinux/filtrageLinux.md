@@ -164,7 +164,6 @@ Restauration :
 ## Exemple de travaux pratique que j'ai effectuer
 
 - [TP Filtrage](../reseauLinux/DmFiltrage.pdf)
-- [Correction avec mon DM](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ### Sources
 - [Sécurité iptables - Azlux](https://gist.github.com/azlux/6a70bd38bb7c525ab26efe7e3a7ea8ac)
