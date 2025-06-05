@@ -116,6 +116,7 @@ nav:
       - volumes: kubernetes/volumes.md
       - manifest: kubernetes/manifest.md
       - exemple: kubernetes/exemple.md
+      - ArgoCD: kubernetes/argocd.md
   - Ansible: 
       - Présentation Ansible: ansible/ansiblePresentation.md
       - Base d'Ansible: ansible/ansibleBase.md
