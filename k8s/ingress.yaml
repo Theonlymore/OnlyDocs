@@ -3,16 +3,20 @@ kind: Ingress
 metadata:
   name: onlydocs
   annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: web
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.tls.certresolver: cloudflare
 spec:
   rules:
-  - host: docs.example.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: onlydocs
-            port:
-              number: 80
+    - host: docs.onlymore.net
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: onlydocs
+                port:
+                  name: http
+  tls:
+    - hosts:
+        - docs.onlymore.net
