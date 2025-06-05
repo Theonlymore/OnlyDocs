@@ -1,12 +1,12 @@
 # OnlyDocs
 
-## Pourquoi 
+## Pourquoi
 
 Cela me permet de noter facilement les choses.
 
 ## Comment
 
-### Outil 
+### Outil
 
 MkDocs est un outil en Python qui me permet de convertir mes fichiers Markdown en fichiers web (HTML, CSS, ...)
 
@@ -40,5 +40,22 @@ Coût final
 
 Pour payer le moins cher possible, il faudrait passer par un autre acteur qu'AWS pour le nom de domaine.
 
+## Construire l'image Docker
 
+Ce dépôt contient un `Dockerfile` vous permettant de créer l'image Docker du site sans utiliser d'image préconstruite. Après avoir cloné ce dépôt :
 
+```bash
+# Cloner le code depuis GitHub
+git clone https://github.com/Theonlymore/OnlyDocs.git
+cd OnlyDocs
+
+# Construire l'image
+docker build -t onlydocs:latest .
+
+# (Optionnel) lancer le conteneur localement
+docker run -p 8080:80 onlydocs:latest
+```
+
+Vous obtenez ainsi une image construite à partir du code source présent sur GitHub uniquement.
+Si vous déployez via ArgoCD, le Job `k8s/build-image-job.yaml` s'occupe
+également de construire cette image avant de lancer le site.
