@@ -1,0 +1,13 @@
+# Build output
+site/
+
+# Editor configuration
+.vscode/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+
+# OS-specific files
+.DS_Store
+Thumbs.db
