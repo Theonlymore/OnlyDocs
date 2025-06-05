@@ -10,6 +10,13 @@ Cela me permet de noter facilement les choses.
 
 MkDocs est un outil en Python qui me permet de convertir mes fichiers Markdown en fichiers web (HTML, CSS, ...)
 
+### Installation
+Installez les dépendances Python nécessaires avec :
+
+```bash
+pip install -r requirements.txt
+```
+
 ### Serveur
 J'utilise AWS avec un lien entre le service de stockage S3 et le CDN CloudFront
 
