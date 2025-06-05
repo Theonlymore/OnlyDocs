@@ -17,4 +17,3 @@ spec:
         - "--destination=registry.default.svc.cluster.local:5000/onlydocs:latest"
         - "--insecure"
         - "--skip-tls-verify"
-
