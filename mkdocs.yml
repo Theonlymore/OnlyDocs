@@ -170,19 +170,19 @@ nav:
     - Windows serveur :
       - Base : windows/windowsServeur/base.md
       - Présentation: windows/windowsServeur/windowsServeur.md
-      - Diagnostic: windows/windowsServeur/diagnostic.md
+      - Diagnostic: windows/diagnostic.md
       - Active directory: windows/windowsServeur/ad.md
       - Kerberos: windows/windowsServeur/kerberos.md
       - RDP: windows/windowsServeur/rdp.md
       - Partition: windows/windowsServeur/partition.md
       - DHCP: windows/windowsServeur/dhcp.md
-      - Observateur d'événement: windows/windowsServeur/observateurEvenement.md
+      - Observateur d'événement: windows/windowsServeur/observateurEvenements.md
       - Des GPO:
         - GPO: windows/windowsServeur/gpo/adminLocal.md
         - Autres:  windows/windowsServeur/gpo/gpo.md
     - Logicels:
       - vsCode: windows/soft/vsCode.md
-      - Terminal: windows/soft/terminal.md
+      - Terminal: windows/soft/newTerminal.md
       - Office365:
         - mail: windows/soft/office365/mail.md
     - Master: windows/makeMaster.md
