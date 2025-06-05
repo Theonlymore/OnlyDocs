@@ -1,53 +1,53 @@
-# Visual studio code
+# Visual Studio Code
 
-## Raccourci clavier
+## Raccourcis clavier
 
-Voir tout les raccourcis : `Ctrl+K+S`
+Voir tous les raccourcis : `Ctrl+K+S`
 
-### **Géneral**
+### **Général**
 
 | Raccourci      | Tâche                     |
 | -------------- | ------------------------- |
 | `Ctrl+Shift+N` | Ouvrir instance VsCode   |
 | `Ctrl+Shift+W` | Fermer instance VsCode    |
-| `Ctrl+P`       | Aller à un fichiers       |
+| `Ctrl+P`       | Aller à un fichier        |
 | `Ctrl+G`       | Go to line...             |
 | `Ctrl+T`       | Voir les symboles (#,...) |
 
-### **Editeur de texte**
+### **Éditeur de texte**
 
 | Tâche               | Raccourci                              |
 | ------------------- | -------------------------------------- |
-| `Ctrl+X`            | Couper une ligne(Rien de selectionner) |
-| `Ctrl+C`            | Copier une ligne(Rien de selectionner) |
+| `Ctrl+X`            | Couper une ligne (rien de sélectionné) |
+| `Ctrl+C`            | Copier une ligne (rien de sélectionné) |
 | `Alt+↑/↓`           | Déplacer une ligne vers le haut/bas    |
-| `Shift+Alt+↑/↓`     | Dupliquer un ligne                     |
+| `Shift+Alt+↑/↓`     | Dupliquer une ligne                    |
 | `Ctrl+Shift+K`      | Supprimer une ligne                    |
-| `Ctrl+Entrer`       | Inserer une ligne après                |
-| `Ctrl+Shift+Entrer` | inserer une ligne avant                |
+| `Ctrl+Entrer`       | Insérer une ligne après               |
+| `Ctrl+Shift+Entrer` | Insérer une ligne avant               |
 | `Ctrl+↑/↓`          | Scroll dans les lignes                 |
 | `Ctrl+/`            | Commenter une ligne                    |
 
-### **Recherche et replacement**
+### **Recherche et remplacement**
 
 | Tâche         | Raccourci                         |
 | ------------- | --------------------------------- |
 | `Ctrl+F`      | Recherche                         |
 | `Ctrl+H`      | Remplacer                         |
 | `F3/Shift+F3` | Recherche après/avant             |
-| `Alt+Entrer`  | Multi-curseurs sur les ocurrences |
+| `Alt+Entrer`  | Multi-curseurs sur les occurrences |
 
-### **Multi-curseurs et selection**
+### **Multi-curseurs et sélection**
 
 | Tâche          | Raccourci                                  |
 | -------------- | ------------------------------------------ |
-| `Alt+Clique`   | Inserer un curseur                         |
-| `Ctrl+Alt+↑/↓` | Inserer curseur après ou avant             |
-| `Ctrl+U`       | Retours à la dernière opération de curseur |
-| `Ctrl+L`       | Selectionner la ligne actuelle             |
-| `Ctrl+Shift+L` | Selectionner tout les ocurrences           |
+| `Alt+Clique`   | Insérer un curseur                        |
+| `Ctrl+Alt+↑/↓` | Insérer un curseur après ou avant          |
+| `Ctrl+U`       | Retour à la dernière opération de curseur |
+| `Ctrl+L`       | Sélectionner la ligne actuelle            |
+| `Ctrl+Shift+L` | Sélectionner toutes les occurrences        |
 
-### **Edition de Languages**
+### **Édition de langages**
 
 | Tâche         | Raccourci                               |
 | ------------- | --------------------------------------- |

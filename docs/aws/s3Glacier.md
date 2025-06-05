@@ -1,6 +1,6 @@
 # S3 Glacier
 
-## Installation de [Aws CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html)
+## Installation de [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html)
 
 ```bash
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -8,7 +8,7 @@ unzip awscliv2.zip #apt install zip
 sudo ./aws/install
 ``` 
 
-## [Configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) Aws cli
+## [Configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) AWS CLI
 
 ```bash
 $aws configure
@@ -18,7 +18,7 @@ Default region name [None]: eu-west-3
 Default output format [None]: yaml
 ```
 
-## [Cli completion](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-completion.html) :
+## [CLI completion](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-completion.html) :
 
 ```bash
 $ find / -name aws_completer
@@ -27,7 +27,7 @@ $ find / -name aws_completer
 $ complete -C '/usr/local/bin/aws_completer' aws
 ```
 
-## Commande basique S3 Glaicer sur le cli aws
+## Commandes basiques S3 Glacier sur le CLI AWS
 
 
 - Liste des "vaults" :
@@ -37,7 +37,7 @@ $aws glacier list-vaults --account-id -
 ```
 
 
-- Demande de l'inventaire du "Vault" (cela peux prendre plus de 5 heure) : 
+- Demande de l'inventaire du "vault" (cela peut prendre plus de cinq heures) :
 
 ```bash
 aws glacier initiate-job --account-id - --vault-name my-vault --job-parameters '{"Type": "inventory-retrieval"}'

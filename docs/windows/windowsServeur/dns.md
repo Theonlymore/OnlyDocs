@@ -1,3 +1,3 @@
-Servuer dns précis pour un domain précis.
+Serveur DNS précis pour un domaine précis.
 
-dns conditionnel
+DNS conditionnel
