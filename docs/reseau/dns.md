@@ -16,30 +16,30 @@ Exemple : `www.perdu.com.`
 
 ### Mécanismes d'interrogation
 
-Récursives(client) et itératives(serveur de dns) [image](https://www.omnisecu.com/images/tcpip/recursive-iterative-dns-query.jpg?ezimgfmt=ngcb3/notWebP)
+Requêtes récursives (côté client) et itératives (côté serveur DNS) [image](https://www.omnisecu.com/images/tcpip/recursive-iterative-dns-query.jpg?ezimgfmt=ngcb3/notWebP)
 
 
 ## Enregistrements 
 
-Plusieurs types d'enregistrements peuvent êtres céées dans le serveur DNS. Ils permettent la résolution d'un nom de poste ou d'une adresse IP.
+Plusieurs types d'enregistrements peuvent être créés dans le serveur DNS. Ils permettent la résolution d'un nom de poste ou d'une adresse IP.
 
 Enregistrement `A` et `AAAA` ( Address Record)
      
-  - `A` : Faire correspondre un nom de poste en adresse IPv4. `AAAA` : Correspondre un adresse IPv6.
+  - `A` : fait correspondre un nom de poste à une adresse IPv4. `AAAA` : correspond à une adresse IPv6.
   
 CNAME (Canonical Name)
      
-  - Crée un alise vers le nom d'un autre poste.
+  - Crée un alias vers le nom d'un autre poste.
   
 MX (Mail Exchange) 
      
-  - Définit les serveurs de courrier pour le domaine. (possible d'en mettre plusieurs avec priorité)
+  - Définit les serveurs de courrier pour le domaine (il est possible d'en mettre plusieurs avec une notion de priorité).
 
 PTR (Pointer server)
 
-  - Associe une adressse IP à un enregistrement de noms de domaine. ( ip to nom de domaine)
+  - Associe une adresse IP à un enregistrement de noms de domaine (IP vers nom de domaine).
 
-NS (Name Serveur)
+NS (Name Server)
 - 
   - Définit les serveurs de noms de domaine.
   

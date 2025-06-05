@@ -1,3 +1,3 @@
-# Mes lien  utiles
+# Mes liens utiles
 
-Pour le moment il y a rien 😉
+Pour le moment il n'y a rien 😉

@@ -4,10 +4,10 @@
 
 - https://admin.exchange.microsoft.com/
 
-- Activer archivre local
+- Activer l'archive locale
 
-si cela marche pas --> mettre dans la strategie de groupe
-stratégie de rétention outlook
+Si cela ne marche pas → mettre dans la stratégie de groupe
+Stratégie de rétention Outlook
 
 
 ## Liste de diffusion
