@@ -20,7 +20,7 @@ Fichier configuration des sites web
 Répertoire : `/etc/nginx/sites-available/`
 
 
-De sites-available à sites-enabled : `ln -s /etc/nginx/sites-available/001-rocheralexandre.com /etc/nginx/sites-enabled/`
+De sites-available à sites-enabled : `ln -s /etc/nginx/sites-available/001-docs.rocheralexandre.com /etc/nginx/sites-enabled/`
 
 
 ## Reverse proxy

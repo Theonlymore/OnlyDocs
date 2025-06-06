@@ -37,7 +37,7 @@ services:
   web:
     image: httpd
     labels:
-      - "traefik.http.routers.whoami.rule=Host(`test.rocheralexandre.com`)"
+      - "traefik.http.routers.whoami.rule=Host(`docs.rocheralexandre.com`)"
 ```
 
 ### Test du load balancer
