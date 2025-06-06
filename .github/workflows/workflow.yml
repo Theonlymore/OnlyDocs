@@ -13,7 +13,7 @@ jobs:
     - uses: Theonlymore/MkdocsToSFTP@main
       with:
           username: 'mkdocs'
-          server: 'rocheralexandre.com'
+          server: 'docs.rocheralexandre.com'
           port: 22
           local_path: './site/*'
           remote_path: '/apps/web/mkdocs/'

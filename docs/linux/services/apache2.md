@@ -10,11 +10,11 @@ Avoir installer apache2
 
 Crée un Virtualhost dans un nouveau fichier dans le dossier :  `/etc/apache2/sites-availadble/`
 
-- `vim 001-www.rocheralexandre.com.conf`
+- `vim 001-docs.rocheralexandre.com.conf`
 
 ```bash
 <Virtualhost *:80>
-    ServerName www.rocheralexandre.com #Nom de domaine du serveur
+    ServerName docs.rocheralexandre.com #Nom de domaine du serveur
     DocumentRoot /var/www/html/ #Dossier source du site
 </Virtualhost>
 ```
@@ -25,7 +25,7 @@ Pour les futures tests, mettre un `index` dans `DocumentRoot`
 
 Activation du site web :
 
-- `a2ensite 001-www.rocheralexandre.com.conf`
+- `a2ensite 001-docs.rocheralexandre.com.conf`
 - `service apache2 restart`
 
 ### Mise en place du ssl
@@ -43,21 +43,21 @@ Installation du paquet qui permet la création du certificat :
   
 Création du certificat :
 
-- `certbot -d www.rocheralexandre.com certonly --manual --preferred-challenge dns`
+- `certbot -d docs.rocheralexandre.com certonly --manual --preferred-challenge dns`
   
 Répondre aux questions, certbot demande crée un champ txt sur sont le dns, le faire.
 
 Après vérifications accepté :
 
-Certificat dans le dossier : `/etc/letsencrypt/live/www.rocheralexandre.com-001/`
+Certificat dans le dossier : `/etc/letsencrypt/live/docs.rocheralexandre.com-001/`
 
 #### Création d'une virtualhost pour mis en place ssl
 
-- `vim /etc/apache2/sites-available/002-www.rocheralexandre.com.conf`
+- `vim /etc/apache2/sites-available/002-docs.rocheralexandre.com.conf`
   
 ```bash
 <Virtualhost *:443>
-    ServerName www.rocheralexandre.com
+    ServerName docs.rocheralexandre.com
     DocumentRoot /var/www/html/
 
     SSLEngin on
@@ -73,14 +73,14 @@ Nous devons maintenant crée le dossier `certs` dans `/etc/apache2/`
 
 Mettre le certificat et la clé privé dans le dossier "certs"
 
-- `cp /etc/letsencrypt/live/www.rocheralexandre.com-001/cert.pem /etc/apache2/certs/alex.crt`
-- `cp /etc/letsencrypt/live/www.rocheralexandre.com-001/privkey.pem /etc/apache2/certs/alex.key`
+- `cp /etc/letsencrypt/live/docs.rocheralexandre.com-001/cert.pem /etc/apache2/certs/alex.crt`
+- `cp /etc/letsencrypt/live/docs.rocheralexandre.com-001/privkey.pem /etc/apache2/certs/alex.key`
 
 Activation des module/site apache2 :
 
 - `a2enmod ssl`
 - `a2enmod rewrite`
-- `a2ensite 002-www.rocheralexandre.com`
+- `a2ensite 002-docs.rocheralexandre.com`
 - `service apache2 restart`
 
 
