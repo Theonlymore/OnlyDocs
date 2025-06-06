@@ -35,7 +35,7 @@ kind: Ingress
 metadata:
   name: onlydocs
   annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
     traefik.ingress.kubernetes.io/router.tls.certresolver: cloudflare
 spec:
   rules:
