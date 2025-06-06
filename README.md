@@ -57,5 +57,4 @@ docker run -p 8080:80 onlydocs:latest
 ```
 
 Vous obtenez ainsi une image construite à partir du code source présent sur GitHub uniquement.
-Si vous déployez via ArgoCD, le Job `k8s/build-image-job.yaml` s'occupe
-également de construire cette image avant de lancer le site.
+L'image est maintenant construite et poussée vers GitHub Container Registry par la GitHub Action `.github/workflows/push-ghcr.yml`. Le `Deployment` récupère ensuite l’image `ghcr.io/theonlymore/onlydocs:latest`.
