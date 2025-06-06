@@ -1,22 +1,2 @@
-name: deploy-mkdocs
-
-on:
-  push:
-    branches:
-    - main
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
-    - uses: Theonlymore/MkdocsToSFTP@main
-      with:
-          username: 'mkdocs'
-          server: 'docs.rocheralexandre.com'
-          port: 22
-          local_path: './site/*'
-          remote_path: '/apps/web/mkdocs/'
-          password: ${{ secrets.SFTP_PASSWORD }}
 
   
