@@ -1,0 +1,24 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: onlydocs
+  namespace: argocd
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: onlydocs=ghcr.io/theonlymore/onlydocs:latest
+    argocd-image-updater.argoproj.io/onlydocs.update-strategy: digest
+    argocd-image-updater.argoproj.io/onlydocs.pull-secret: pullsecret:argocd/ghcr
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/theonlymore/onlydocs.git
+    targetRevision: main
+    path: k8s
+    kustomize: {}
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: onlyhub
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
