@@ -15,6 +15,7 @@ spec:
       containers:
       - name: onlydocs
         image: ghcr.io/theonlymore/onlydocs:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
 ---
