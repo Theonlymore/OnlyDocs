@@ -2,6 +2,11 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: onlydocs
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: ghcr.io/theonlymore/onlydocs
+    argocd-image-updater.argoproj.io/ghcr.io_theonlymore_onlydocs.update-strategy: latest
+    argocd-image-updater.argoproj.io/ghcr.io_theonlymore_onlydocs.allow-tags: regexp:^v?\d+\.\d+\.\d+$
+    # ou juste "latest" si tu veux uniquement suivre le tag `latest`
 spec:
   project: default
   source:
